@@ -48,7 +48,7 @@ body {
   background-attachment: fixed; }
 
 #fbsection1, #fbsection2, #fbsection3, #fbsection4, #fbsection5, #fbsection6, #fbsection7 {
-  background-image: url(../images/reactr-front.png); }
+  background-image: url(../images/react/reactr-front.png); }
   #fbsection1 .btn, #fbsection2 .btn, #fbsection3 .btn, #fbsection4 .btn, #fbsection5 .btn, #fbsection6 .btn, #fbsection7 .btn {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
