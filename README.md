@@ -1,1 +1,3 @@
-"# portfolio"  git init git add README.md git commit -m "first commit" git remote add origin https://github.com/tenjojeremy/portfolio.git git push -u origin master
+Showcasing my work
+
+http://www.jeremytenjo.com/
