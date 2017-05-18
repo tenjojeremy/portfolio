@@ -1,2 +1,1 @@
-# portfolio
-Portfolio website with project examples.
+"# portfolio"  git init git add README.md git commit -m "first commit" git remote add origin https://github.com/tenjojeremy/portfolio.git git push -u origin master

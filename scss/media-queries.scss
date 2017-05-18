@@ -1,0 +1,138 @@
+@media (max-width: 1304px) {
+    #fbsection1 {
+        ul {
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 44, 44, 0.3);
+            background: rgba(0, 44, 44, 0.3);
+            color: rgba(0, 44, 44, 0.3);
+        }
+    }
+    #fbsection2 {
+        ul {
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+    #fbsection3 {
+        ul {
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+    #fbsection4 {
+        ul {
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    #intro {
+        ul {
+            width: 400px;
+        }
+        li {
+            &:first-child {
+                font-size: 46px;
+            }
+            font-size: 17px;
+        }
+    }
+    .cbp-fbscroller {
+        nav {
+            right: 0px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #intro {
+        ul {
+            width: 240px;
+        }
+        li {
+            &:first-child {
+                font-size: 33px;
+            }
+            font-size: 12px;
+        }
+    }
+    #fbsection1 {
+        ul {
+            width: 200px;
+        }
+        li {
+            font-size: 40px;
+            &:nth-child(2) {
+                font-size: 13px;
+            }
+            &:nth-child(3) {
+                font-size: 14px;
+            }
+        }
+        .btn {
+            margin-top: 80px;
+        }
+    }
+    #fbsection2 {
+        ul {
+            width: 200px;
+        }
+        li {
+            font-size: 40px;
+            &:nth-child(2) {
+                font-size: 13px;
+            }
+            &:nth-child(3) {
+                font-size: 14px;
+            }
+        }
+        .btn {
+            margin-top: 80px;
+        }
+    }
+    #fbsection3 {
+        ul {
+            width: 200px;
+        }
+        li {
+            font-size: 40px;
+            &:nth-child(2) {
+                font-size: 13px;
+            }
+            &:nth-child(3) {
+                font-size: 14px;
+            }
+        }
+        .btn {
+            margin-top: 80px;
+        }
+    }
+    #fbsection4 {
+        ul {
+            width: 200px;
+        }
+        li {
+            font-size: 40px;
+            &:nth-child(2) {
+                font-size: 13px;
+            }
+            &:nth-child(3) {
+                font-size: 14px;
+            }
+        }
+        .btn {
+            margin-top: 80px;
+        }
+    }
+}
