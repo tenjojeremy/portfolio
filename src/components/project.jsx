@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import LinkButton from './linkButton.jsx'
+import LinkButton from '../components/linkButton.jsx'
 
 class FanshaweIntramurals extends React.Component {
 	constructor(props) {

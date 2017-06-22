@@ -24,8 +24,8 @@ export default class name extends React.Component {
 
 		//Template
 		return (
-			<ParticlesCon>
-				<Particles params={{
+			<span>
+				<Particles height={'100vh'} params={{
 					"particles": {
 						"number": {
 							"value": 150,
@@ -136,7 +136,7 @@ export default class name extends React.Component {
 					"retina_detect": true
 				}}/>
 
-			</ParticlesCon>
+		</span>
 		);
 	}
 
