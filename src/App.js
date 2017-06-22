@@ -3,6 +3,7 @@ import './App.css';
 //Projects
 import Project from './components/project.jsx';
 import styled from 'styled-components'
+import Particles from './components/particles.jsx';
 
 class App extends Component {
 	render() {
@@ -38,6 +39,7 @@ class App extends Component {
 
 		return (
 			<MasterContainer>
+				<Particles />				
 				{projectList}
 			</MasterContainer>
 		);
