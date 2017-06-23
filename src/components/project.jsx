@@ -34,17 +34,38 @@ class FanshaweIntramurals extends React.Component {
 	width: 50%;
 	position:absolute;
 	left: 50%;
+	@media (max-width: 951px) {
+		left: 0;
+		right: 0;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+
+	}
+
 	`;
 
 		const ProjectDesc = styled.div `
 height: 60%;
-width: 400px;
+width: auto;
+max-width: 400px;
 top: 0;
 bottom:0;
 margin-top: auto;
 margin-bottom: auto;
 position:absolute;
 left: 100px;
+@media (max-width: 951px) {
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	background:rgba(0, 0, 0, 0.50);
+	border-radius: 2px;
+	height:90%;
+
+}
+
 `;
 		const Title = styled.p `
 color: white;
@@ -52,6 +73,11 @@ font-family: "PT Sans", sans-serif;
     font-size: 60px;
     line-height: 87px;
 		margin-bottom: 20px;
+		@media (max-width: 600px) {
+			line-height: 47px;
+			font-size: 40px;
+
+		}
 `;
 		const Position = styled.p `
 color: white;
@@ -69,7 +95,12 @@ letter-spacing: 4px;
 		font-size: 19px;
     line-height: 26px;
     font-family: "PT Serif", serif;
-    height: 170px;
+    height: auto;
+`;
+
+		const Span = styled.div `
+margin-top: 20px;
+height:41px;
 `;
 		return (
 			<ProjectContainer color={this.state.color} img={this.state.images}>
@@ -78,7 +109,9 @@ letter-spacing: 4px;
 						<Title>{this.state.name}</Title>
 						<Position>{this.state.position}</Position>
 						<Description>{this.state.description}</Description>
-						<LinkButton link={this.state.link} type={this.state.type}/>
+						<Span>
+							<LinkButton link={this.state.link} type={this.state.type}/>
+						</Span>
 					</ProjectDesc>
 				</ProjectDescCon>
 			</ProjectContainer>

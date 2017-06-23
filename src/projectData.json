@@ -1,0 +1,78 @@
+	[{
+		"name": "Fanshawe Intramurals",
+		"color": "red",
+		"images": "fanshawe_intramurals",
+		"description": "Web app where students can join intramural teams and connect with their team-mates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
+		"type": "GITHUB LINK"
+	}, {
+		"name": "Complaints Check",
+		"color": "blue",
+		"images": "complaints_check",
+		"description": "A web app where property manager can track tenants complaints and keep records of them It integrates a CMS to manage complaints and a client-side interface where tenants can log in and place complaints with photo evidence and detailed description's.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "https://github.com/tenjojeremy/Property_Management_App",
+		"type": "GITHUB LINK"
+	}, {
+		"name": "My Weddings Ontario",
+		"color": "blue",
+		"images": "weddings_bg",
+		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "http://www.jeremytenjo.com/weddings_p2/",
+		"type": "TRY DEMO"
+
+	}, {
+		"name": "Reactr",
+		"color": "blue",
+		"images": "react_bg",
+		"description": "Reactr.ca is the official website for Fanshawe’s web development team, for which I am part of. Developed with Codeignitor I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.",
+		"position": "FRON-BACK-END DEVELOPER",
+		"link": "http://www.jeremytenjo.com/reactr/",
+		"type": "TRY DEMO"
+
+	}, {
+		"name": "Infographics",
+		"color": "blue",
+		"images": "d3_bg",
+		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "http://www.jeremytenjo.com/infographics/",
+		"type": "TRY DEMO"
+
+	}, {
+		"name": "EDFC",
+		"color": "blue",
+		"images": "edfg_bg",
+		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
+		"position": "PROJECT MANAGER - BACK-END DEVELOPER",
+		"link": "http://www.jeremytenjo.com/EDFC//",
+		"type": "TRY DEMO"
+
+	}, {
+		"name": "Drinky",
+		"color": "blue",
+		"images": "drinky_bg",
+		"description": "The Drinky website is a concept for a website dedicated to sell alcohol. The purposed of my website is to make it easy for the website to be managed from the effectively from the cms.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "http://www.jeremytenjo.com/drinky/",
+		"type": "TRY DEMO"
+
+	}, {
+		"name": "My Movies",
+		"color": "blue",
+		"images": "mymovies",
+		"description": "My Movies website is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and rotten tomatoes, but adding some nice touched to offer a nice and easy user experience.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "http://www.jeremytenjo.com/weddings_p2/",
+		"type": "TRY DEMO"
+	}, {
+		"name": "Christina Tischler Project",
+		"color": "blue",
+		"images": "tischler_bg",
+		"description": "Christina Tischeler website is designed for an individual business focused on selling arts and crafts of her own making. Custom made and local products are nicely showcased in the website, persuading people to purchase her produces.",
+		"position": "FRONT-END DEVELOPER",
+		"link": "http://www.jeremytenjo.com/tischler/",
+		"type": "TRY DEMO"
+	}]

@@ -26,9 +26,8 @@ export default class LinkButton extends React.Component {
     padding: 10px 20px 10px 20px;
     border: solid #ffffff 2px;
     text-decoration: none;
-		position: absolute;
-		bottom:0;
 		`
+
 		//Template
 		return (
 			<Link href={this.state.link} target="_blank">{this.state.type}</Link>

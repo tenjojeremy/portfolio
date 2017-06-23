@@ -23,10 +23,15 @@ export default class name extends React.Component {
 		background: #182327;
  `;
 
+		const InfoContainer = styled.div `
+width: 300px;
+height: 300px;
+background: red;
+	 `;
 		//Template
 		return (
 			<ParticlesCon>
-				<Particles />
+				<Particles/>
 
 			</ParticlesCon>
 		);
