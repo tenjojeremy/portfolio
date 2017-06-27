@@ -27,6 +27,9 @@ class FanshaweIntramurals extends React.Component {
 		padding:0;
 		height: 100vh;
 		width: 100%;
+		@media (max-width: 600px) {
+			background-image: url('../images/${props => props.img}_m.png');
+		}
 `;
 
 		const ProjectDescCon = styled.div `
@@ -63,6 +66,7 @@ left: 100px;
 	background:rgba(0, 0, 0, 0.50);
 	border-radius: 2px;
 	height:90%;
+	padding: 20px;
 
 }
 
@@ -76,6 +80,7 @@ font-family: "PT Sans", sans-serif;
 		@media (max-width: 600px) {
 			line-height: 47px;
 			font-size: 40px;
+			margin-top: 0px;
 
 		}
 `;
@@ -99,8 +104,12 @@ letter-spacing: 4px;
 `;
 
 		const Span = styled.div `
-margin-top: 20px;
+margin-top: 60px;
 height:41px;
+@media (max-width: 600px) {
+	margin-top: 20px
+
+}
 `;
 		return (
 			<ProjectContainer color={this.state.color} img={this.state.images}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 export default class name extends React.Component {
 
@@ -18,9 +18,9 @@ export default class name extends React.Component {
 		//Properties
 
 		//Style
-		const ParticlesCon = styled.div `
-		height: 100vh;
- `;
+		// const ParticlesCon = styled.div `
+		// height: 100vh;
+ // `;
 
 		//Template
 		return (
@@ -28,7 +28,7 @@ export default class name extends React.Component {
 				<Particles height={'100vh'} params={{
 					"particles": {
 						"number": {
-							"value": 150,
+							"value": 80,
 							"density": {
 								"enable": true,
 								"value_area": 900
@@ -98,11 +98,11 @@ export default class name extends React.Component {
 						"detect_on": "canvas",
 						"events": {
 							"onhover": {
-								"enable": true,
+								"enable": false,
 								"mode": "grab"
 							},
 							"onclick": {
-								"enable": true,
+								"enable": false,
 								"mode": "push"
 							},
 							"resize": true
