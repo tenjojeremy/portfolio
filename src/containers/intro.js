@@ -1,5 +1,5 @@
 import React from 'react';
-import Particles from '../components/particles.jsx';
+import Particles from '../components/particles';
 import styled from 'styled-components'
 
 export default class name extends React.Component {

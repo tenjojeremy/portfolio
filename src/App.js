@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 //Projects
-import Project from './components/project.jsx';
+import Project from './components/project';
 import styled from 'styled-components'
-import Intro from './containers/intro.jsx';
+import Intro from './containers/intro';
 import ProjectsData from './projectData.json';
 
 class App extends Component {
