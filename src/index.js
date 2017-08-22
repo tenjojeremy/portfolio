@@ -4,7 +4,7 @@ import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-//Firebase Configuration
+// Firebase Configuration
 // var firebase = require("firebase/app");
 //
 // var config = {
