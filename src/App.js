@@ -14,15 +14,15 @@ class App extends Component {
     height: 100%;
     width: 100%;
   `;
-		const projects = ProjectsData;
 
-		const projectList = projects.map((project) => <span key={project.name.toString()}>
+		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
 		</span>);
 
 		return (
 			<MasterContainer>
-				<Intro/> {projectList}
+				<Intro/>
+				{projectList}
 			</MasterContainer>
 		);
 	}
