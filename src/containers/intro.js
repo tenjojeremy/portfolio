@@ -26,8 +26,10 @@ class name extends React.Component {
 				<InfoContainer>
 					<Title>Jeremy Tenjo</Title>
 					<SubTitle>Project Showcase</SubTitle>
-					<Linktext>Check out my Gihut and Linkedin Pages</Linktext>
-
+					<AboutMe>
+						I am a web developer who enjoys the challenge of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development for efficient. I create web apps that make lives easier.
+					</AboutMe>
+					<Linktext>Check out my Linkedin and GitHub Pages</Linktext>
 					<LinksCon>
 						<a target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/jeremy-tenjo-244048120">
 							<Icon src={LinkedinIcon} alt="linkedin icon"/>
@@ -45,7 +47,13 @@ class name extends React.Component {
 }
 
 //Style
- const Linktext = styled.p `
+const AboutMe = styled.p `
+text-align: center;
+color: white;
+font-weight: lighter;
+font-size: 14px;
+ `;
+const Linktext = styled.p `
 color: #BDBDBD;
 text-align: center;
 font-size: 12px;
@@ -56,7 +64,7 @@ width: 40px;
 padding: 10px;
  `;
 const LinksCon = styled.div `
-	${'' /* background: red; */}
+	${ ''/* background: red; */}
 height: 70px;
 width: 120px;
 margin: 0 auto;
@@ -95,6 +103,7 @@ text-align: center;
 font-size: 21px;
 line-height: 25px;
 color: white;
+font-weight: bold;
 `;
 
 export default name
