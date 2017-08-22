@@ -51,6 +51,7 @@ width: 100%;
 `;
 
 const ProjectDescCon = styled.div `
+	${'' /* background: red; */}
 height: 100%;
 width: 50%;
 position:absolute;
@@ -67,7 +68,9 @@ width: 80%;
 `;
 
 const ProjectDesc = styled.div `
-height: 60%;
+	${'' /* background: blue; */}
+${'' /* height: 60%; */}
+max-height: 900px;
 width: auto;
 max-width: 400px;
 top: 0;
@@ -124,6 +127,9 @@ height: auto;
 const Span = styled.div `
 margin-top: 60px;
 height:41px;
+margin: 0 auto;
+display: block;
+width: 190px;
 @media (max-width: 600px) {
 margin-top: 20px
 

@@ -76,7 +76,7 @@ background: #182327;
 
 const InfoContainer = styled.div `
 width: 390px;
-height: 300px;
+height: 350px;
 // background: red;
 position: absolute;
 top: 0;
