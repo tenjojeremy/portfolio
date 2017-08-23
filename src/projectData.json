@@ -25,7 +25,7 @@
 
 	}, {
 		"name": "Reactr",
-		"color": "blue",
+		"color": "green",
 		"images": "react_bg",
 		"description": "Reactr.ca is the official website for Fanshawe’s web development team, for which I am part of. Developed with Codeignitor I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.",
 		"position": "FRON-BACK-END DEVELOPER",
@@ -34,7 +34,7 @@
 
 	}, {
 		"name": "Infographics",
-		"color": "blue",
+		"color": "yellow",
 		"images": "d3_bg",
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "FULLSTACK DEVELOPER",
@@ -43,7 +43,7 @@
 
 	}, {
 		"name": "EDFC",
-		"color": "blue",
+		"color": "pink",
 		"images": "edfg_bg",
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "PROJECT MANAGER - BACK-END DEVELOPER",
@@ -61,7 +61,7 @@
 
 	}, {
 		"name": "My Movies",
-		"color": "blue",
+		"color": "orange",
 		"images": "mymovies",
 		"description": "My Movies website is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and rotten tomatoes, but adding some nice touched to offer a nice and easy user experience.",
 		"position": "FULLSTACK DEVELOPER",
