@@ -103,6 +103,7 @@ margin-right: 20px;
   `;
 const ProjectContainer = styled.div `
 background: ${props => props.color};
+${'' /* background: #1B2629; */}
 background-image: url('../images/${props => props.img}.png');
 background-attachment: fixed;
 background-position: top center;

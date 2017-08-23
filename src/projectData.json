@@ -1,6 +1,6 @@
 	[{
 		"name": "Fanshawe Intramurals",
-		"color": "red",
+		"color": "#795548",
 		"images": "fanshawe_intramurals",
 		"description": "Web app where students can join intramural teams and connect with their team-mates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
 		"position": "FULLSTACK DEVELOPER",
@@ -8,7 +8,7 @@
 		"type": "GITHUB LINK"
 	}, {
 		"name": "Complaints Check",
-		"color": "blue",
+		"color": "#2A919A",
 		"images": "complaints_check",
 		"description": "A web app where property manager can track tenants complaints and keep records of them It integrates a CMS to manage complaints and a client-side interface where tenants can log in and place complaints with photo evidence and detailed description's.",
 		"position": "FULLSTACK DEVELOPER",
@@ -16,7 +16,7 @@
 		"type": "GITHUB LINK"
 	}, {
 		"name": "My Weddings Ontario",
-		"color": "blue",
+		"color": "#EF5350",
 		"images": "weddings_bg",
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "FULLSTACK DEVELOPER",
@@ -25,7 +25,7 @@
 
 	}, {
 		"name": "Reactr",
-		"color": "green",
+		"color": "#F9A825",
 		"images": "react_bg",
 		"description": "Reactr.ca is the official website for Fanshawe’s web development team, for which I am part of. Developed with Codeignitor I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.",
 		"position": "FRON-BACK-END DEVELOPER",
@@ -34,7 +34,7 @@
 
 	}, {
 		"name": "Infographics",
-		"color": "yellow",
+		"color": "#673AB7",
 		"images": "d3_bg",
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "FULLSTACK DEVELOPER",
@@ -43,7 +43,7 @@
 
 	}, {
 		"name": "EDFC",
-		"color": "pink",
+		"color": "#2D353F",
 		"images": "edfg_bg",
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "PROJECT MANAGER - BACK-END DEVELOPER",
@@ -52,7 +52,7 @@
 
 	}, {
 		"name": "Drinky",
-		"color": "blue",
+		"color": "#22A7F0",
 		"images": "drinky_bg",
 		"description": "The Drinky website is a concept for a website dedicated to sell alcohol. The purposed of my website is to make it easy for the website to be managed from the effectively from the cms.",
 		"position": "FULLSTACK DEVELOPER",
@@ -61,7 +61,7 @@
 
 	}, {
 		"name": "My Movies",
-		"color": "orange",
+		"color": "#E87E04",
 		"images": "mymovies",
 		"description": "My Movies website is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and rotten tomatoes, but adding some nice touched to offer a nice and easy user experience.",
 		"position": "FULLSTACK DEVELOPER",
@@ -69,7 +69,7 @@
 		"type": "TRY DEMO"
 	}, {
 		"name": "Christina Tischler Project",
-		"color": "blue",
+		"color": "#019875",
 		"images": "tischler_bg",
 		"description": "Christina Tischeler website is designed for an individual business focused on selling arts and crafts of her own making. Custom made and local products are nicely showcased in the website, persuading people to purchase her produces.",
 		"position": "FRONT-END DEVELOPER",
