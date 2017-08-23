@@ -137,7 +137,7 @@ width: 80%;
 @media (max-width: 600px) {
 position: static;
 height: auto;
-
+width: 95%;
 }
 `;
 
@@ -184,7 +184,7 @@ margin-top: 10px;
 	line-height: 47px;
 	font-size: 40px;
 	margin-top: 0px;
-
+text-align: center;
 }
 `;
 const Position = styled.p `
@@ -197,6 +197,9 @@ height: 40px;
 border-bottom: 1px solid white;
 margin-bottom: 20px;
 letter-spacing: 4px;
+@media (max-width: 600px) {
+text-align: center;
+}
 `;
 const Description = styled.p `
 color:white;
