@@ -54,17 +54,7 @@ left: 0;
 			// maxWidth: 900,
 			color: '#fff'
 		};
-		const conStyle = {
 
-			position: 'absolute',
-			top: 0,
-			bottom: 0,
-			left: 0,
-			right: 0,
-			margin: 'auto',
-			maxWidth: '800px',
-			maxHeight: '550px'
-		};
 		const SliceImg = styled.img `
 	 height: 90%;
     width: 95%;
@@ -73,27 +63,29 @@ left: 0;
 		max-width: 800px;
 	 `;
 		const CloseIcon = styled.img `
-width: 30px;
-${'' /* float: right; */}
+width: 20px;
 position: absolute;
 right: 33px;
  `;
 		const CloseIconCon = styled.div `
-	${'' /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-	max-width: 732px;
-  height: 30px;
-	margin-top: 30px;
-	@media (max-width: 810px) {
-	margin-right: 34px;
-} */}
 position: relative;
 height: 30px;
   `;
-	 const CarouselInner = styled.div `
+		const LeftArrow = styled.img `
+width: 20px;
+position: absolute;
+left: 33px;
+ `;
+		const RightArrow = styled.img `
+width: 20px;
+position: absolute;
+right: 23px;
+ `;
+		const DirCon = styled.div `
+position: relative;
+height: 23px;
+  `;
+		const CarouselInner = styled.div `
 	 position: absolute;
 	 top: 0;
 	 bottom: 0;
@@ -102,6 +94,9 @@ height: 30px;
 	 margin: auto;
 	 max-width: 800px;
 	 max-height: 550px;
+	 @media (max-width: 600px) {
+top: 50px;
+	 }
 	 `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
@@ -115,25 +110,31 @@ height: 30px;
 
 					<CarouselInner>
 
-					<CloseIconCon>
-						<CloseIcon src={close}/>
-					</CloseIconCon>
+						<CloseIconCon>
+							<CloseIcon src={close}/>
+						</CloseIconCon>
 
-					<SwipeableViews index={1} enableMouseEvents={true}>
+						<SwipeableViews index={1} enableMouseEvents={true}>
 
-						<div style={styles}>
-							<SliceImg src={screenshot}/>
-						</div>
-						<div style={styles}>
-							<SliceImg src={screenshot}/>
+							<div style={styles}>
+								<SliceImg src={screenshot}/>
+							</div>
+							<div style={styles}>
+								<SliceImg src={screenshot}/>
 
-						</div>
-						<div style={styles}>
-							<SliceImg src={screenshot}/>
+							</div>
+							<div style={styles}>
+								<SliceImg src={screenshot}/>
 
-						</div>
-					</SwipeableViews>
-				</CarouselInner>
+							</div>
+						</SwipeableViews>
+
+						<DirCon>
+							<LeftArrow src={arrowLeft}/>
+							<RightArrow src={arrowRight}/>
+
+						</DirCon>
+					</CarouselInner>
 				</CarouselCon>
 				{projectList}
 			</MasterContainer>
