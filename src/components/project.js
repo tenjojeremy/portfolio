@@ -7,8 +7,16 @@ import sqlIcon from '../images/MySQL.svg';
 import laravelIcon from '../images/laravel.svg';
 import codeignitorIcon from '../images/codeigniter.svg';
 import screenshot from '../images/screenshot.png';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {Toggle_Carousel,Set_Gallery} from '../state/actions/index';
 
-class FanshaweIntramurals extends React.Component {
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators({
+		Toggle_Carousel,Set_Gallery
+	}, dispatch)
+}
+class Projects extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -22,6 +30,10 @@ class FanshaweIntramurals extends React.Component {
 		};
 	}
 
+	showCarousel = (name) => {
+		this.props.Set_Gallery(name)
+		this.props.Toggle_Carousel(true)
+	}
 	render() {
 
 		return (
@@ -42,15 +54,13 @@ class FanshaweIntramurals extends React.Component {
 
 						<GalleryCon>
 
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-							<GalleryItem src={screenshot}/>
-
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
 
 						</GalleryCon>
 						<Span>
@@ -114,7 +124,7 @@ margin-right: 20px;
   `;
 const ProjectContainer = styled.div `
 background: ${props => props.color};
-${'' /* background: #1B2629; */}
+${ ''/* background: #1B2629; */}
 background-image: url('../images/${props => props.img}.png');
 background-attachment: fixed;
 background-position: top center;
@@ -178,7 +188,7 @@ margin: auto;
 }
 @media (max-width: 600px) {
 background: none;
-${'' /* height: 760px; */}
+${ ''/* height: 760px; */}
 position: static;
 
 }
@@ -231,4 +241,4 @@ margin-top: 40px;
 
 }
 `;
-export default FanshaweIntramurals
+export default connect(null, mapDispatchToProps)(Projects);
