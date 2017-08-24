@@ -229,6 +229,9 @@ font-size: 19px;
 line-height: 26px;
 font-family: "PT Serif", serif;
 height: auto;
+@media (max-width: 600px) {
+ font-size: 16px;
+}
 `;
 
 const Span = styled.div `
