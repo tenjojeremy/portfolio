@@ -94,7 +94,7 @@ left: 0;
 						<SliceImg src={screenshot} />
 
 					</div>
-					</AutoPlaySwipeableViews >
+					</AutoPlaySwipeableViews>
 				</CarouselCon>
 				{projectList}
 			</MasterContainer>
