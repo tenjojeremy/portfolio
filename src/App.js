@@ -49,7 +49,7 @@ left: 0;
 
 	    padding: 15,
 	    minHeight: 100,
-	    maxWidth: 900,
+	    // maxWidth: 900,
 	    color: '#fff',
 
 	};
@@ -69,6 +69,7 @@ left: 0;
     width: 90%;
 		margin: 0 auto;
 		display: block;
+		max-width: 800px;
 	 `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>

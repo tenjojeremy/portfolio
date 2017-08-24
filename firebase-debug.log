@@ -1,0 +1,41 @@
+[debug] [2017-08-24T15:52:06.386Z] ----------------------------------------------------------------------
+[debug] [2017-08-24T15:52:06.389Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\je_re\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-08-24T15:52:06.389Z] CLI Version:   3.9.2
+[debug] [2017-08-24T15:52:06.389Z] Platform:      win32
+[debug] [2017-08-24T15:52:06.389Z] Node Version:  v8.0.0
+[debug] [2017-08-24T15:52:06.389Z] Time:          Thu Aug 24 2017 11:52:06 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T15:52:06.389Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-24T15:52:06.406Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-24T15:52:06.406Z] > authorizing via signed-in user
+[debug] [2017-08-24T15:52:06.409Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-24T15:52:06.409Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/lSAf294d_fwQ5Z4Pxo5NiceWBRqS79mv7XlBoUtN7HU',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 24 2017 11:52:06 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T15:52:07.022Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-24T15:52:07.059Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+ Thu Aug 24 2017 11:52:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T15:52:09.065Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-24T15:52:09.067Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+ Thu Aug 24 2017 11:52:09 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T15:52:11.120Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-83749'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-08-24T15:52:16.052Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-83749/uploads/-KsJwQdFJB66HpMkHeB1?fileCount=37&message=  
+ Thu Aug 24 2017 11:52:16 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T15:53:55.337Z] Error: socket hang up
+    at createHangUpError (_http_client.js:343:15)
+    at TLSSocket.socketOnEnd (_http_client.js:435:23)
+    at emitNone (events.js:110:20)
+    at TLSSocket.emit (events.js:207:7)
+    at endReadableNT (_stream_readable.js:1045:12)
+    at _combinedTickCallback (internal/process/next_tick.js:102:11)
+    at process._tickCallback (internal/process/next_tick.js:161:9)
+[error] 
+[error] Error: Server Error. socket hang up
