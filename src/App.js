@@ -5,6 +5,7 @@ import Project from './components/project';
 import styled from 'styled-components'
 import Intro from './containers/intro';
 import ProjectsData from './projectData.json';
+import screenshot from './images/screenshot.png';
 
 class App extends Component {
 	render() {
@@ -22,6 +23,7 @@ class App extends Component {
 		return (
 			<MasterContainer>
 				<Intro/>
+
 				{projectList}
 			</MasterContainer>
 		);

@@ -6,6 +6,7 @@ import vueIcon from '../images/vue.svg';
 import sqlIcon from '../images/MySQL.svg';
 import laravelIcon from '../images/laravel.svg';
 import codeignitorIcon from '../images/codeigniter.svg';
+import screenshot from '../images/screenshot.png';
 
 class FanshaweIntramurals extends React.Component {
 	constructor(props) {
@@ -20,6 +21,7 @@ class FanshaweIntramurals extends React.Component {
 			images: props.images
 		};
 	}
+
 	render() {
 
 		return (
@@ -31,18 +33,25 @@ class FanshaweIntramurals extends React.Component {
 						<Description>{this.state.description}</Description>
 						<TechyTitle>Tech used:</TechyTitle>
 						<TechList>
-							<li><IconTech src={reactIcon}/></li>
-							<li><IconTech src={vueIcon}/></li>
+							<li title="React"><IconTech src={reactIcon}/></li>
+							<li title="Vuejs"><IconTech src={vueIcon}/></li>
 							<Express>Express.js</Express>
-							<li><IconTech src={laravelIcon}/></li>
-							<li><IconTech src={codeignitorIcon}/></li>
+							<li title="Laravel"><IconTech src={laravelIcon}/></li>
+							<li title="Codeignitor"><IconTech src={codeignitorIcon}/></li>
 						</TechList>
+
 						<GalleryCon>
-							<GalleryItem src={sqlIcon}/>
-							<GalleryItem src={sqlIcon}/>
-							<GalleryItem src={sqlIcon}/>
-							<GalleryItem src={sqlIcon}/>
-							<GalleryItem src={sqlIcon}/>
+
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+							<GalleryItem src={screenshot}/>
+
+
 						</GalleryCon>
 						<Span>
 							<LinkButton link={this.state.link} type={this.state.type}/>
@@ -54,7 +63,7 @@ class FanshaweIntramurals extends React.Component {
 	}
 }
 const GalleryItem = styled.img `
-width: 50px;
+width: 100px;
 display: block;
 margin: 0 auto;
 
@@ -63,6 +72,8 @@ const GalleryCon = styled.div `
 height: 100px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
 overflow: scroll;
 overflow-x: hidden;
 margin-top: 20px;

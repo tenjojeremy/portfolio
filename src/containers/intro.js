@@ -32,14 +32,14 @@ class name extends React.Component {
 					</AboutMe>
 					<Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
 					<LinksCon>
-						<a target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/jeremy-tenjo-244048120">
+						<a title="Linkedin" target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/jeremy-tenjo-244048120">
 							<Icon src={LinkedinIcon} alt="linkedin icon"/>
 						</a>
 
-						<a target="_blank" rel="noopener noreferrer" href="https://github.com/tenjojeremy">
+						<a title="Github" target="_blank" rel="noopener noreferrer" href="https://github.com/tenjojeremy">
 							<Icon src={GithubIcon} alt="github icon"/>
 						</a>
-						<a target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume.pdf?alt=media&token=2695b8d8-c8a4-4acc-812a-68bdf48b43b8">
+						<a title="Portfolio" target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume.pdf?alt=media&token=2695b8d8-c8a4-4acc-812a-68bdf48b43b8">
 							<Icon src={ResumeIcon} alt="CV icon"/>
 						</a>
 					</LinksCon>
