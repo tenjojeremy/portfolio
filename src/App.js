@@ -23,7 +23,7 @@ function mapDispatchToProps(dispatch) {
 	}, dispatch)
 }
 function mapStateToProps(state) {
-	return {toggleCarousel: state.ToogleCarousel}
+	return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount}
 }
 class App extends Component {
 	constructor(props) {
@@ -36,15 +36,21 @@ class App extends Component {
 		this.props.Toggle_Carousel(false)
 	}
 	prev = () => {
-
+		if (this.state.index !== 0) {
 		let n = this.state.index - 1;
 		console.log(n);
 		this.setState({index: n})
+	} else {
+		this.setState({index: this.props.galleryCount})
+	}
 	}
 	next = () => {
+		if (this.state.index < this.props.galleryCount) {
 			let n = this.state.index + 1;
-			console.log(n);
 			this.setState({index: n})
+		} else {
+			this.setState({index: 0})
+		}
 	}
 	mixins : [Carousel.ControllerMixin]
 	render() {

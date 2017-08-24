@@ -4,3 +4,6 @@ export const Toggle_Carousel = (e) => {
 export const Set_Gallery = (e) => {
 	return {type: 'SET_GALLERY', data: e}
 }
+export const Set_Gallery_Count = (e) => {
+	return {type: 'SET_GALLERY_COUNT', data: e}
+}
