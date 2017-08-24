@@ -62,8 +62,8 @@ left: 0;
 			left: 0,
 			right: 0,
 			margin: 'auto',
-			height: 600
-
+			maxWidth: '800px',
+			maxHeight: '550px'
 		};
 		const SliceImg = styled.img `
 	 height: 90%;
@@ -82,7 +82,7 @@ float: right;
   left: 0;
   right: 0;
   margin: auto;
-	max-width: 800px;
+	max-width: 732px;
   height: 30px;
 	margin-top: 30px;
 	@media (max-width: 810px) {
