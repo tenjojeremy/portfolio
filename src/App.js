@@ -49,7 +49,19 @@ left: 0;
 
 	    padding: 15,
 	    minHeight: 100,
+	    maxWidth: 900,
 	    color: '#fff',
+
+	};
+	const conStyle = {
+
+	    position: 'absolute',
+	    top: 0,
+	    bottom: 0,
+	    left: 0,
+	    right: 0,
+	    margin: 'auto',
+			height: 600
 
 	};
 	 const SliceImg = styled.img `
@@ -67,7 +79,7 @@ left: 0;
 				<Intro/>
 
 				<CarouselCon>
-					<SwipeableViews>
+					<SwipeableViews style={conStyle}>
 					<div style={styles}>
 					<SliceImg src={screenshot} />
 					</div>
