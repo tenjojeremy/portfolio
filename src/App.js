@@ -72,7 +72,9 @@ position: fixed;
 z-index: 99;
 top: 0;
 left: 0;
+
 	`;
+
 		const styles = {
 
 			padding: 15,
@@ -128,7 +130,7 @@ top: 50px;
 	 }
 	 `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
-			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
+			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder}/>
 		</span>);
 
 		return (

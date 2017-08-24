@@ -9,11 +9,12 @@ import codeignitorIcon from '../images/codeigniter.svg';
 import screenshot from '../images/screenshot.png';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Toggle_Carousel,Set_Gallery} from '../state/actions/index';
+import {Toggle_Carousel, Set_Gallery} from '../state/actions/index';
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({
-		Toggle_Carousel,Set_Gallery
+		Toggle_Carousel,
+		Set_Gallery
 	}, dispatch)
 }
 class Projects extends React.Component {
@@ -26,7 +27,8 @@ class Projects extends React.Component {
 			position: props.position,
 			link: props.link,
 			type: props.type,
-			images: props.images
+			imagesBG: props.imagesBG,
+			imagesFolder: props.imagesFolder
 		};
 	}
 
@@ -37,7 +39,7 @@ class Projects extends React.Component {
 	render() {
 
 		return (
-			<ProjectContainer color={this.state.color} img={this.state.images}>
+			<ProjectContainer color={this.state.color} img={this.state.imagesBG} imagesFolder={this.state.imagesFolder}>
 				<ProjectDescCon>
 					<ProjectDesc>
 						<Title>{this.state.name}</Title>
@@ -54,13 +56,27 @@ class Projects extends React.Component {
 
 						<GalleryCon>
 
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
-							<GalleryItem src={screenshot} onClick={() =>{this.showCarousel(this.state.name)}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
+							<GalleryItem src={screenshot} onClick={() => {
+								this.showCarousel(this.state.name)
+							}}/>
 
 						</GalleryCon>
 						<Span>
@@ -82,7 +98,6 @@ const GalleryCon = styled.div `
 height: 100px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-column-gap: 10px;
 grid-row-gap: 10px;
 overflow: scroll;
 overflow-x: scroll;
@@ -134,8 +149,7 @@ text-align: center;
   `;
 const ProjectContainer = styled.div `
 background: ${props => props.color};
-${ ''/* background: #1B2629; */}
-background-image: url('../images/${props => props.img}.png');
+background-image: url('../images/${props => props.imagesFolder}/${props => props.img}.png');
 background-attachment: fixed;
 background-position: top center;
 background-repeat: no-repeat;
@@ -147,7 +161,6 @@ width: 100%;
 @media (max-width: 600px) {
 	background-image: none;
 	height: auto;
-
 }
 `;
 
