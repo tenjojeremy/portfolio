@@ -26,7 +26,7 @@ class App extends Component {
 			<MasterContainer>
 				<Intro/>
 				<Carousel>
-				        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1"/>
+				        <img src={screenshot}/>
 				        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2"/>
 				        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3"/>
 				        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4"/>
