@@ -37,7 +37,7 @@ class App extends Component {
 			? 'block'
 			: 'block'};
 background: rgba(0, 0, 0, 0.5);
-background: white;
+${'' /* background: white; */}
 height: 100%;
 width: 100%;
 position: fixed;
@@ -46,21 +46,18 @@ top: 0;
 left: 0;
 	`;
 	const styles = {
-	  slide: {
+
 	    padding: 15,
 	    minHeight: 100,
 	    color: '#fff',
-	  },
-	  slide1: {
-	    background: '#FEA900',
-	  },
-	  slide2: {
-	    background: '#B3DC4A',
-	  },
-	  slide3: {
-	    background: '#6AC0FF',
-	  },
+
 	};
+	 const SliceImg = styled.img `
+	 height: 90%;
+    width: 90%;
+		margin: 0 auto;
+		display: block;
+	 `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
 		</span>);
@@ -68,20 +65,20 @@ left: 0;
 		return (
 			<MasterContainer>
 				<Intro/>
-				<SwipeableViews>
-	 <div style={Object.assign({}, styles.slide, styles.slide1)}>
-		 slide n°1
-	 </div>
-	 <div style={Object.assign({}, styles.slide, styles.slide2)}>
-		 slide n°2
-	 </div>
-	 <div style={Object.assign({}, styles.slide, styles.slide3)}>
-		 slide n°3
-	 </div>
- </SwipeableViews>
-				{/* <CarouselCon>
 
-				</CarouselCon> */}
+				<CarouselCon>
+					<SwipeableViews>
+					<div style={styles}>
+					<SliceImg src={screenshot} />
+					</div>
+					<div style={styles}>
+					slide n°2
+					</div>
+					<div style={styles}>
+					slide n°3
+					</div>
+					</SwipeableViews>
+				</CarouselCon>
 				{projectList}
 			</MasterContainer>
 		);
