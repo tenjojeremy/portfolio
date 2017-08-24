@@ -186,7 +186,7 @@ position: static;
 const Title = styled.p `
 color: white;
 font-family: "PT Sans", sans-serif;
-font-size: 50px;
+font-size: 40px;
 line-height: 60px;
 margin-bottom: 10px;
 margin-top: 10px;
