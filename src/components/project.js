@@ -121,6 +121,16 @@ li {
 display: inline;
 margin-right: 20px;
 }
+@media (max-width: 600px) {
+margin: 0 auto;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 4px;
+padding: 5px;
+width: auto;
+white-space: nowrap;
+display: inline-block;
+text-align: center;
+}
   `;
 const ProjectContainer = styled.div `
 background: ${props => props.color};

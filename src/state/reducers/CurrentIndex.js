@@ -1,6 +1,6 @@
-export default function(state = false, action) {
+export default function(state = 0, action) {
 	switch (action.type) {
-		case "TOGGLE_CAROUSEL":
+		case "SET_INDEX":
 			return action.data
 
 			default:

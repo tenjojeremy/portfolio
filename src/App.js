@@ -23,13 +23,13 @@ function mapDispatchToProps(dispatch) {
 	}, dispatch)
 }
 function mapStateToProps(state) {
-	return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount}
+	return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount, currentIndex: state.CurrentIndex}
 }
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			index: 0
+			index: this.props.currentIndex
 		};
 	}
 	closeCar = () => {
@@ -37,12 +37,12 @@ class App extends Component {
 	}
 	prev = () => {
 		if (this.state.index !== 0) {
-		let n = this.state.index - 1;
-		console.log(n);
-		this.setState({index: n})
-	} else {
-		this.setState({index: this.props.galleryCount})
-	}
+			let n = this.state.index - 1;
+			console.log(n);
+			this.setState({index: n})
+		} else {
+			this.setState({index: this.props.galleryCount})
+		}
 	}
 	next = () => {
 		if (this.state.index < this.props.galleryCount) {
