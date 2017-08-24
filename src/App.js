@@ -7,7 +7,6 @@ import Intro from './containers/intro';
 import ProjectsData from './projectData.json';
 import screenshot from './images/screenshot.png';
 import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
 
 
 //State
@@ -67,7 +66,7 @@ left: 0;
 	};
 	 const SliceImg = styled.img `
 	 height: 90%;
-    width: 90%;
+    width: 95%;
 		margin: 0 auto;
 		display: block;
 		max-width: 800px;
@@ -75,14 +74,13 @@ left: 0;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
 		</span>);
-		const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 		return (
 			<MasterContainer>
 				<Intro/>
 
 				<CarouselCon >
-					<AutoPlaySwipeableViews  style={conStyle} enableMouseEvents={true}>
+					<SwipeableViews  style={conStyle} enableMouseEvents={true}>
 					<div style={styles}>
 					<SliceImg src={screenshot} />
 					</div>
@@ -94,7 +92,7 @@ left: 0;
 						<SliceImg src={screenshot} />
 
 					</div>
-					</AutoPlaySwipeableViews>
+					</SwipeableViews>
 				</CarouselCon>
 				{projectList}
 			</MasterContainer>
