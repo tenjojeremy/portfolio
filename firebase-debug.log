@@ -1,0 +1,28 @@
+[debug] [2017-08-24T19:22:13.921Z] ----------------------------------------------------------------------
+[debug] [2017-08-24T19:22:13.925Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\je_re\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-08-24T19:22:13.926Z] CLI Version:   3.9.2
+[debug] [2017-08-24T19:22:13.926Z] Platform:      win32
+[debug] [2017-08-24T19:22:13.926Z] Node Version:  v8.0.0
+[debug] [2017-08-24T19:22:13.926Z] Time:          Thu Aug 24 2017 15:22:13 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T19:22:13.927Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-24T19:22:13.946Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-24T19:22:13.946Z] > authorizing via signed-in user
+[debug] [2017-08-24T19:22:13.950Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+ Thu Aug 24 2017 15:22:13 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T19:22:14.502Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-24T19:22:14.504Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+ Thu Aug 24 2017 15:22:14 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T19:22:15.694Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-83749'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-08-24T19:22:17.018Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-83749/uploads/-KsKgU2yYn2KUY0Dnx4M?fileCount=41&message=  
+ Thu Aug 24 2017 15:22:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-24T19:22:36.402Z] Error: write ECONNRESET
+    at exports._errnoException (util.js:1026:11)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:848:14)
+[error] 
+[error] Error: Server Error. write ECONNRESET
