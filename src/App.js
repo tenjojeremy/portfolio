@@ -6,8 +6,10 @@ import styled from 'styled-components'
 import Intro from './containers/intro';
 import ProjectsData from './projectData.json';
 import screenshot from './images/screenshot.png';
+import arrowLeft from './images/arrowLeft.svg';
+import arrowRight from './images/arrowRight.svg';
+import close from './images/close.svg';
 import SwipeableViews from 'react-swipeable-views';
-
 
 //State
 import {bindActionCreators} from 'redux';
@@ -37,7 +39,7 @@ class App extends Component {
 			? 'block'
 			: 'block'};
 background: rgba(0, 0, 0, 0.5);
-${'' /* background: white; */}
+${ ''/* background: white; */}
 height: 100%;
 width: 100%;
 position: fixed;
@@ -45,32 +47,48 @@ z-index: 99;
 top: 0;
 left: 0;
 	`;
-	const styles = {
+		const styles = {
 
-	    padding: 15,
-	    minHeight: 100,
-	    // maxWidth: 900,
-	    color: '#fff',
+			padding: 15,
+			minHeight: 100,
+			// maxWidth: 900,
+			color: '#fff'
+		};
+		const conStyle = {
 
-	};
-	const conStyle = {
-
-	    position: 'absolute',
-	    top: 0,
-	    bottom: 0,
-	    left: 0,
-	    right: 0,
-	    margin: 'auto',
+			position: 'absolute',
+			top: 0,
+			bottom: 0,
+			left: 0,
+			right: 0,
+			margin: 'auto',
 			height: 600
 
-	};
-	 const SliceImg = styled.img `
+		};
+		const SliceImg = styled.img `
 	 height: 90%;
     width: 95%;
 		margin: 0 auto;
 		display: block;
 		max-width: 800px;
 	 `;
+		const CloseIcon = styled.img `
+width: 30px;
+float: right;
+ `;
+		const CloseIconCon = styled.div `
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+	max-width: 800px;
+  height: 30px;
+	margin-top: 30px;
+	@media (max-width: 810px) {
+	margin-right: 34px;
+}
+  `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
 		</span>);
@@ -79,19 +97,24 @@ left: 0;
 			<MasterContainer>
 				<Intro/>
 
-				<CarouselCon >
-					<SwipeableViews  style={conStyle} enableMouseEvents={true}>
-					<div style={styles}>
-					<SliceImg src={screenshot} />
-					</div>
-					<div style={styles}>
-						<SliceImg src={screenshot} />
+				<CarouselCon>
+					<CloseIconCon>
+						<CloseIcon src={close}/>
+					</CloseIconCon>
 
-					</div>
-					<div style={styles}>
-						<SliceImg src={screenshot} />
+					<SwipeableViews index={1} style={conStyle} enableMouseEvents={true}>
 
-					</div>
+						<div style={styles}>
+							<SliceImg src={screenshot}/>
+						</div>
+						<div style={styles}>
+							<SliceImg src={screenshot}/>
+
+						</div>
+						<div style={styles}>
+							<SliceImg src={screenshot}/>
+
+						</div>
 					</SwipeableViews>
 				</CarouselCon>
 				{projectList}
