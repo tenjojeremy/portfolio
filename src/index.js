@@ -6,11 +6,11 @@ import './index.css';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
+import firebase from 'firebase/app';
 
 const store = createStore(Reducers);
-// Firebase Configuration
-var firebase = require("firebase/app");
 
+// Firebase Configuration
 var config = {
 	apiKey: "AIzaSyDRRWbzzADN3rhjBWpZeiHfaIq4a1gvIOY",
 	authDomain: "portfolio-83749.firebaseapp.com",
