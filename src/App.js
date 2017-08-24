@@ -38,7 +38,7 @@ class App extends Component {
 		display: ${this.props.toggleCarousel
 			? 'block'
 			: 'block'};
-background: rgba(0, 0, 0, 0.5);
+background: rgba(0, 0, 0, 0.8);
 ${ ''/* background: white; */}
 height: 100%;
 width: 100%;
@@ -74,10 +74,12 @@ left: 0;
 	 `;
 		const CloseIcon = styled.img `
 width: 30px;
-float: right;
+${'' /* float: right; */}
+position: absolute;
+right: 33px;
  `;
 		const CloseIconCon = styled.div `
-	position: absolute;
+	${'' /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -87,8 +89,20 @@ float: right;
 	margin-top: 30px;
 	@media (max-width: 810px) {
 	margin-right: 34px;
-}
+} */}
+position: relative;
+height: 30px;
   `;
+	 const CarouselInner = styled.div `
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 margin: auto;
+	 max-width: 800px;
+	 max-height: 550px;
+	 `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} images={project.images}/>
 		</span>);
@@ -98,11 +112,14 @@ float: right;
 				<Intro/>
 
 				<CarouselCon>
+
+					<CarouselInner>
+
 					<CloseIconCon>
 						<CloseIcon src={close}/>
 					</CloseIconCon>
 
-					<SwipeableViews index={1} style={conStyle} enableMouseEvents={true}>
+					<SwipeableViews index={1} enableMouseEvents={true}>
 
 						<div style={styles}>
 							<SliceImg src={screenshot}/>
@@ -116,6 +133,7 @@ float: right;
 
 						</div>
 					</SwipeableViews>
+				</CarouselInner>
 				</CarouselCon>
 				{projectList}
 			</MasterContainer>
