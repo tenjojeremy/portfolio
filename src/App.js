@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Intro from './containers/intro';
 import ProjectsData from './projectData.json';
 import screenshot from './images/screenshot.png';
+import screenshot2 from './images/ddd.png';
 import arrowLeft from './images/arrowLeft.svg';
 import arrowRight from './images/arrowRight.svg';
 import close from './images/close.svg';
@@ -25,7 +26,26 @@ function mapStateToProps(state) {
 	return {toggleCarousel: state.ToogleCarousel}
 }
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			index: 0
+		};
+	}
+	closeCar = () => {
+		this.props.Toggle_Carousel(false)
+	}
+	prev = () => {
 
+		let n = this.state.index - 1;
+		console.log(n);
+		this.setState({index: n})
+	}
+	next = () => {
+			let n = this.state.index + 1;
+			console.log(n);
+			this.setState({index: n})
+	}
 	mixins : [Carousel.ControllerMixin]
 	render() {
 		const MasterContainer = styled.div `
@@ -37,7 +57,7 @@ class App extends Component {
 		const CarouselCon = styled.div `
 		display: ${this.props.toggleCarousel
 			? 'block'
-			: 'block'};
+			: 'none'};
 background: rgba(0, 0, 0, 0.8);
 ${ ''/* background: white; */}
 height: 100%;
@@ -66,6 +86,7 @@ left: 0;
 width: 20px;
 position: absolute;
 right: 33px;
+cursor: pointer;
  `;
 		const CloseIconCon = styled.div `
 position: relative;
@@ -75,11 +96,13 @@ height: 30px;
 width: 20px;
 position: absolute;
 left: 33px;
+cursor: pointer;
  `;
 		const RightArrow = styled.img `
 width: 20px;
 position: absolute;
 right: 23px;
+cursor: pointer;
  `;
 		const DirCon = styled.div `
 position: relative;
@@ -111,17 +134,16 @@ top: 50px;
 					<CarouselInner>
 
 						<CloseIconCon>
-							<CloseIcon src={close}/>
+							<CloseIcon src={close} onClick={this.closeCar}/>
 						</CloseIconCon>
 
-						<SwipeableViews index={1} enableMouseEvents={true}>
+						<SwipeableViews index={this.state.index}>
 
 							<div style={styles}>
 								<SliceImg src={screenshot}/>
 							</div>
 							<div style={styles}>
-								<SliceImg src={screenshot}/>
-
+								<SliceImg src={screenshot2}/>
 							</div>
 							<div style={styles}>
 								<SliceImg src={screenshot}/>
@@ -130,8 +152,8 @@ top: 50px;
 						</SwipeableViews>
 
 						<DirCon>
-							<LeftArrow src={arrowLeft}/>
-							<RightArrow src={arrowRight}/>
+							<LeftArrow src={arrowLeft} onClick={this.prev}/>
+							<RightArrow src={arrowRight} onClick={this.next}/>
 
 						</DirCon>
 					</CarouselInner>
