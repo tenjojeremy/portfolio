@@ -54,7 +54,6 @@ class name extends React.Component {
 const AboutMe = styled.p `
 text-align: center;
 color: white;
-font-weight: lighter;
 font-size: 16px;
 margin-top: 40px;
 margin-bottom: 40px;
@@ -110,7 +109,7 @@ margin-top: 0;
 `;
 const SubTitle = styled.p `
 text-align: center;
-font-size: 21px;
+font-size: 20px;
 line-height: 25px;
 color: white;
 font-weight: bold;
