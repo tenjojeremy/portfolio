@@ -85,10 +85,12 @@ left: 0;
 					<SliceImg src={screenshot} />
 					</div>
 					<div style={styles}>
-					slide n°2
+						<SliceImg src={screenshot} />
+
 					</div>
 					<div style={styles}>
-					slide n°3
+						<SliceImg src={screenshot} />
+
 					</div>
 					</SwipeableViews>
 				</CarouselCon>
