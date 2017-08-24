@@ -75,7 +75,7 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-column-gap: 10px;
 grid-row-gap: 10px;
 overflow: scroll;
-overflow-x: hidden;
+overflow-x: scroll;
 margin-top: 20px;
 margin-bottom: 20px;
 @media (min-width: 600px) {

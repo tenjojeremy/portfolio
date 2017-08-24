@@ -28,7 +28,7 @@ class name extends React.Component {
 					<Title>Jeremy Tenjo</Title>
 					<SubTitle>Project Showcase</SubTitle>
 					<AboutMe>
-						I am a web developer who enjoys the challenge of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development for efficient. I create web apps that make lives easier.
+						I am a web developer who enjoys the challenges of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development for efficient. I create web apps that make lives easier.
 					</AboutMe>
 					<Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
 					<LinksCon>
@@ -57,6 +57,13 @@ color: white;
 font-size: 16px;
 margin-top: 40px;
 margin-bottom: 40px;
+line-height: 21px;
+letter-spacing: 2px;
+@media (min-width: 600px) {
+	font-size: 18px;
+
+
+}
  `;
 const Linktext = styled.p `
 color: #BDBDBD;
