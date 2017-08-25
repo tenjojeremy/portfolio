@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import LinkButton from '../components/linkButton'
-import reactIcon from '../images/react.svg';
-import vueIcon from '../images/vue.svg';
-import sqlIcon from '../images/MySQL.svg';
-import laravelIcon from '../images/laravel.svg';
-import codeignitorIcon from '../images/codeigniter.svg';
-import screenshot from '../images/screenshot.png';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Toggle_Carousel, Set_Gallery, Set_Current_Index, Set_Gallery_Count} from '../state/actions/index';
@@ -47,11 +41,10 @@ class Projects extends React.Component {
 		let listGallery = [],
 			source,
 			index,
-			listTechCount = this.state.techList,
-			techSource;
+			listTechCount = this.state.techList;
 
 		for (var i = 1; i <= this.state.imagesGallery; i++) {
-			source = `/images/${this.state.imagesFolder}/${i}.jpg`;
+			source = `/images/${this.state.imagesFolder}/${i}.png`;
 
 			listGallery.push(<GalleryItem key={i} data-index={i} src={source} onClick={(e) => {
 				index = e.target.dataset.index - 1;
@@ -61,6 +54,9 @@ class Projects extends React.Component {
 
 		let listTech = listTechCount.map((item, i) => {
 			let source2 = `/images/icons/${item}.svg`;
+			if (item === 'express') {
+				return <Express key={i}>Express.js</Express>
+			}
 			return <li key={i} title={item}><IconTech src={source2}/></li>
 		})
 
@@ -115,7 +111,7 @@ padding: 0;
 margin: 0;
 width: 60px;
 position: relative;
-bottom: 3px;
+bottom: 2px;
  `;
 const IconTech = styled.img `
 width: 20px

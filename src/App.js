@@ -5,8 +5,6 @@ import Project from './components/project';
 import styled from 'styled-components'
 import Intro from './containers/intro';
 import ProjectsData from './projectData.json';
-import screenshot from './images/screenshot.png';
-import screenshot2 from './images/ddd.png';
 import arrowLeft from './images/arrowLeft.svg';
 import arrowRight from './images/arrowRight.svg';
 import close from './images/close.svg';
@@ -136,11 +134,10 @@ top: 50px;
 		</span>);
 
 		let list = [],
-			source,
-			index;
+			source;
 
 		for (var i = 1; i <= this.props.galleryCount; i++) {
-			source = `/images/${this.props.gallerySelected}/${i}.jpg`;
+			source = `/images/${this.props.gallerySelected}/${i}.png`;
 
 			list.push(
 				<div key={i} style={styles}>

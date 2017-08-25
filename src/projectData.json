@@ -1,4 +1,17 @@
-	[{
+	[
+		{
+		"name": "Live Note",
+		"color": "#795548",
+		"imagesFolder": "Live_Note",
+		"imagesBG": "fanshawe_intramurals",
+		"imagesGallery": 7,
+		"description": "Web app where students can join intramural teams and connect with their team-mates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
+		"type": "GITHUB LINK",
+		"techList": ["react", "firebase"]
+	},
+		{
 		"name": "Fanshawe Intramurals",
 		"color": "#795548",
 		"imagesFolder": "fanshawe_intramurals",
@@ -8,8 +21,9 @@
 		"position": "FULLSTACK DEVELOPER",
 		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
 		"type": "GITHUB LINK",
-		"techList": ["vue"]
-	}, {
+		"techList": ["vue", "express"]
+	},
+	{
 		"name": "Complaints Check",
 		"color": "#2A919A",
 		"imagesFolder": "complaints_check",
