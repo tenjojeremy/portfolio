@@ -19,11 +19,12 @@ import {Toggle_Carousel, Set_Current_Index} from './state/actions/index';
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({
-		Toggle_Carousel, Set_Current_Index
+		Toggle_Carousel,
+		Set_Current_Index
 	}, dispatch)
 }
 function mapStateToProps(state) {
-	return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount, currentIndex: state.CurrentIndex}
+	return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount, currentIndex: state.CurrentIndex, imagesFolder: state.imagesFolder, gallerySelected: state.GallerySelected}
 }
 class App extends Component {
 	constructor(props) {
@@ -38,7 +39,6 @@ class App extends Component {
 	prev = () => {
 		if (this.props.currentIndex !== 0) {
 			let n = this.props.currentIndex - 1;
-			console.log(n);
 			this.props.Set_Current_Index(n)
 		} else {
 			this.props.Set_Current_Index(this.props.galleryCount)
@@ -135,6 +135,20 @@ top: 50px;
 			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery}/>
 		</span>);
 
+		let list = [],
+			source,
+			index;
+
+		for (var i = 1; i <= this.props.galleryCount; i++) {
+			source = `/images/${this.props.gallerySelected}/${i}.jpg`;
+
+			list.push(
+				<div key={i} style={styles}>
+					<SliceImg src={source}/>
+				</div>
+			);
+		}
+
 		return (
 			<MasterContainer>
 				<Intro/>
@@ -148,17 +162,7 @@ top: 50px;
 						</CloseIconCon>
 
 						<SwipeableViews index={this.props.currentIndex}>
-
-							<div style={styles}>
-								<SliceImg src={screenshot}/>
-							</div>
-							<div style={styles}>
-								<SliceImg src={screenshot2}/>
-							</div>
-							<div style={styles}>
-								<SliceImg src={screenshot}/>
-
-							</div>
+							{list}
 						</SwipeableViews>
 
 						<DirCon>

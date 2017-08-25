@@ -9,13 +9,14 @@ import codeignitorIcon from '../images/codeigniter.svg';
 import screenshot from '../images/screenshot.png';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Toggle_Carousel, Set_Gallery, Set_Current_Index} from '../state/actions/index';
+import {Toggle_Carousel, Set_Gallery, Set_Current_Index, Set_Gallery_Count} from '../state/actions/index';
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({
 		Toggle_Carousel,
 		Set_Gallery,
-		Set_Current_Index
+		Set_Current_Index,
+		Set_Gallery_Count
 	}, dispatch)
 }
 class Projects extends React.Component {
@@ -34,16 +35,17 @@ class Projects extends React.Component {
 		};
 	}
 
-	showCarousel = (name, i) => {
-		console.log(i);
-		this.props.Set_Gallery(name)
+	showCarousel = (imagesFolder, i) => {
+		this.props.Set_Gallery(imagesFolder)
+		this.props.Set_Gallery_Count(this.state.imagesGallery)
 		this.props.Set_Current_Index(i)
 		this.props.Toggle_Carousel(true)
 	}
 
 	render() {
 		let list = [],
-			source, index;
+			source,
+			index;
 
 		for (var i = 1; i <= this.state.imagesGallery; i++) {
 			source = `/images/${this.state.imagesFolder}/${i}.jpg`;
