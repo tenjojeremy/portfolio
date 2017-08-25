@@ -132,7 +132,7 @@ top: 50px;
 	 }
 	 `;
 		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
-			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery}/>
+			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
 		</span>);
 
 		let list = [],

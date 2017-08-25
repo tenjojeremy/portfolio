@@ -31,7 +31,8 @@ class Projects extends React.Component {
 			type: props.type,
 			imagesBG: props.imagesBG,
 			imagesFolder: props.imagesFolder,
-			imagesGallery: props.imagesGallery
+			imagesGallery: props.imagesGallery,
+			techList: props.techList
 		};
 	}
 
@@ -43,18 +44,25 @@ class Projects extends React.Component {
 	}
 
 	render() {
-		let list = [],
+		let listGallery = [],
 			source,
-			index;
+			index,
+			listTechCount = this.state.techList,
+			techSource;
 
 		for (var i = 1; i <= this.state.imagesGallery; i++) {
 			source = `/images/${this.state.imagesFolder}/${i}.jpg`;
 
-			list.push(<GalleryItem key={i} data-index={i} src={source} onClick={(e) => {
+			listGallery.push(<GalleryItem key={i} data-index={i} src={source} onClick={(e) => {
 				index = e.target.dataset.index - 1;
 				this.showCarousel(this.state.imagesFolder, index)
 			}}/>);
 		}
+
+		let listTech = listTechCount.map((item, i) => {
+			let source2 = `/images/icons/${item}.svg`;
+			return <li key={i} title={item}><IconTech src={source2}/></li>
+		})
 
 		return (
 			<ProjectContainer color={this.state.color} img={this.state.imagesBG} imagesFolder={this.state.imagesFolder}>
@@ -65,15 +73,11 @@ class Projects extends React.Component {
 						<Description>{this.state.description}</Description>
 						<TechyTitle>Tech used:</TechyTitle>
 						<TechList>
-							<li title="React"><IconTech src={reactIcon}/></li>
-							<li title="Vuejs"><IconTech src={vueIcon}/></li>
-							<Express>Express.js</Express>
-							<li title="Laravel"><IconTech src={laravelIcon}/></li>
-							<li title="Codeignitor"><IconTech src={codeignitorIcon}/></li>
+							{listTech}
 						</TechList>
 
 						<GalleryCon>
-							{list}
+							{listGallery}
 						</GalleryCon>
 						<Span>
 							<LinkButton link={this.state.link} type={this.state.type}/>
