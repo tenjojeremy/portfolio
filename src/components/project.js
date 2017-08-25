@@ -28,13 +28,27 @@ class Projects extends React.Component {
 			link: props.link,
 			type: props.type,
 			imagesBG: props.imagesBG,
-			imagesFolder: props.imagesFolder
+			imagesFolder: props.imagesFolder,
+			imagesGallery: props.imagesGallery
 		};
 	}
 
 	showCarousel = (name) => {
 		this.props.Set_Gallery(name)
 		this.props.Toggle_Carousel(true)
+	}
+
+	galleryList = () => {
+
+		let count = this.state.imagesGallery;
+		console.log(count);
+		if (count !== 0) {
+			for (var i = 0; i < count; i++) {
+				return <GalleryItem src={screenshot} onClick={() => {
+					this.showCarousel(this.state.name)
+				}}/>
+			}
+		}
 	}
 	render() {
 
@@ -55,8 +69,8 @@ class Projects extends React.Component {
 						</TechList>
 
 						<GalleryCon>
-
-							<GalleryItem src={screenshot} onClick={() => {
+							{this.galleryList()}
+							{/* <GalleryItem src={screenshot} onClick={() => {
 								this.showCarousel(this.state.name)
 							}}/>
 							<GalleryItem src={screenshot} onClick={() => {
@@ -76,7 +90,7 @@ class Projects extends React.Component {
 							}}/>
 							<GalleryItem src={screenshot} onClick={() => {
 								this.showCarousel(this.state.name)
-							}}/>
+							}}/> */}
 
 						</GalleryCon>
 						<Span>
