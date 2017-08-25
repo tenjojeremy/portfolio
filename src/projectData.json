@@ -13,7 +13,7 @@
 		"color": "#2A919A",
 		"imagesFolder": "complaints_check",
 		"imagesBG": "complaints_check",
-		"imagesGallery": 0,
+		"imagesGallery": 2,
 		"description": "A web app where property manager can track tenants complaints and keep records of them It integrates a CMS to manage complaints and a client-side interface where tenants can log in and place complaints with photo evidence and detailed description's.",
 		"position": "FULLSTACK DEVELOPER",
 		"link": "https://github.com/tenjojeremy/Property_Management_App",

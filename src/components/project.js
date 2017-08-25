@@ -9,12 +9,13 @@ import codeignitorIcon from '../images/codeigniter.svg';
 import screenshot from '../images/screenshot.png';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Toggle_Carousel, Set_Gallery} from '../state/actions/index';
+import {Toggle_Carousel, Set_Gallery, Set_Current_Index} from '../state/actions/index';
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({
 		Toggle_Carousel,
-		Set_Gallery
+		Set_Gallery,
+		Set_Current_Index
 	}, dispatch)
 }
 class Projects extends React.Component {
@@ -33,24 +34,25 @@ class Projects extends React.Component {
 		};
 	}
 
-	showCarousel = (name) => {
+	showCarousel = (name, i) => {
+		console.log(i);
 		this.props.Set_Gallery(name)
+		this.props.Set_Current_Index(i)
 		this.props.Toggle_Carousel(true)
 	}
 
-	galleryList = () => {
-
-		let count = this.state.imagesGallery;
-		console.log(count);
-		if (count !== 0) {
-			for (var i = 0; i < count; i++) {
-				return <GalleryItem src={screenshot} onClick={() => {
-					this.showCarousel(this.state.name)
-				}}/>
-			}
-		}
-	}
 	render() {
+		let list = [],
+			source, index;
+
+		for (var i = 1; i <= this.state.imagesGallery; i++) {
+			source = `/images/${this.state.imagesFolder}/${i}.jpg`;
+
+			list.push(<GalleryItem key={i} data-index={i} src={source} onClick={(e) => {
+				index = e.target.dataset.index - 1;
+				this.showCarousel(this.state.imagesFolder, index)
+			}}/>);
+		}
 
 		return (
 			<ProjectContainer color={this.state.color} img={this.state.imagesBG} imagesFolder={this.state.imagesFolder}>
@@ -69,29 +71,7 @@ class Projects extends React.Component {
 						</TechList>
 
 						<GalleryCon>
-							{this.galleryList()}
-							{/* <GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/>
-							<GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/>
-							<GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/>
-							<GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/>
-							<GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/>
-							<GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/>
-							<GalleryItem src={screenshot} onClick={() => {
-								this.showCarousel(this.state.name)
-							}}/> */}
-
+							{list}
 						</GalleryCon>
 						<Span>
 							<LinkButton link={this.state.link} type={this.state.type}/>

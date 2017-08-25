@@ -15,11 +15,11 @@ import SwipeableViews from 'react-swipeable-views';
 //State
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Toggle_Carousel} from './state/actions/index';
+import {Toggle_Carousel, Set_Current_Index} from './state/actions/index';
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({
-		Toggle_Carousel
+		Toggle_Carousel, Set_Current_Index
 	}, dispatch)
 }
 function mapStateToProps(state) {
@@ -36,20 +36,22 @@ class App extends Component {
 		this.props.Toggle_Carousel(false)
 	}
 	prev = () => {
-		if (this.state.index !== 0) {
-			let n = this.state.index - 1;
+		if (this.props.currentIndex !== 0) {
+			let n = this.props.currentIndex - 1;
 			console.log(n);
-			this.setState({index: n})
+			this.props.Set_Current_Index(n)
 		} else {
-			this.setState({index: this.props.galleryCount})
+			this.props.Set_Current_Index(this.props.galleryCount)
+
 		}
 	}
 	next = () => {
-		if (this.state.index < this.props.galleryCount) {
-			let n = this.state.index + 1;
-			this.setState({index: n})
+		if (this.props.currentIndex < this.props.galleryCount) {
+			let n = this.props.currentIndex + 1;
+			this.props.Set_Current_Index(n)
+
 		} else {
-			this.setState({index: 0})
+			this.props.Set_Current_Index(0)
 		}
 	}
 	mixins : [Carousel.ControllerMixin]
@@ -145,7 +147,7 @@ top: 50px;
 							<CloseIcon src={close} onClick={this.closeCar}/>
 						</CloseIconCon>
 
-						<SwipeableViews index={this.state.index}>
+						<SwipeableViews index={this.props.currentIndex}>
 
 							<div style={styles}>
 								<SliceImg src={screenshot}/>
