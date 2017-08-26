@@ -91,7 +91,7 @@ margin: 0 auto;
 
  `;
 const GalleryCon = styled.div `
-height: 100px;
+height: auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-row-gap: 10px;
@@ -101,8 +101,6 @@ margin-top: 20px;
 margin-bottom: 20px;
 @media (min-width: 600px) {
 	height: 200px;
-
-
 }
  `;
 const Express = styled.li `
