@@ -64,7 +64,8 @@ class App extends Component {
 		display: ${this.props.toggleCarousel
 			? 'block'
 			: 'none'};
-background: rgba(0, 0, 0, 0.8);
+${'' /* background: rgba(0, 0, 0, 0.8); */}
+background: rgba(255, 255, 255, 0.9);
 ${ ''/* background: white; */}
 height: 100%;
 width: 100%;
@@ -89,13 +90,13 @@ left: 0;
 		margin: 0 auto;
 		display: block;
 		max-width: 600px;
-
 	 `;
 		const CloseIcon = styled.img `
 width: 20px;
 position: absolute;
 right: 33px;
 cursor: pointer;
+fill: white;
  `;
 		const CloseIconCon = styled.div `
 position: relative;
