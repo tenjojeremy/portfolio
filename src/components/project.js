@@ -88,7 +88,7 @@ const GalleryItem = styled.img `
 width: 100px;
 display: block;
 margin: 0 auto;
-
+cursor: pointer;
  `;
 const GalleryCon = styled.div `
 height: auto;

@@ -83,12 +83,13 @@ left: 0;
 			color: '#fff'
 		};
 
-		const SliceImg = styled.img `
+		const SlideImage = styled.img `
 	 height: 90%;
     width: 95%;
 		margin: 0 auto;
 		display: block;
-		max-width: 800px;
+		max-width: 600px;
+
 	 `;
 		const CloseIcon = styled.img `
 width: 20px;
@@ -124,7 +125,7 @@ height: 23px;
 	 right: 0;
 	 margin: auto;
 	 max-width: 800px;
-	 max-height: 550px;
+	 max-height: 640px;
 	 @media (max-width: 600px) {
 top: 50px;
 	 }
@@ -141,7 +142,7 @@ top: 50px;
 
 			list.push(
 				<div key={i} style={styles}>
-					<SliceImg src={source}/>
+					<SlideImage src={source}/>
 				</div>
 			);
 		}
