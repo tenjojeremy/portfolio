@@ -126,10 +126,10 @@ list-style: none;
 color: white;
 padding: 0;
 margin-top: 0;
+height: 18px;
 li {
 display: inline;
-margin-left: 5px;
-margin-right: 5px;
+margin-right: 10px;
 }
 @media (max-width: 600px) {
 margin: 0 auto;
@@ -140,6 +140,10 @@ width: auto;
 white-space: nowrap;
 display: inline-block;
 text-align: center;
+padding: 10px;
+margin-left: 0;
+margin-right: 0;
+
 }
   `;
 const ProjectContainer = styled.div `
