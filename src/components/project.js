@@ -128,7 +128,8 @@ padding: 0;
 margin-top: 0;
 li {
 display: inline;
-margin-right: 20px;
+margin-left: 5px;
+margin-right: 5px;
 }
 @media (max-width: 600px) {
 margin: 0 auto;
