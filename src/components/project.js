@@ -75,7 +75,7 @@ class Projects extends React.Component {
 						<GalleryCon>
 							{listGallery}
 						</GalleryCon>
-						<Span>
+						<Span display={this.state.type}>
 							<LinkButton link={this.state.link} type={this.state.type}/>
 						</Span>
 					</ProjectDesc>
@@ -257,11 +257,13 @@ height: auto;
 `;
 
 const Span = styled.div `
+	display: ${props => props.display !== ""
+	? 'block'
+	: 'none'};
 margin-top: 60px;
 height:41px;
 margin: 0 auto;
-display: block;
-width: 155px;
+${ ''/* width: 105px; */}
 @media (max-width: 600px) {
 margin-top: 40px;
 

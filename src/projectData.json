@@ -43,7 +43,7 @@
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/weddings_p2/",
-		"type": "TRY DEMO",
+		"type": "DEMO",
 		"techList": ["vue"]
 
 	}, {
@@ -55,7 +55,7 @@
 		"description": "Reactr.ca is the official website for Fanshawe’s web development team, for which I am part of. Developed with Codeignitor I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.",
 		"position": "FRON-BACK-END DEVELOPER",
 		"link": "http://www.jeremytenjo.com/reactr/",
-		"type": "TRY DEMO",
+		"type": "DEMO",
 		"techList": ["vue"]
 
 	}, {
@@ -67,7 +67,7 @@
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/infographics/",
-		"type": "TRY DEMO",
+		"type": "DEMO",
 		"techList": ["vue"]
 
 	}, {
@@ -79,8 +79,8 @@
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "PROJECT MANAGER - BACK-END DEVELOPER",
 		"link": "http://www.jeremytenjo.com/EDFC//",
-		"type": "TRY DEMO",
-		"techList": ["vue"]
+		"type": "DEMO",
+		"techList": ["php", "sql", "js"]
 
 	}, {
 		"name": "Drinky",
@@ -91,20 +91,9 @@
 		"description": "The Drinky website is a concept for a website dedicated to sell alcohol. The purposed of my website is to make it easy for the website to be managed from the effectively from the cms.",
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/drinky/",
-		"type": "TRY DEMO",
-		"techList": ["vue"]
+		"type": "",
+		"techList": ["php", "sql", "js"]
 
-	}, {
-		"name": "My Movies",
-		"color": "#E87E04",
-		"imagesFolder": "mymovies",
-		"imagesBG": "mymovies",
-		"imagesGallery": 0,
-		"description": "My Movies website is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and rotten tomatoes, but adding some nice touched to offer a nice and easy user experience.",
-		"position": "FULLSTACK DEVELOPER",
-		"link": "http://www.jeremytenjo.com/weddings_p2/",
-		"type": "TRY DEMO",
-		"techList": ["vue"]
 	}, {
 		"name": "Christina Tischler Project",
 		"color": "#019875",
@@ -114,6 +103,17 @@
 		"description": "Christina Tischeler website is designed for an individual business focused on selling arts and crafts of her own making. Custom made and local products are nicely showcased in the website, persuading people to purchase her produces.",
 		"position": "FRONT-END DEVELOPER",
 		"link": "http://www.jeremytenjo.com/tischler/",
-		"type": "TRY DEMO",
-		"techList": ["vue"]
+		"type": "DEMO",
+		"techList": ["html", "js"]
+	}, {
+		"name": "My Movies",
+		"color": "#E87E04",
+		"imagesFolder": "mymovies",
+		"imagesBG": "mymovies",
+		"imagesGallery": 0,
+		"description": "My Movies website is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and rotten tomatoes, but adding some nice touched to offer a nice and easy user experience.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "",
+		"type": "",
+		"techList": ["php", "sql", "js"]
 	}]

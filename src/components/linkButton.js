@@ -8,7 +8,7 @@ export default class LinkButton extends React.Component {
 		super(props)
 		this.state = {
 			link: props.link,
-			type: 'TRY DEMO'
+			type: props.type
 		}
 	}
 
@@ -28,6 +28,9 @@ export default class LinkButton extends React.Component {
     text-decoration: none;
 		position: relative;
     top: 11px;
+		display: block;
+		margin: 0 auto;
+		width: 55px;
 		`
 
 		//Template
