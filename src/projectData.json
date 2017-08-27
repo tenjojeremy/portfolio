@@ -6,10 +6,10 @@
 		"imagesBG": "Live_Note",
 		"imagesGallery": 7,
 		"description": "Live note is a mobile centered progressive web app. I build it for better note taking during meetings and classes. This app consists of starting an audio note, and as it records the user can add timestamped comments and picture to the note. This gives note taking: audio, visual and textual context for a more detailed note.",
-		"position": "FULLSTACK DEVELOPER",
+		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://live-note-ce62c.firebaseapp.com/",
-		"type": "GITHUB LINK",
-		"techList": ["react", "firebase"]
+		"type": "DEMO",
+		"techList": ["react", "firebase", "xd"]
 	},
 		{
 		"name": "Fanshawe Intramurals",
@@ -18,10 +18,10 @@
 		"imagesBG": "fanshawe_intramurals",
 		"imagesGallery": 3,
 		"description": "Web app where students can join intramural teams and connect with their team-mates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
-		"position": "FULLSTACK DEVELOPER",
+		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
-		"type": "GITHUB LINK",
-		"techList": ["vue", "express"]
+		"type": "DEMO",
+		"techList": ["vue", "express", "photoshop"]
 	},
 	{
 		"name": "Complaints Check",
@@ -30,52 +30,51 @@
 		"imagesBG": "complaints_check",
 		"imagesGallery": 2,
 		"description": "A web app where property manager can track tenants complaints and keep records of them It integrates a CMS to manage complaints and a client-side interface where tenants can log in and place complaints with photo evidence and detailed description's.",
-		"position": "FULLSTACK DEVELOPER",
+		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://github.com/tenjojeremy/Property_Management_App",
-		"type": "GITHUB LINK",
-		"techList": ["vue"]
-	}, {
-		"name": "My Weddings Ontario",
-		"color": "#EF5350",
-		"imagesFolder": "weddings",
-		"imagesBG": "weddings_bg",
-		"imagesGallery": 0,
-		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
-		"position": "FULLSTACK DEVELOPER",
-		"link": "http://www.jeremytenjo.com/weddings_p2/",
 		"type": "DEMO",
-		"techList": ["vue"]
-
+		"techList": ["vue", "laravel", "sql", "photoshop"]
 	}, {
 		"name": "Reactr",
 		"color": "#F9A825",
 		"imagesFolder": "react",
 		"imagesBG": "react_bg",
-		"imagesGallery": 0,
-		"description": "Reactr.ca is the official website for Fanshawe’s web development team, for which I am part of. Developed with Codeignitor I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.",
-		"position": "FRON-BACK-END DEVELOPER",
+		"imagesGallery": 5,
+		"description": "Reactr.ca is the official website for Fanshawe’s web development team. Developed with Codeignitor I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.",
+		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/reactr/",
 		"type": "DEMO",
-		"techList": ["vue"]
+		"techList": ["vue", "codeigniter", "sql"]
+	}, {
+		"name": "My Weddings Ontario",
+		"color": "#EF5350",
+		"imagesFolder": "weddings",
+		"imagesBG": "weddings_bg",
+		"imagesGallery": 7,
+		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
+		"position": "FULLSTACK DEVELOPER",
+		"link": "http://www.jeremytenjo.com/weddings_p2/",
+		"type": "DEMO",
+		"techList": ["vue","codeigniter","sql"]
 
 	}, {
 		"name": "Infographics",
 		"color": "#673AB7",
 		"imagesFolder": "d3",
 		"imagesBG": "d3_bg",
-		"imagesGallery": 0,
+		"imagesGallery": 8,
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/infographics/",
 		"type": "DEMO",
-		"techList": ["vue"]
+		"techList": ["d3"]
 
 	}, {
 		"name": "EDFC",
 		"color": "#2D353F",
 		"imagesFolder": "edfg",
 		"imagesBG": "edfg_bg",
-		"imagesGallery": 0,
+		"imagesGallery": 4,
 		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
 		"position": "PROJECT MANAGER - BACK-END DEVELOPER",
 		"link": "http://www.jeremytenjo.com/EDFC//",
@@ -87,15 +86,15 @@
 		"color": "#22A7F0",
 		"imagesFolder": "drinky",
 		"imagesBG": "drinky_bg",
-		"imagesGallery": 0,
+		"imagesGallery": 1,
 		"description": "The Drinky website is a concept for a website dedicated to sell alcohol. The purposed of my website is to make it easy for the website to be managed from the effectively from the cms.",
-		"position": "FULLSTACK DEVELOPER",
+		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "http://www.jeremytenjo.com/drinky/",
 		"type": "",
-		"techList": ["php", "sql", "js"]
+		"techList": ["php", "sql", "js", "photoshop"]
 
 	}, {
-		"name": "Christina Tischler Project",
+		"name": "Christina Tischler",
 		"color": "#019875",
 		"imagesFolder": "tischler",
 		"imagesBG": "tischler_bg",
@@ -110,10 +109,10 @@
 		"color": "#E87E04",
 		"imagesFolder": "mymovies",
 		"imagesBG": "mymovies",
-		"imagesGallery": 0,
+		"imagesGallery": 1,
 		"description": "My Movies website is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and rotten tomatoes, but adding some nice touched to offer a nice and easy user experience.",
-		"position": "FULLSTACK DEVELOPER",
+		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "",
 		"type": "",
-		"techList": ["php", "sql", "js"]
+		"techList": ["php", "sql", "js", "photoshop"]
 	}]
