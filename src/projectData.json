@@ -7,7 +7,7 @@
 		"imagesGallery": 7,
 		"description": "Live note is a mobile centered progressive web app. I build it for better note taking during meetings and classes. This app consists of starting an audio note, and as it records the user can add timestamped comments and picture to the note. This gives note taking: audio, visual and textual context for a more detailed note.",
 		"position": "FULLSTACK DEVELOPER",
-		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
+		"link": "https://live-note-ce62c.firebaseapp.com/",
 		"type": "GITHUB LINK",
 		"techList": ["react", "firebase"]
 	},
@@ -110,7 +110,7 @@
 		"color": "#019875",
 		"imagesFolder": "tischler",
 		"imagesBG": "tischler_bg",
-		"imagesGallery": 0,
+		"imagesGallery": 5,
 		"description": "Christina Tischeler website is designed for an individual business focused on selling arts and crafts of her own making. Custom made and local products are nicely showcased in the website, persuading people to purchase her produces.",
 		"position": "FRONT-END DEVELOPER",
 		"link": "http://www.jeremytenjo.com/tischler/",
