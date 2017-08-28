@@ -20,7 +20,7 @@
 		"description": "Web app where students can join intramural teams and connect with their team-mates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
 		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
-		"type": "DEMO",
+		"type": "",
 		"techList": ["vue", "express", "photoshop"]
 	},
 	{
@@ -44,7 +44,7 @@
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/reactr/",
 		"type": "DEMO",
-		"techList": ["vue", "codeigniter", "sql"]
+		"techList": ["codeigniter", "sql"]
 	}, {
 		"name": "My Weddings Ontario",
 		"color": "#EF5350",
@@ -55,7 +55,7 @@
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/weddings_p2/",
 		"type": "DEMO",
-		"techList": ["vue","codeigniter","sql"]
+		"techList": ["codeigniter","sql"]
 
 	}, {
 		"name": "Infographics",
