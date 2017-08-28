@@ -71,7 +71,6 @@ class Projects extends React.Component {
 						<TechList>
 							{listTech}
 						</TechList>
-
 						<GalleryCon>
 							{listGallery}
 						</GalleryCon>
@@ -126,7 +125,7 @@ list-style: none;
 color: white;
 padding: 0;
 margin-top: 0;
-height: 18px;
+height: auto;
 li {
 display: inline;
 margin-right: 10px;

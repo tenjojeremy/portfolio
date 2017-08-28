@@ -103,7 +103,7 @@
 		"position": "FRONT-END DEVELOPER",
 		"link": "http://www.jeremytenjo.com/tischler/",
 		"type": "DEMO",
-		"techList": ["html", "js"]
+		"techList": ["js"]
 	}, {
 		"name": "My Movies",
 		"color": "#E87E04",
