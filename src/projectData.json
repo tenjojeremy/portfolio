@@ -32,7 +32,7 @@
 		"description": "A web app where property manager can track tenants complaints and keep records of them It integrates a CMS to manage complaints and a client-side interface where tenants can log in and place complaints with photo evidence and detailed description's.",
 		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://github.com/tenjojeremy/Property_Management_App",
-		"type": "DEMO",
+		"type": "",
 		"techList": ["vue", "laravel", "sql", "photoshop"]
 	}, {
 		"name": "Reactr",
