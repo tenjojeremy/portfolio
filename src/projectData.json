@@ -16,7 +16,7 @@
 		"color": "#795548",
 		"imagesFolder": "fanshawe_intramurals",
 		"imagesBG": "fanshawe_intramurals",
-		"imagesGallery": 3,
+		"imagesGallery": 6,
 		"description": "Web app where students can join intramural teams and connect with their team-mates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
 		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://github.com/tenjojeremy/Fanshawe_Intramurals",
