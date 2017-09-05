@@ -23,7 +23,13 @@ var config = {
 firebase.initializeApp(config);
 
 //add visit
-firebase.database().ref(`visits`).push({count: 1})
+let current;
+
+firebase.database().ref('visits').once('value').then(function(snap) {
+  current = snap.val().count
+  let n = current + 1
+  firebase.database().ref(`visits/`).update({count: n})
+})
 
 ReactDOM.render(
   <Provider store={store}>
