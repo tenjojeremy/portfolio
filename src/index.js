@@ -7,6 +7,7 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
 import firebase from 'firebase/app';
+require("firebase/database");
 
 const store = createStore(Reducers);
 
@@ -22,9 +23,8 @@ var config = {
 firebase.initializeApp(config);
 
 //add visit
-firebase.database().ref(`visits`).push({
-	count: 1
-)}
+firebase.database().ref(`visits`).push({count: 1})
+
 ReactDOM.render(
   <Provider store={store}>
   <App/>
