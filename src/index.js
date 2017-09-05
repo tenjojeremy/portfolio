@@ -23,12 +23,28 @@ var config = {
 firebase.initializeApp(config);
 
 //add visit
-let current;
+let current,
+  d = new Date(),
+  months = [
+    'Jan',
+    'Feb',
+    'March',
+    'Apr',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ],
+  currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
 
 firebase.database().ref('visits').once('value').then(function(snap) {
   current = snap.val().count
   let n = current + 1
-  firebase.database().ref(`visits/`).update({count: n})
+  firebase.database().ref(`visits/`).update({count: n, date: currentDate})
 })
 
 ReactDOM.render(
