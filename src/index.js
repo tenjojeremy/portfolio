@@ -39,7 +39,7 @@ let current,
     'November',
     'December'
   ],
-  currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
 
 firebase.database().ref('visits').once('value').then(function(snap) {
   current = snap.val().count
