@@ -6,26 +6,19 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
 import firebase from 'firebase';
-require("firebase/database");
-
+// import fms from './firebase-messaging-sw';
 const store = createStore(Reducers);
 
 //service Worker
-if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+if (process.env.NODE_ENV === 'development' && 'serviceWorker' in navigator) {
   window.onload = () => {
     const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
     navigator.serviceWorker.register(swUrl).catch(error => {
       console.error('Error during service worker registration:', error);
     });
-    // const swUrl2 = `${process.env.PUBLIC_URL}/firebase-messaging-sw.js`;
-    // navigator.serviceWorker.register(swUrl2).catch(error => {
-    //   console.error('Error during service worker registration:', error);
-    // });
+
   }
 }
-
-//push notifications permission
-// Notification.requestPermission()
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
@@ -45,33 +38,42 @@ var config = {
 };
 firebase.initializeApp(config);
 
+//push notifications permission
+const messaging = firebase.messaging()
+  messaging.requestPermission().then(() => {
+    console.log('Hve Pemission');
+    return messaging.getToken()
+  }).then((token) => {
+    console.log('token:', token);
+  })
 
-//add visit
-let current,
-  d = new Date(),
-  months = [
-    'Jan',
-    'Feb',
-    'March',
-    'Apr',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ],
-  currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
+  messaging.onMessage((data) => {console.log(data);})
+  //add visit
+  let current,
+    d = new Date(),
+    months = [
+      'Jan',
+      'Feb',
+      'March',
+      'Apr',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
+    ],
+    currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
 
-firebase.database().ref('visits').once('value').then(function(snap) {
-  current = snap.val().count
-  let n = current + 1
-  firebase.database().ref(`visits/`).update({count: n, date: currentDate})
-})
+  firebase.database().ref('visits').once('value').then(function(snap) {
+    current = snap.val().count
+    let n = current + 1
+    firebase.database().ref(`visits/`).update({count: n, date: currentDate})
+  })
 
-ReactDOM.render(
-  <Provider store={store}>
-  <App/>
-</Provider>, document.getElementById('root'));
+  ReactDOM.render(
+    <Provider store={store}>
+    <App/>
+  </Provider>, document.getElementById('root'));

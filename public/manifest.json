@@ -1,10 +1,10 @@
 {
   "short_name": "JT Showcase",
-  "name": "eremy Tenjo Showcase",
+  "name": "Jeremy Tenjo Showcase",
   "gcm_sender_id": "103953800507",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "JeremyLogo.png",
       "sizes": "192x192",
       "type": "image/png"
     }
