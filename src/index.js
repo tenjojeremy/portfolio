@@ -11,17 +11,21 @@ require("firebase/database");
 const store = createStore(Reducers);
 
 //service Worker
-if (process.env.NODE_ENV === 'development' && 'serviceWorker' in navigator) {
+if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
   window.onload = () => {
     const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
     navigator.serviceWorker.register(swUrl).catch(error => {
       console.error('Error during service worker registration:', error);
     });
+    // const swUrl2 = `${process.env.PUBLIC_URL}/firebase-messaging-sw.js`;
+    // navigator.serviceWorker.register(swUrl2).catch(error => {
+    //   console.error('Error during service worker registration:', error);
+    // });
   }
 }
 
 //push notifications permission
-Notification.requestPermission()
+// Notification.requestPermission()
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
@@ -41,11 +45,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-//MFC Config
-const messaging = firebase.messaging();
-messaging.getToken().then((token) => {
-  console.log(token);
-})
 
 //add visit
 let current,
