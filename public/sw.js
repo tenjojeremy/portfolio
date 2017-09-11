@@ -9,12 +9,13 @@ self.addEventListener('activate', () => {
   });
 });
 
-//Cache Assets
+//Cache Shell
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('cacheName').then(function(cache) {
+    caches.open('v1').then(function(cache) {
       return cache.addAll(
         [
+          'index.html',
           'static/css/*.css',
           'static/js/*.js',
         ]
