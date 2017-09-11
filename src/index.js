@@ -5,7 +5,7 @@ import './index.css';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 require("firebase/database");
 
 const store = createStore(Reducers);
@@ -20,6 +20,16 @@ if (process.env.NODE_ENV === 'development' && 'serviceWorker' in navigator) {
   }
 }
 
+//push notifications permission
+Notification.requestPermission()
+
+//subscribe to GMC
+navigator.serviceWorker.ready.then((sw) => {
+  sw.pushManager.subscribe({userVisibleOnly: true}).then(function(subscription) {
+    console.log('endpoint:', subscription.endpoint);
+  })
+})
+
 // Firebase Configuration
 var config = {
   apiKey: "AIzaSyDRRWbzzADN3rhjBWpZeiHfaIq4a1gvIOY",
@@ -30,6 +40,12 @@ var config = {
   messagingSenderId: "7666199790"
 };
 firebase.initializeApp(config);
+
+//MFC Config
+const messaging = firebase.messaging();
+messaging.getToken().then((token) => {
+  console.log(token);
+})
 
 //add visit
 let current,

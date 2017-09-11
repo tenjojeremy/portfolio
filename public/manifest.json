@@ -1,6 +1,7 @@
 {
   "short_name": "JT Showcase",
   "name": "eremy Tenjo Showcase",
+  "gcm_sender_id": "7666199790",
   "icons": [
     {
       "src": "favicon.ico",
