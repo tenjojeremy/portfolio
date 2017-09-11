@@ -16,7 +16,8 @@
     "react-swipeable-views": "^0.12.5",
     "redux": "^3.7.2",
     "styled-components": "^2.1.0",
-    "swipe-js-iso": "^2.0.3"
+    "swipe-js-iso": "^2.0.3",
+    "workbox-sw": "^2.0.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

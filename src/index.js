@@ -41,7 +41,7 @@ firebase.initializeApp(config);
 //push notifications permission
 const messaging = firebase.messaging()
   messaging.requestPermission().then(() => {
-    console.log('Hve Pemission');
+    console.log('Have Pemission');
     return messaging.getToken()
   }).then((token) => {
     console.log('token:', token);

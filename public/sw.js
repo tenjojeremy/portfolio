@@ -1,4 +1,6 @@
 
+// importScripts('/node_modules/workbox-sw/build/workbox-sw.vX.X.X.prod.js');
+
 self.addEventListener('activate', () => {
   self.clients.matchAll({ type: 'window' }).then(windowClients => {
     for (let windowClient of windowClients) {
@@ -7,17 +9,14 @@ self.addEventListener('activate', () => {
   });
 });
 
-//Caching
+//Cache Assets
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
+    caches.open('cacheName').then(function(cache) {
       return cache.addAll(
         [
-          '/css/bootstrap.css',
-          '/css/main.css',
-          '/js/bootstrap.min.js',
-          '/js/jquery.min.js',
-          '/offline.html'
+          'static/css/*.css',
+          'static/js/*.js',
         ]
       );
     })
