@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
@@ -10,6 +9,16 @@ import firebase from 'firebase/app';
 require("firebase/database");
 
 const store = createStore(Reducers);
+
+//service Worker
+if (process.env.NODE_ENV === 'development' && 'serviceWorker' in navigator) {
+  window.onload = () => {
+    const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
+    navigator.serviceWorker.register(swUrl).catch(error => {
+      console.error('Error during service worker registration:', error);
+    });
+  }
+}
 
 // Firebase Configuration
 var config = {
@@ -51,4 +60,3 @@ ReactDOM.render(
   <Provider store={store}>
   <App/>
 </Provider>, document.getElementById('root'));
-registerServiceWorker();
