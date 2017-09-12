@@ -48,3 +48,26 @@
     "image": "https://lh3.googleusercontent.com/-j20vUPHfT2M/AAAAAAAAAAI/AAAAAAAAACs/TLCMvAuQN9U/photo.jpg"
   }
 }
+[debug] [2017-09-12T15:01:11.472Z] ----------------------------------------------------------------------
+[debug] [2017-09-12T15:01:11.474Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-09-12T15:01:11.474Z] CLI Version:   3.10.1
+[debug] [2017-09-12T15:01:11.474Z] Platform:      win32
+[debug] [2017-09-12T15:01:11.474Z] Node Version:  v8.4.0
+[debug] [2017-09-12T15:01:11.475Z] Time:          Tue Sep 12 2017 11:01:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-12T15:01:11.475Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-12T15:01:11.483Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-12T15:01:11.484Z] > authorizing via signed-in user
+[debug] [2017-09-12T15:01:11.485Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+ Tue Sep 12 2017 11:01:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-12T15:01:11.807Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-12T15:01:11.809Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+ Tue Sep 12 2017 11:01:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-12T15:01:12.248Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-83749'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-09-12T15:01:13.617Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-83749/uploads/-Ktqavb9f38yWyfBqc8k?fileCount=92&message=  
+ Tue Sep 12 2017 11:01:13 GMT-0400 (Eastern Daylight Time)

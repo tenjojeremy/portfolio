@@ -10,7 +10,7 @@ import firebase from 'firebase';
 const store = createStore(Reducers);
 
 //service Worker
-if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+// if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
   window.onload = () => {
     const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
     navigator.serviceWorker.register(swUrl).catch(error => {
@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     });
 
   }
-}
+// }
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
