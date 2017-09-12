@@ -17,18 +17,11 @@ self.addEventListener('install', function(event) {
         [
           '/',
           '/index.html',
-          '/static/js/main.f2ad7c56.js',
-          '/static/css/main.9826c792.css',
+          // '/static/js/main.f2ad7c56.js',
+          // '/static/css/main.9826c792.css',
         ]
       );
     }).catch((err) => {console.log(err);})
   );
 });
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
-  );
-});
+ 

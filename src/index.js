@@ -9,16 +9,18 @@ import firebase from 'firebase';
 // import fms from './firebase-messaging-sw';
 import sw from './registerServiceWorker';
 const store = createStore(Reducers);
-sw()
-//service Worker
-// if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-  window.onload = () => {
-    const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
-    navigator.serviceWorker.register(swUrl).catch(error => {
-      console.error('Error during service worker registration:', error);
-    });
 
-  }
+
+
+
+// if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  // window.onload = () => {
+  //   const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
+  //   navigator.serviceWorker.register(swUrl).catch(error => {
+  //     console.error('Error during service worker registration:', error);
+  //   });
+  //
+  // }
 // }
 
 //subscribe to GMC
