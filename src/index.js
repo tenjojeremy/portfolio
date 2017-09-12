@@ -10,8 +10,8 @@ import firebase from 'firebase';
 import sw from './registerServiceWorker';
 const store = createStore(Reducers);
 
-
-
+//serviceWorker
+sw()
 
 // if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
   // window.onload = () => {
