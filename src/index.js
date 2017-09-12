@@ -7,10 +7,12 @@ import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
 import firebase from 'firebase';
 import sw from './registerServiceWorker';
+import {unregister} from './registerServiceWorker';
 const store = createStore(Reducers);
 
 //serviceWorker
 sw()
+unregister()
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
@@ -38,9 +40,9 @@ const messaging = firebase.messaging()
   }).then((token) => {
 
     //add tooken to database
-    console.log('token:', token);
+    // console.log('token:', token);
     firebase.database().ref(`tokens/`).update({token: token})
-alert(token)
+    alert(token)
   })
 
   messaging.onMessage((data) => {
