@@ -28,10 +28,10 @@ messaging.setBackgroundMessageHandler(({data} = {}) => {
 
 // curl -X POST -H "Authorization: key=AIzaSyB9dJPbtyMtHpPKgZwoLzUjNFkxOWrsprg" -H "Content-Type: application/json" -d '{
 //   "notification": {
-//     "title": "Portugal vs. Denmark",
+//     "title": "New View",
 //     "body": "5 to 1",
 //     "icon": "firebase-logo.png",
 //     "click_action": "https://console.firebase.google.com/project/portfolio-83749/database/data"
 //   },
-//   "to": "c1Brr8gSo9w:APA91bFRyvRQgO-LxiE7NpxBMVRfos3PHqNFDy2Ms0P5ieInTwkl10GHasHVQ2oECGRTPLzm4QPFQGpshb0x0VKyngNljsM2hlHHcmXHSi6TvCX3EibhqsHTPGjSotvuvm0hmGxQv3IW"
+//   "to": "e1YmfJ_r1kE:APA91bFKYswOLK-EqknlkIioGtbYWK6mQUxjjXRVUh9XB0UKonqbAqC-7O4rmArou58e3w6X6UQAL2Lj3R038qqc2aud6ZaBcaE1vlhoKXZHHnh-rwgcWCAEGtGdWVCP8wqDQTjMztYx"
 // }' "https://fcm.googleapis.com/fcm/send"
