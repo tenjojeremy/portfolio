@@ -12,7 +12,7 @@ const store = createStore(Reducers);
 
 //serviceWorker
 sw()
-
+console.log("HERE!")
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
