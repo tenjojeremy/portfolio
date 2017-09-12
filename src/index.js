@@ -7,8 +7,9 @@ import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
 import firebase from 'firebase';
 // import fms from './firebase-messaging-sw';
+import sw from './registerServiceWorker';
 const store = createStore(Reducers);
-
+sw()
 //service Worker
 // if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
   window.onload = () => {

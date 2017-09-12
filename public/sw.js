@@ -17,8 +17,8 @@ self.addEventListener('install', function(event) {
         [
           '/',
           '/index.html',
-          '/sw.js',
-          '/firebase-messaging-sw.js',
+          '/static/js/main.f2ad7c56.js',
+          '/static/css/main.9826c792.css',
         ]
       );
     }).catch((err) => {console.log(err);})
