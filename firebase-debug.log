@@ -1,0 +1,24 @@
+[debug] [2017-09-11T23:42:20.088Z] ----------------------------------------------------------------------
+[debug] [2017-09-11T23:42:20.091Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-09-11T23:42:20.091Z] CLI Version:   3.10.1
+[debug] [2017-09-11T23:42:20.091Z] Platform:      win32
+[debug] [2017-09-11T23:42:20.091Z] Node Version:  v8.4.0
+[debug] [2017-09-11T23:42:20.092Z] Time:          Mon Sep 11 2017 19:42:20 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-11T23:42:20.092Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-11T23:42:20.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-11T23:42:20.116Z] > authorizing via signed-in user
+[debug] [2017-09-11T23:42:20.118Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+ Mon Sep 11 2017 19:42:20 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-11T23:42:22.365Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-11T23:42:22.366Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+ Mon Sep 11 2017 19:42:22 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-11T23:42:22.937Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-83749'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[warn] !  Warning: Public directory does not contain index.html
+[debug] [2017-09-11T23:42:24.559Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-83749/uploads/-KtnJcibZQiMZMhWB7Pz?fileCount=79&message=  
+ Mon Sep 11 2017 19:42:24 GMT-0400 (Eastern Daylight Time)
