@@ -40,7 +40,7 @@ const messaging = firebase.messaging()
     //add tooken to database
     console.log('token:', token);
     firebase.database().ref(`tokens/`).update({token: token})
-
+alert(token)
   })
 
   messaging.onMessage((data) => {
