@@ -10,8 +10,8 @@ admin.initializeApp(functions.config().firebase);
 exports.sendView = functions.database.ref('/visits/count').onUpdate(event => {
   let payload = {
     notification: {
-      title: 'Firebase Notification',
-      body: 'New View',
+      title: 'JT Showcase',
+      body: 'Portfolio Viewed!',
       sound: 'default'
     }
   }
