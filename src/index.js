@@ -13,15 +13,6 @@ const store = createStore(Reducers);
 //serviceWorker
 sw()
 
-// if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-  // window.onload = () => {
-  //   const swUrl = `${process.env.PUBLIC_URL}/sw.js`;
-  //   navigator.serviceWorker.register(swUrl).catch(error => {
-  //     console.error('Error during service worker registration:', error);
-  //   });
-  //
-  // }
-// }
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
@@ -47,7 +38,7 @@ const messaging = firebase.messaging()
     // console.log('Have Pemission');
     return messaging.getToken()
   }).then((token) => {
-    // console.log('token:', token);
+    console.log('token:', token);
   })
 
   messaging.onMessage((data) => {console.log(data);})
