@@ -6,13 +6,11 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
 import firebase from 'firebase';
-// import fms from './firebase-messaging-sw';
 import sw from './registerServiceWorker';
 const store = createStore(Reducers);
 
 //serviceWorker
 sw()
-console.log("HERE!")
 
 //subscribe to GMC
 navigator.serviceWorker.ready.then((sw) => {
@@ -38,7 +36,14 @@ const messaging = firebase.messaging()
     // console.log('Have Pemission');
     return messaging.getToken()
   }).then((token) => {
+
+    //add tooken to database
     console.log('token:', token);
+    firebase.database().ref('tokens/').set({
+       token
+    })
+
+
   })
 
   messaging.onMessage((data) => {console.log(data);})
