@@ -98,7 +98,7 @@ overflow: scroll;
 overflow-x: scroll;
 margin-top: 20px;
 margin-bottom: 20px;
-@media (min-width: 600px) {
+@media (min-width: 950px) {
 	height: 200px;
 }
  `;
@@ -130,7 +130,7 @@ li {
 display: inline;
 margin-right: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 margin: 0 auto;
 background: rgba(0, 0, 0, 0.5);
 border-radius: 4px;
@@ -156,7 +156,7 @@ margin:0;
 padding:0;
 height: 100vh;
 width: 100%;
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 	background-image: none;
 	height: auto;
 }
@@ -176,7 +176,7 @@ margin-left: auto;
 width: 80%;
 
 }
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 position: static;
 height: auto;
 width: 95%;
@@ -208,7 +208,7 @@ bottom: 0;
 margin: auto;
 
 }
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 background: none;
 ${ ''/* height: 760px; */}
 position: static;
@@ -223,7 +223,7 @@ line-height: 60px;
 margin-bottom: 10px;
 margin-top: 10px;
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 	line-height: 47px;
 	font-size: 40px;
 	margin-top: 0px;
@@ -240,7 +240,7 @@ height: 40px;
 border-bottom: 1px solid white;
 margin-bottom: 20px;
 letter-spacing: 4px;
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 text-align: center;
 }
 `;
@@ -250,7 +250,7 @@ font-size: 19px;
 line-height: 26px;
 font-family: "PT Serif", serif;
 height: auto;
-@media (max-width: 600px) {
+@media (max-width: 950px) {
  font-size: 16px;
 }
 `;
@@ -263,7 +263,7 @@ margin-top: 60px;
 height:41px;
 margin: 0 auto;
 ${ ''/* width: 105px; */}
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 margin-top: 40px;
 
 }

@@ -113,6 +113,9 @@ margin-top: 0;
 @media (min-width: 600px) {
 	 font-size: 66px;
 }
+@media (min-width: 950px) {
+	 font-size: 66px;
+}
 `;
 const SubTitle = styled.p `
 text-align: center;
