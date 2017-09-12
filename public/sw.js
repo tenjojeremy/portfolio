@@ -16,6 +16,7 @@ self.addEventListener('install', function(event) {
       return cache.addAll(
         [
           '/index.html',
+          '/sw.js',
         ]
       );
     }).catch((err) => {console.log(err);})
