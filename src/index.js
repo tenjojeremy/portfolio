@@ -39,14 +39,13 @@ const messaging = firebase.messaging()
 
     //add tooken to database
     console.log('token:', token);
-    firebase.database().ref('tokens/').update({
-       token
-    })
-
+    firebase.database().ref(`tokens/`).update({token: token})
 
   })
 
-  messaging.onMessage((data) => {console.log(data);})
+  messaging.onMessage((data) => {
+    console.log(data);
+  })
   //add visit
   let current,
     d = new Date(),

@@ -26,12 +26,12 @@ messaging.setBackgroundMessageHandler(({data} = {}) => {
   return self.registration.showNotification(title, opts);
 });
 
-curl -X POST -H "Authorization: key=AIzaSyB9dJPbtyMtHpPKgZwoLzUjNFkxOWrsprg" -H "Content-Type: application/json" -d '{
-  "notification": {
-    "title": "Portugal vs. Denmark",
-    "body": "5 to 1",
-    "icon": "firebase-logo.png",
-    "click_action": "https://console.firebase.google.com/project/portfolio-83749/database/data"
-  },
-  "to": "c1Brr8gSo9w:APA91bFRyvRQgO-LxiE7NpxBMVRfos3PHqNFDy2Ms0P5ieInTwkl10GHasHVQ2oECGRTPLzm4QPFQGpshb0x0VKyngNljsM2hlHHcmXHSi6TvCX3EibhqsHTPGjSotvuvm0hmGxQv3IW"
-}' "https://fcm.googleapis.com/fcm/send"
+// curl -X POST -H "Authorization: key=AIzaSyB9dJPbtyMtHpPKgZwoLzUjNFkxOWrsprg" -H "Content-Type: application/json" -d '{
+//   "notification": {
+//     "title": "Portugal vs. Denmark",
+//     "body": "5 to 1",
+//     "icon": "firebase-logo.png",
+//     "click_action": "https://console.firebase.google.com/project/portfolio-83749/database/data"
+//   },
+//   "to": "c1Brr8gSo9w:APA91bFRyvRQgO-LxiE7NpxBMVRfos3PHqNFDy2Ms0P5ieInTwkl10GHasHVQ2oECGRTPLzm4QPFQGpshb0x0VKyngNljsM2hlHHcmXHSi6TvCX3EibhqsHTPGjSotvuvm0hmGxQv3IW"
+// }' "https://fcm.googleapis.com/fcm/send"
