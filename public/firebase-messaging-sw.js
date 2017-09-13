@@ -18,6 +18,7 @@ const messaging = firebase.messaging();
 // })
 
 messaging.setBackgroundMessageHandler(({data} = {}) => {
+  console.log(data);
   const title = data.title || 'Title';
   const opts = Object.assign({
     body: data.body || 'Body'
@@ -25,4 +26,3 @@ messaging.setBackgroundMessageHandler(({data} = {}) => {
 
   return self.registration.showNotification(title, opts);
 });
- 
