@@ -3,10 +3,10 @@ const admin = require('firebase-admin');
 admin.initializeApp(functions.config().firebase);
 
 exports.sendView = functions.database.ref('/visits/count').onUpdate(event => {
+  const original = event.data.val()
+
   let payload = {
     notification: {
-      // title: 'JT Showcase',
-      title: event.data.val() || 'JT Showcase',
       title: 'JT Showcase',
       body: 'Portfolio Viewed!',
       sound: 'default'

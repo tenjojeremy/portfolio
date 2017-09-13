@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import LinkedinIcon from '../images/linkedin.svg';
 import GithubIcon from '../images/github.svg';
 import ResumeIcon from '../images/ResumeIcon.svg';
+import arrowDownIcon from '../images/arrowDown.svg';
 
 class name extends React.Component {
 
@@ -44,6 +45,7 @@ class name extends React.Component {
 						</a>
 					</LinksCon>
 				</InfoContainer>
+				<ArrowDown src={arrowDownIcon} alt="Arrow Down"/>
 			</ParticlesCon>
 		);
 	}
@@ -51,6 +53,14 @@ class name extends React.Component {
 }
 
 //Style
+ const ArrowDown = styled.img `
+width: 40px;
+position: absolute;
+bottom: 0;
+left: 0 ;
+right: 0;
+margin: auto;
+ `;
 const AboutMe = styled.p `
 text-align: center;
 color: white;
@@ -84,6 +94,7 @@ margin: 0 auto;
 const ParticlesCon = styled.div `
 height: 100vh;
 background: #182327;
+position: relative;
 `;
 
 const InfoContainer = styled.div `
