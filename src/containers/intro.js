@@ -104,16 +104,18 @@ position: relative;
 `;
 
 const InfoContainer = styled.div `
-width: 390px;
 height: 520px;
+width: 100%;
 position: absolute;
 top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-@media (max-width: 390px) {
-	width: 100%;
+@media (min-width: 600px) {
+	width: 390px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 `;
