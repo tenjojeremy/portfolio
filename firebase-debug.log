@@ -1,0 +1,97 @@
+[debug] [2017-09-13T20:17:34.988Z] ----------------------------------------------------------------------
+[debug] [2017-09-13T20:17:34.989Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-09-13T20:17:34.989Z] CLI Version:   3.10.1
+[debug] [2017-09-13T20:17:34.990Z] Platform:      win32
+[debug] [2017-09-13T20:17:34.990Z] Node Version:  v8.4.0
+[debug] [2017-09-13T20:17:34.990Z] Time:          Wed Sep 13 2017 16:17:34 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:34.990Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-13T20:17:34.999Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-13T20:17:35.000Z] > authorizing via signed-in user
+[debug] [2017-09-13T20:17:35.002Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+ Wed Sep 13 2017 16:17:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:35.405Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T20:17:35.405Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+ Wed Sep 13 2017 16:17:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:35.862Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-83749'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-09-13T20:17:36.730Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~5.2.1",
+    "firebase-functions": "^0.6.2"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-09-13T20:17:36.733Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/portfolio-83749?view=CONSUMER_VIEW  
+ Wed Sep 13 2017 16:17:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:36.734Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/portfolio-83749?view=CONSUMER_VIEW  
+ Wed Sep 13 2017 16:17:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:37.398Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-09-13T20:17:37.404Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2017-09-13T20:17:37.405Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/portfolio-83749  
+ Wed Sep 13 2017 16:17:37 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:37.405Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/portfolio-83749/apiKeys  
+ Wed Sep 13 2017 16:17:37 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:37.716Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T20:17:37.798Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-09-13T20:17:45.904Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/portfolio-83749/configs  
+ Wed Sep 13 2017 16:17:45 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:46.408Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (14.64 KB) for uploading
+[debug] [2017-09-13T20:17:51.481Z] >>> HTTP REQUEST GET https://www.googleapis.com/storage/v1/b/staging.portfolio-83749.appspot.com  
+ Wed Sep 13 2017 16:17:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:51.892Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T20:17:51.892Z] >>> HTTP REQUEST POST https://www.googleapis.com/upload/storage/v1/b/staging.portfolio-83749.appspot.com/o?uploadType=media&name=firebase-functions-source ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 14988,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'C:\\Users\\jeremy\\AppData\\Local\\Temp\\firebase-functions-4220xaY1DFLml03Q.zip',
+  fd: 5,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: undefined,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 14988 } 
+ Wed Sep 13 2017 16:17:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-09-13T20:17:52.538Z] <<< HTTP RESPONSE 200
+[info] +  functions: functions folder uploaded successfully
+[info] i  hosting: preparing build directory for upload...
+[debug] [2017-09-13T20:17:53.274Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-83749/uploads/-KtwswZc78iwycJzP5N7?fileCount=93&message=  
+ Wed Sep 13 2017 16:17:53 GMT-0400 (Eastern Daylight Time)
