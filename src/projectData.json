@@ -63,7 +63,7 @@
 		"imagesFolder": "d3",
 		"imagesBG": "d3_bg",
 		"imagesGallery": 8,
-		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
+		"description": "Using the D3 JavaScript library I built 10 dynamic, database ready infographics which represent results from a survey conducted by Fanshawe’s school of contemporary media for IDP and IMS graduates.",
 		"position": "FULLSTACK DEVELOPER",
 		"link": "http://www.jeremytenjo.com/infographics/",
 		"type": "DEMO",
@@ -75,8 +75,7 @@
 		"imagesFolder": "edfg",
 		"imagesBG": "edfg_bg",
 		"imagesGallery": 4,
-		"description": "My Weddings Ontario is a website that connects brides with vendors and where brides can save. I added functionality such as; Vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.",
-		"position": "PROJECT MANAGER - BACK-END DEVELOPER",
+		"description": "The EDFC website was created for the Eating Disorders Foundation of Canada with the purpose of creating a website where people could go and share their experiences with eating disorders with people all around the world, and ideally seek help.",
 		"link": "http://www.jeremytenjo.com/EDFC//",
 		"type": "DEMO",
 		"techList": ["php", "sql", "js"]
