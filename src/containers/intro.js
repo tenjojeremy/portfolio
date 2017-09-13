@@ -8,58 +8,65 @@ import arrowDownIcon from '../images/arrowDown.svg';
 
 class name extends React.Component {
 
-	//initial state
-	constructor(props) {
-		super(props)
-		this.state = {
-			data: 'initial'
-		}
-	}
+  //initial state
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: 'initial'
+    }
+  }
 
-	//Methods
+  //Methods
 
-	render() {
-		//Properties
+  render() {
+    //Properties
 
-		//Template
-		return (
-			<ParticlesCon>
-				<Particles/>
-				<InfoContainer>
-					<Title>Jeremy Tenjo</Title>
-					<SubTitle>Project Showcase</SubTitle>
-					<AboutMe>
-						I am a web developer who enjoys the challenges of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development more efficient. Scroll down to check out my projects.
-					</AboutMe>
-					<Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
-					<LinksCon>
-						<a title="Linkedin" target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/jeremy-tenjo-244048120">
-							<Icon src={LinkedinIcon} alt="linkedin icon"/>
-						</a>
+    //Template
+    return (
+      <ParticlesCon>
+        <Particles/>
+        <InfoContainer>
+          <Title>Jeremy Tenjo</Title>
+          <SubTitle>Project Showcase</SubTitle>
+          <AboutMe>
+            I am a web developer who enjoys the challenges of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development more efficient. Scroll down to check out my projects.
+          </AboutMe>
+          <Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
+          <LinksCon>
+            <a title="Linkedin" target="_blank" rel="noopener noreferrer" href="https://ca.linkedin.com/in/jeremy-tenjo-244048120">
+              <Icon src={LinkedinIcon} alt="linkedin icon"/>
+            </a>
 
-						<a title="Github" target="_blank" rel="noopener noreferrer" href="https://github.com/tenjojeremy">
-							<Icon src={GithubIcon} alt="github icon"/>
-						</a>
-						<a title="Portfolio" target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume.pdf?alt=media&token=2695b8d8-c8a4-4acc-812a-68bdf48b43b8">
-							<Icon src={ResumeIcon} alt="CV icon"/>
-						</a>
-					</LinksCon>
-				</InfoContainer>
-				<ArrowDown src={arrowDownIcon} alt="Arrow Down"/>
-			</ParticlesCon>
-		);
-	}
+            <a title="Github" target="_blank" rel="noopener noreferrer" href="https://github.com/tenjojeremy">
+              <Icon src={GithubIcon} alt="github icon"/>
+            </a>
+            <a title="Portfolio" target="_blank" rel="noopener noreferrer" href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume.pdf?alt=media&token=2695b8d8-c8a4-4acc-812a-68bdf48b43b8">
+              <Icon src={ResumeIcon} alt="CV icon"/>
+            </a>
+          </LinksCon>
+					<ArrowDown src={arrowDownIcon} alt="Arrow Down"/>
+
+        </InfoContainer>
+
+      </ParticlesCon>
+    );
+  }
 
 }
 
 //Style
- const ArrowDown = styled.img `
+const ArrowDown = styled.img `
+display: block;
+margin: 0 auto;
 width: 40px;
-position: absolute;
-bottom: 0;
-left: 0 ;
-right: 0;
-margin: auto;
+
+@media (min-width: 600px) {
+	position: absolute;
+	bottom: 0;
+	left: 0 ;
+	right: 0;
+	margin: auto;
+}
  `;
 const AboutMe = styled.p `
 text-align: center;
@@ -98,18 +105,17 @@ position: relative;
 
 const InfoContainer = styled.div `
 width: 390px;
-height: 480px;
+height: 520px;
 position: absolute;
-top: 20px;
+top: 0;
+bottom: 0;
 left: 0;
 right: 0;
 margin: auto;
 @media (max-width: 390px) {
 	width: 100%;
 }
-@media (max-width: 600px) {
-	 height: 600px;
-}
+
 `;
 const Title = styled.p `
 color: #049372;
