@@ -71,8 +71,6 @@ line-height: 21px;
 letter-spacing: 2px;
 @media (min-width: 600px) {
 	font-size: 18px;
-
-
 }
  `;
 const Linktext = styled.p `
@@ -95,20 +93,22 @@ const ParticlesCon = styled.div `
 height: 100vh;
 background: #182327;
 position: relative;
+
 `;
 
 const InfoContainer = styled.div `
 width: 390px;
 height: 480px;
-// background: red;
 position: absolute;
-top: 0;
-bottom: 0;
+top: 20px;
 left: 0;
 right: 0;
 margin: auto;
 @media (max-width: 390px) {
 	width: 100%;
+}
+@media (max-width: 600px) {
+	 height: 600px;
 }
 `;
 const Title = styled.p `
