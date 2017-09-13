@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from '../components/particles';
-import styled from 'styled-components'
+import styled , {keyframes} from 'styled-components'
 import LinkedinIcon from '../images/linkedin.svg';
 import GithubIcon from '../images/github.svg';
 import ResumeIcon from '../images/ResumeIcon.svg';
@@ -23,7 +23,31 @@ class name extends React.Component {
   }
   render() {
     //Properties
+		const rotate360 = keyframes`
+			from {
+				opacity: 0.3;
+			}
 
+			to {
+				opacity: 1;
+			}
+		`;
+		const ArrowDown = styled.img `
+		display: block;
+		margin: 0 auto;
+		width: 40px;
+		cursor: pointer;
+		animation: ${rotate360} 1s linear infinite;
+
+
+		@media (min-width: 600px) {
+			position: absolute;
+			bottom: 0;
+			left: 0 ;
+			right: 0;
+			margin: auto;
+		}
+		 `;
     //Template
     return (
       <ParticlesCon>
@@ -57,20 +81,7 @@ class name extends React.Component {
 }
 
 //Style
-const ArrowDown = styled.img `
-display: block;
-margin: 0 auto;
-width: 40px;
-cursor: pointer;
 
-@media (min-width: 600px) {
-	position: absolute;
-	bottom: 0;
-	left: 0 ;
-	right: 0;
-	margin: auto;
-}
- `;
 const AboutMe = styled.p `
 text-align: center;
 color: white;
