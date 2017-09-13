@@ -19,7 +19,7 @@ class name extends React.Component {
 
   //Methods
   ScrollDown = () => {
-		goToAnchor('firstProject', false)
+		goToAnchor('firstProject', true)
   }
   render() {
     //Properties
