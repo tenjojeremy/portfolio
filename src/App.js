@@ -16,54 +16,54 @@ import {connect} from 'react-redux';
 import {Toggle_Carousel, Set_Current_Index} from './state/actions/index';
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({
-		Toggle_Carousel,
-		Set_Current_Index
-	}, dispatch)
+  return bindActionCreators({
+    Toggle_Carousel,
+    Set_Current_Index
+  }, dispatch)
 }
 function mapStateToProps(state) {
-	return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount, currentIndex: state.CurrentIndex, imagesFolder: state.imagesFolder, gallerySelected: state.GallerySelected}
+  return {toggleCarousel: state.ToogleCarousel, galleryCount: state.GalleryCount, currentIndex: state.CurrentIndex, imagesFolder: state.imagesFolder, gallerySelected: state.GallerySelected}
 }
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			index: this.props.currentIndex
-		};
-	}
-	closeCar = () => {
-		this.props.Toggle_Carousel(false)
-	}
-	prev = () => {
-		if (this.props.currentIndex !== 0) {
-			let n = this.props.currentIndex - 1;
-			this.props.Set_Current_Index(n)
-		} else {
-			this.props.Set_Current_Index(this.props.galleryCount)
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: this.props.currentIndex
+    };
+  }
+  closeCar = () => {
+    this.props.Toggle_Carousel(false)
+  }
+  prev = () => {
+    if (this.props.currentIndex !== 0) {
+      let n = this.props.currentIndex - 1;
+      this.props.Set_Current_Index(n)
+    } else {
+      this.props.Set_Current_Index(this.props.galleryCount)
 
-		}
-	}
-	next = () => {
-		if (this.props.currentIndex < this.props.galleryCount) {
-			let n = this.props.currentIndex + 1;
-			this.props.Set_Current_Index(n)
+    }
+  }
+  next = () => {
+    if (this.props.currentIndex < this.props.galleryCount) {
+      let n = this.props.currentIndex + 1;
+      this.props.Set_Current_Index(n)
 
-		} else {
-			this.props.Set_Current_Index(0)
-		}
-	}
-	mixins : [Carousel.ControllerMixin]
-	render() {
-		const MasterContainer = styled.div `
+    } else {
+      this.props.Set_Current_Index(0)
+    }
+  }
+  mixins : [Carousel.ControllerMixin]
+  render() {
+    const MasterContainer = styled.div `
     margin:0;
     padding:0;
     height: 100%;
     width: 100%;
   `;
-		const CarouselCon = styled.div `
+    const CarouselCon = styled.div `
 		display: ${this.props.toggleCarousel
-			? 'block'
-			: 'none'};
+      ? 'block'
+      : 'none'};
 background: rgba(255, 255, 255, 0.9);
 height: 100%;
 width: 100%;
@@ -74,49 +74,49 @@ left: 0;
 
 	`;
 
-		const styles = {
+    const styles = {
 
-			padding: 15,
-			minHeight: 100,
-			// maxWidth: 900,
-			color: '#fff'
-		};
+      padding: 15,
+      minHeight: 100,
+      // maxWidth: 900,
+      color: '#fff'
+    };
 
-		const SlideImage = styled.img `
+    const SlideImage = styled.img `
 	 height: 90%;
     width: 95%;
 		margin: 0 auto;
 		display: block;
 		max-width: 600px;
 	 `;
-		const CloseIcon = styled.img `
+    const CloseIcon = styled.img `
 width: 20px;
 position: absolute;
 right: 33px;
 cursor: pointer;
 fill: white;
  `;
-		const CloseIconCon = styled.div `
+    const CloseIconCon = styled.div `
 position: relative;
 height: 30px;
   `;
-		const LeftArrow = styled.img `
+    const LeftArrow = styled.img `
 width: 20px;
 position: absolute;
 left: 33px;
 cursor: pointer;
  `;
-		const RightArrow = styled.img `
+    const RightArrow = styled.img `
 width: 20px;
 position: absolute;
 right: 23px;
 cursor: pointer;
  `;
-		const DirCon = styled.div `
+    const DirCon = styled.div `
 position: relative;
 height: 23px;
   `;
-		const CarouselInner = styled.div `
+    const CarouselInner = styled.div `
 	 position: absolute;
 	 top: 0;
 	 bottom: 0;
@@ -129,50 +129,57 @@ height: 23px;
 top: 50px;
 	 }
 	 `;
-		const projectList = ProjectsData.map((project) => <span key={project.name.toString()}>
-			<Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
-		</span>);
+    const projectList = ProjectsData.map((project, index) => {
+        if (index === 0) {
+        	return <span key={project.name.toString()} id="firstProject">
+	          <Project  name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
+	        </span>;
+        }
+        return <span key={project.name.toString()}>
+          <Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
+        </span>;
+      })
 
-		let list = [],
-			source;
+      let list = [],
+        source;
 
-		for (var i = 1; i <= this.props.galleryCount; i++) {
-			source = `/images/${this.props.gallerySelected}/${i}.png`;
+      for (var i = 1; i <= this.props.galleryCount; i++) {
+        source = `/images/${this.props.gallerySelected}/${i}.png`;
 
-			list.push(
-				<div key={i} style={styles}>
-					<SlideImage src={source}/>
-				</div>
-			);
-		}
+        list.push(
+          <div key={i} style={styles}>
+            <SlideImage src={source}/>
+          </div>
+        );
+      }
 
-		return (
-			<MasterContainer>
-				<Intro/>
+      return (
+        <MasterContainer>
+          <Intro/>
 
-				<CarouselCon>
+          <CarouselCon>
 
-					<CarouselInner>
+            <CarouselInner>
 
-						<CloseIconCon>
-							<CloseIcon src={close} onClick={this.closeCar}/>
-						</CloseIconCon>
+              <CloseIconCon>
+                <CloseIcon src={close} onClick={this.closeCar}/>
+              </CloseIconCon>
 
-						<SwipeableViews index={this.props.currentIndex}>
-							{list}
-						</SwipeableViews>
+              <SwipeableViews index={this.props.currentIndex}>
+                {list}
+              </SwipeableViews>
 
-						<DirCon>
-							<LeftArrow src={arrowLeft} onClick={this.prev}/>
-							<RightArrow src={arrowRight} onClick={this.next}/>
+              <DirCon>
+                <LeftArrow src={arrowLeft} onClick={this.prev}/>
+                <RightArrow src={arrowRight} onClick={this.next}/>
 
-						</DirCon>
-					</CarouselInner>
-				</CarouselCon>
-				{projectList}
-			</MasterContainer>
-		);
-	}
-}
+              </DirCon>
+            </CarouselInner>
+          </CarouselCon>
+          {projectList}
+        </MasterContainer>
+      );
+    }
+  }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+  export default connect(mapStateToProps, mapDispatchToProps)(App);

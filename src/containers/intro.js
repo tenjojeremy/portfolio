@@ -5,6 +5,7 @@ import LinkedinIcon from '../images/linkedin.svg';
 import GithubIcon from '../images/github.svg';
 import ResumeIcon from '../images/ResumeIcon.svg';
 import arrowDownIcon from '../images/arrowDown.svg';
+import { goToAnchor } from 'react-scrollable-anchor'
 
 class name extends React.Component {
 
@@ -17,7 +18,9 @@ class name extends React.Component {
   }
 
   //Methods
-
+  ScrollDown = () => {
+		goToAnchor('firstProject', false)
+  }
   render() {
     //Properties
 
@@ -29,7 +32,7 @@ class name extends React.Component {
           <Title>Jeremy Tenjo</Title>
           <SubTitle>Project Showcase</SubTitle>
           <AboutMe>
-            I am a web developer who enjoys the challenges of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development more efficient. Scroll down to check out my projects.
+            I am a web developer who enjoys the challenges of solving modern problems by using the latest and greatest web tools availabe at my disposal. I love Javascript, but I am always experimenting new technnologies that will make my development more efficient.
           </AboutMe>
           <Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
           <LinksCon>
@@ -44,8 +47,7 @@ class name extends React.Component {
               <Icon src={ResumeIcon} alt="CV icon"/>
             </a>
           </LinksCon>
-					<ArrowDown src={arrowDownIcon} alt="Arrow Down"/>
-
+					<ArrowDown src={arrowDownIcon} alt="Arrow Down" onClick={this.ScrollDown}/>
         </InfoContainer>
 
       </ParticlesCon>
@@ -59,6 +61,7 @@ const ArrowDown = styled.img `
 display: block;
 margin: 0 auto;
 width: 40px;
+cursor: pointer;
 
 @media (min-width: 600px) {
 	position: absolute;
