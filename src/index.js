@@ -6,8 +6,8 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Reducers from './state/reducers';
 import firebase from 'firebase';
-import sw from './registerServiceWorker';
-import {unregister} from './registerServiceWorker';
+// import sw from './registerServiceWorker';
+// import {unregister} from './registerServiceWorker';
 const store = createStore(Reducers);
 
 //serviceWorker
