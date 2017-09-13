@@ -11,7 +11,7 @@ import {unregister} from './registerServiceWorker';
 const store = createStore(Reducers);
 
 //serviceWorker
-sw()
+// sw()
 
 //subscribe to GMC
 if (navigator.serviceWorker) {
