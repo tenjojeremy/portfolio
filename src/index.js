@@ -14,11 +14,14 @@ const store = createStore(Reducers);
 sw()
 
 //subscribe to GMC
-navigator.serviceWorker.ready.then((sw) => {
-  sw.pushManager.subscribe({userVisibleOnly: true}).then(function(subscription) {
-    // console.log('endpoint:', subscription.endpoint);
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.ready.then((sw) => {
+    sw.pushManager.subscribe({userVisibleOnly: true}).then(function(subscription) {
+      // console.log('endpoint:', subscription.endpoint);
+    })
   })
-})
+}
+
 
 // Firebase Configuration
 var config = {
