@@ -57,6 +57,9 @@ class Projects extends React.Component {
 			if (item === 'express') {
 				return <Express key={i}>Express.js</Express>
 			}
+			if (item === 'mongodb') {
+				return <Express key={i}>mongoDB</Express>
+			}
 			return <li key={i} title={item}><IconTech src={source2}/></li>
 		})
 
