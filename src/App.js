@@ -115,11 +115,11 @@ cursor: pointer;
     const DirCon = styled.div `
 position: relative;
 height: 23px;
-@media (max-width: 600px) {
+${'' /* @media (max-width: 600px) {
   position: fixed;
   width: 100%;
   bottom: 20px;
-}
+} */}
   `;
     const CarouselInner = styled.div `
 	 position: absolute;
@@ -131,8 +131,8 @@ height: 23px;
 	 max-width: 800px;
 	 max-height: 640px;
 	 @media (max-width: 600px) {
-${'' /* top: 50px; */}
-top: 20px;
+top: 50px; 
+${'' /* top: 20px; */}
 	 }
 	 `;
     const projectList = ProjectsData.map((project, index) => {
