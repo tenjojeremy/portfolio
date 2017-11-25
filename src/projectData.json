@@ -1,5 +1,17 @@
 	[
 		{
+		"name": "iLandlord",
+		"color": "#43A047",
+		"imagesFolder": "iLandlord",
+		"imagesBG": "iLandlord",
+		"imagesGallery": 10,
+		"description": "iLandlord is a property management webapp, that provides a way for people to manage their rental properties finances. Keep track of Income, Bills, and expenses.",
+		"position": "FULLSTACK DEVELOPER - DESIGNER",
+		"link": "https://ilandlord-486c3.firebaseapp.com/",
+		"type": "DEMO",
+		"techList": ["react", "firebase", "xd"]
+	},
+		{
 		"name": "Live Note",
 		"color": "#F71735",
 		"imagesFolder": "Live_Note",
