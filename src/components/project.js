@@ -202,7 +202,7 @@ background:rgba(0, 0, 0, 0.70);
 border-radius: 2px;
 height:90%;
 padding-top: 30px;
-padding-bottom: 30px;
+padding-bottom: 70px;
 top: 0;
 bottom: 0;
 margin: auto;
