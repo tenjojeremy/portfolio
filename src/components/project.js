@@ -166,7 +166,6 @@ width: 100%;
 `;
 
 const ProjectDescCon = styled.div `
-	${ ''/* background: red; */}
 height: 100%;
 width: 50%;
 position:absolute;
@@ -187,8 +186,6 @@ width: 95%;
 `;
 
 const ProjectDesc = styled.div `
-	${ ''/* background: blue; */}
-${ ''/* height: 60%; */}
 max-height: 900px;
 width: auto;
 max-width: 400px;
@@ -213,7 +210,6 @@ margin: auto;
 }
 @media (max-width: 950px) {
 background: none;
-${ ''/* height: 760px; */}
 position: static;
 
 }
@@ -265,10 +261,6 @@ const Span = styled.div `
 margin-top: 60px;
 height:41px;
 margin: 0 auto;
-${ ''/* width: 105px; */}
-@media (max-width: 950px) {
-margin-top: 40px;
 
-}
 `;
 export default connect(null, mapDispatchToProps)(Projects);

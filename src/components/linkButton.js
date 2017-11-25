@@ -26,8 +26,8 @@ export default class LinkButton extends React.Component {
     padding: 10px 20px 10px 20px;
     border: solid #ffffff 2px;
     text-decoration: none;
-		position: relative;
-    top: 11px;
+		${'' /* position: relative; */}
+    ${'' /* top: 11px; */}
 		display: block;
 		margin: 0 auto;
 		width: 55px;
