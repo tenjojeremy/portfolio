@@ -8,7 +8,7 @@
 		"description": "iLandlord is a property management webapp. Keep track of Income, Bills, expenses and receipts with ease. I created this app with Reactjs to further improve my skills with my current favorite front end framework. Myself being a property manager, this app not only improved my react skills, it also replaced Excel as my main finance tracking app.",
 		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://ilandlord-486c3.firebaseapp.com/",
-		"type": "DEMO",
+		"type": "APP",
 		"techList": ["react", "firebase", "xd"]
 	},
 		{
@@ -20,7 +20,7 @@
 		"description": "Live note is a mobile centered progressive web app. I built it for better note taking during meetings and classes. This app consists of starting an audio note, and as it records the user can add timestamped comments and picture to the note. This gives note taking an audio, visual and textual context for a more detailed note.",
 		"position": "FULLSTACK DEVELOPER - DESIGNER",
 		"link": "https://live-note-ce62c.firebaseapp.com/",
-		"type": "DEMO",
+		"type": "APP",
 		"techList": ["react", "firebase", "xd"]
 	},
 		{
