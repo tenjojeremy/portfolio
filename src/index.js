@@ -40,7 +40,7 @@ const messaging = firebase.messaging()
 messaging.getToken().then(function(currentToken) {
   if (currentToken) {
     console.log(currentToken)
-    
+
   } else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
@@ -53,6 +53,7 @@ messaging.getToken().then(function(currentToken) {
 messaging.onMessage((data) => {
 console.log(data);
 })
+
 //add visit
 let current,
 d = new Date(),
@@ -70,7 +71,7 @@ months = [
   'November',
   'December'
 ],
-currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
+currentDate = '' + d.getHours() + ':'+ d.getMinutes() + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
 
 firebase.database().ref('visits').once('value').then(function(snap) {
 current = snap.val().count
