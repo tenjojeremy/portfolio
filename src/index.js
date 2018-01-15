@@ -37,10 +37,11 @@ firebase.initializeApp(config);
 const messaging = firebase.messaging()
 
 //get token
+let token
 messaging.getToken().then(function(currentToken) {
   if (currentToken) {
     console.log(currentToken)
-
+    token = currentToken
   } else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
@@ -74,9 +75,11 @@ months = [
 currentDate = '' + d.getHours() + ':'+ d.getMinutes() + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
 
 firebase.database().ref('visits').once('value').then(function(snap) {
+
 current = snap.val().count
 let n = current + 1
-firebase.database().ref(`visits/`).update({count: n, date: currentDate})
+
+firebase.database().ref(`visits/`).update({count: n, date: currentDate, token: token})
 })
 
 ReactDOM.render(<Provider store={store}>
