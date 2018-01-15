@@ -4,3 +4,8 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
+@font-face {
+  font-family: "HammersmithOne";
+  src: url("./fonts/HammersmithOne.ttf") format("truetype");
+}

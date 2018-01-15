@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import './App.css';
 //Projects
 import Project from './components/project';
 import styled from 'styled-components'
 import Intro from './containers/intro';
+import ComingSoon from './components/ComingSoon';
 import ProjectsData from './projectData.json';
 import arrowLeft from './images/arrowLeft.svg';
 import arrowRight from './images/arrowRight.svg';
@@ -52,7 +52,8 @@ class App extends Component {
       this.props.Set_Current_Index(0)
     }
   }
-  mixins : [Carousel.ControllerMixin]
+  mixins: [Carousel.ControllerMixin]
+
   render() {
     const MasterContainer = styled.div `
     margin:0;
@@ -115,7 +116,7 @@ cursor: pointer;
     const DirCon = styled.div `
 position: relative;
 height: 23px;
-${'' /* @media (max-width: 600px) {
+${ ''/* @media (max-width: 600px) {
   position: fixed;
   width: 100%;
   bottom: 20px;
@@ -131,15 +132,15 @@ ${'' /* @media (max-width: 600px) {
 	 max-width: 800px;
 	 max-height: 640px;
 	 @media (max-width: 600px) {
-top: 50px; 
-${'' /* top: 20px; */}
+top: 50px;
+${ ''/* top: 20px; */}
 	 }
 	 `;
     const projectList = ProjectsData.map((project, index) => {
         if (index === 0) {
-        	return <span key={project.name.toString()} id="firstProject">
-	          <Project  name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
-	        </span>;
+          return <span key={project.name.toString()} id="firstProject">
+            <Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
+          </span>;
         }
         return <span key={project.name.toString()}>
           <Project name={project.name} description={project.description} color={project.color} position={project.position} link={project.link} type={project.type} imagesBG={project.imagesBG} imagesFolder={project.imagesFolder} imagesGallery={project.imagesGallery} techList={project.techList}/>
@@ -152,39 +153,36 @@ ${'' /* top: 20px; */}
       for (var i = 1; i <= this.props.galleryCount; i++) {
         source = `/images/${this.props.gallerySelected}/${i}.png`;
 
-        list.push(
-          <div key={i} style={styles}>
-            <SlideImage src={source}/>
-          </div>
-        );
+        list.push(<div key={i} style={styles}>
+          <SlideImage src={source}/>
+        </div>);
       }
 
-      return (
-        <MasterContainer>
-          <Intro/>
+      return (<MasterContainer>
+        <Intro/>
+        <ComingSoon/>
 
-          <CarouselCon>
+        <CarouselCon>
 
-            <CarouselInner>
+          <CarouselInner>
 
-              <CloseIconCon>
-                <CloseIcon src={close} onClick={this.closeCar}/>
-              </CloseIconCon>
+            <CloseIconCon>
+              <CloseIcon src={close} onClick={this.closeCar}/>
+            </CloseIconCon>
 
-              <SwipeableViews index={this.props.currentIndex}>
-                {list}
-              </SwipeableViews>
+            <SwipeableViews index={this.props.currentIndex}>
+              {list}
+            </SwipeableViews>
 
-              <DirCon>
-                <LeftArrow src={arrowLeft} onClick={this.prev}/>
-                <RightArrow src={arrowRight} onClick={this.next}/>
-              </DirCon>
+            <DirCon>
+              <LeftArrow src={arrowLeft} onClick={this.prev}/>
+              <RightArrow src={arrowRight} onClick={this.next}/>
+            </DirCon>
 
-            </CarouselInner>
-          </CarouselCon>
-          {projectList}
-        </MasterContainer>
-      );
+          </CarouselInner>
+        </CarouselCon>
+        {projectList}
+      </MasterContainer>);
     }
   }
 
