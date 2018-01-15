@@ -22,7 +22,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-
 // Firebase Configuration
 var config = {
   apiKey: "AIzaSyDRRWbzzADN3rhjBWpZeiHfaIq4a1gvIOY",
@@ -36,46 +35,49 @@ firebase.initializeApp(config);
 
 //push notifications permission
 const messaging = firebase.messaging()
-  // messaging.requestPermission().then(() => {
-  //   // console.log('Have Pemission');
-  //   return messaging.getToken()
-  // }).then((token) => {
-  //
-  //   //add tooken to database
-  //   // console.log('token:', token);
-  //   // firebase.database().ref(`tokens/`).update({token: token})
-  //   // alert(token)
-  // })
 
-  messaging.onMessage((data) => {
-    console.log(data);
-  })
-  //add visit
-  let current,
-    d = new Date(),
-    months = [
-      'Jan',
-      'Feb',
-      'March',
-      'Apr',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
-    ],
-    currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
+//get token
+messaging.getToken().then(function(currentToken) {
+  if (currentToken) {
+    console.log(currentToken)
+    
+  } else {
+    // Show permission request.
+    console.log('No Instance ID token available. Request permission to generate one.');
+    // Show permission UI.
+  }
+}).catch(function(err) {
+  console.log('An error occurred while retrieving token. ', err);
+})
 
-  firebase.database().ref('visits').once('value').then(function(snap) {
-    current = snap.val().count
-    let n = current + 1
-    firebase.database().ref(`visits/`).update({count: n, date: currentDate})
-  })
+messaging.onMessage((data) => {
+console.log(data);
+})
+//add visit
+let current,
+d = new Date(),
+months = [
+  'Jan',
+  'Feb',
+  'March',
+  'Apr',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+],
+currentDate = '' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
 
-  ReactDOM.render(
-    <Provider store={store}>
-    <App/>
-  </Provider>, document.getElementById('root'));
+firebase.database().ref('visits').once('value').then(function(snap) {
+current = snap.val().count
+let n = current + 1
+firebase.database().ref(`visits/`).update({count: n, date: currentDate})
+})
+
+ReactDOM.render(<Provider store={store}>
+<App/>
+</Provider>, document.getElementById('root'));

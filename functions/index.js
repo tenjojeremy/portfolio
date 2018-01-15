@@ -12,6 +12,6 @@ exports.sendView = functions.database.ref('/visits/count').onUpdate(event => {
       sound: 'default'
     }
   }
-  return admin.messaging().sendToDevice("e1YmfJ_r1kE:APA91bFKYswOLK-EqknlkIioGtbYWK6mQUxjjXRVUh9XB0UKonqbAqC-7O4rmArou58e3w6X6UQAL2Lj3R038qqc2aud6ZaBcaE1vlhoKXZHHnh-rwgcWCAEGtGdWVCP8wqDQTjMztYx", payload);
+  return admin.messaging().sendToDevice("c_cjtWvFU-M:APA91bHGQnJDZRT7jwUdhlWn2p1uj8MouncSDH9fl1W9lI0F-n-kSz3hhdEaVXEABhigDxrKkbXZeotw4bWbZ6mwKoO5ypoDPXxxy3ANrF7q3BY0bGSM8nRSlKno4GDFAYYaN5MtHorS", payload);
 
 });
