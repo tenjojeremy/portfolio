@@ -38,7 +38,7 @@ class ComingSoon extends React.Component {
 
 //Style
 const Wrapper = styled.div `
-background: linear-gradient(0deg,rgba(33,33,33,0.61),rgba(33,33,33,0.61)),url(${backgroundIMG});
+background: linear-gradient(0deg,rgba(33,33,33,0.30),rgba(33,33,33,0.30)),url(${backgroundIMG});
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -47,13 +47,15 @@ height: 200px;
 
 @media (min-width: 600px) {
   height: 400px;
-
  }
 `;
-const Content = styled.div `
-    grid-area: a;
-    align-self: center;
 
+const Content = styled.div `
+    padding-top: 15px;
+        @media (min-width: 600px) {
+          padding-top: 95px;
+
+     }
 `;
 const Header = styled.div `
   display: grid;
