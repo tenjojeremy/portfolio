@@ -9,7 +9,7 @@ exports.sendView = functions.database.ref('/visits/count').onUpdate(event => {
     notification: {
       title: 'JT Showcase',
       body: 'Portfolio Viewed!',
-      sound: 'default'
+      sound: 'default',
       token: original
     }
   }

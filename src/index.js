@@ -40,8 +40,8 @@ const messaging = firebase.messaging()
 let token
 messaging.getToken().then(function(currentToken) {
   if (currentToken) {
-    console.log(currentToken)
     token = currentToken
+    console.log(token);
   } else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
