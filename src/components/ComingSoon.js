@@ -65,11 +65,10 @@ const Header = styled.div `
   grid-template-columns: auto 200px;
 grid-gap: 20px;
 position: relative;
-height: 100%;
+height: 112px;
 img {
   width: 60px;
-  ${'' /* height: 100%; */}
-  height: 72px;
+  height: 100%;
   @media (min-width: 400px) {
     width: 70px;
 
