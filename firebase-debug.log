@@ -70,3 +70,137 @@
     }
   }
 }
+[debug] [2018-01-16T00:09:06.497Z] ----------------------------------------------------------------------
+[debug] [2018-01-16T00:09:06.500Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-01-16T00:09:06.500Z] CLI Version:   3.16.0
+[debug] [2018-01-16T00:09:06.500Z] Platform:      win32
+[debug] [2018-01-16T00:09:06.500Z] Node Version:  v8.4.0
+[debug] [2018-01-16T00:09:06.500Z] Time:          Mon Jan 15 2018 19:09:06 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:06.500Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-16T00:09:06.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-16T00:09:06.511Z] > authorizing via signed-in user
+[debug] [2018-01-16T00:09:06.513Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+  
+ Mon Jan 15 2018 19:09:06 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:06.900Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T00:09:06.901Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+  
+ Mon Jan 15 2018 19:09:06 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:07.360Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-83749'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2018-01-16T00:09:07.741Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~5.2.1",
+    "firebase-functions": "^0.6.2"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-01-16T00:09:07.743Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/portfolio-83749?view=CONSUMER_VIEW  
+  
+ Mon Jan 15 2018 19:09:07 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:07.743Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/portfolio-83749?view=CONSUMER_VIEW  
+  
+ Mon Jan 15 2018 19:09:07 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:08.391Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T00:09:08.426Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2018-01-16T00:09:08.427Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/portfolio-83749  
+  
+ Mon Jan 15 2018 19:09:08 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:08.428Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/portfolio-83749/apiKeys  
+  
+ Mon Jan 15 2018 19:09:08 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:08.777Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T00:09:08.855Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-01-16T00:09:14.809Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/portfolio-83749/configs  
+  
+ Mon Jan 15 2018 19:09:14 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:15.281Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (14.67 KB) for uploading
+[debug] [2018-01-16T00:09:21.160Z] >>> HTTP REQUEST GET https://www.googleapis.com/storage/v1/b/staging.portfolio-83749.appspot.com  
+  
+ Mon Jan 15 2018 19:09:21 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:21.456Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T00:09:21.456Z] >>> HTTP REQUEST POST https://www.googleapis.com/upload/storage/v1/b/staging.portfolio-83749.appspot.com/o?uploadType=media&name=firebase-functions-source  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 15018,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'C:\\Users\\jeremy\\AppData\\Local\\Temp\\firebase-functions-15124GELvdhkdXMQO.zip',
+  fd: 5,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: undefined,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 15018 } 
+ Mon Jan 15 2018 19:09:21 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:22.094Z] <<< HTTP RESPONSE 200
+[info] +  functions: functions folder uploaded successfully
+[info] i  hosting: preparing build directory for upload...
+[debug] [2018-01-16T00:09:23.216Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-83749/uploads/-L2wI3zWEqdfpMPK2m03?fileCount=107&message=  
+  
+ Mon Jan 15 2018 19:09:23 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:09:33.738Z] <<< HTTP RESPONSE 502
+[debug] [2018-01-16T00:09:33.738Z] <<< HTTP RESPONSE BODY <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+[debug] [2018-01-16T00:09:33.739Z] TypeError: Cannot create property 'error' on string '<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+'
+    at module.exports (C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:11:16)
+    at Request._callback (C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:45:25)
+    at Request.self.callback (C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:125:13)
+    at Request.emit (events.js:213:7)
+    at Request.<anonymous> (C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1163:10)
+    at emitOne (events.js:115:13)
+    at Request.emit (events.js:210:7)
+    at IncomingMessage.<anonymous> (C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1085:12)
+    at Object.onceWrapper (events.js:314:30)
+[error] 
+[error] Error: An unexpected error has occurred.
