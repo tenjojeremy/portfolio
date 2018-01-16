@@ -68,7 +68,8 @@ position: relative;
 height: 100%;
 img {
   width: 60px;
-  height: 100%;
+  ${'' /* height: 100%; */}
+  height: 72px;
   @media (min-width: 400px) {
     width: 70px;
 
