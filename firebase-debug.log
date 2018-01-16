@@ -1,0 +1,72 @@
+[debug] [2018-01-16T00:04:43.181Z] ----------------------------------------------------------------------
+[debug] [2018-01-16T00:04:43.184Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jeremy\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-01-16T00:04:43.185Z] CLI Version:   3.16.0
+[debug] [2018-01-16T00:04:43.185Z] Platform:      win32
+[debug] [2018-01-16T00:04:43.185Z] Node Version:  v8.4.0
+[debug] [2018-01-16T00:04:43.186Z] Time:          Mon Jan 15 2018 19:04:43 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:04:43.186Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-16T00:04:43.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-16T00:04:43.204Z] > authorizing via signed-in user
+[debug] [2018-01-16T00:04:43.206Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-16T00:04:43.206Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/R63God7W9vtfNpef_rDtxH55rEdJP4864tAmKES6sSk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jan 15 2018 19:04:43 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:04:43.664Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T00:04:43.788Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-83749  
+  
+ Mon Jan 15 2018 19:04:43 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:04:44.227Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-16T00:04:44.228Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-83749/tokens  
+  
+ Mon Jan 15 2018 19:04:44 GMT-0500 (Eastern Standard Time)
+[debug] [2018-01-16T00:04:49.432Z] <<< HTTP RESPONSE 500
+[debug] [2018-01-16T00:04:49.432Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, An unknown error occurred. Please contact support.
+[debug] [2018-01-16T00:04:49.435Z] Error Context: {
+  "body": {
+    "error": {
+      "code": "UNKNOWN_ERROR",
+      "message": "An unknown error occurred. Please contact support."
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": "UNKNOWN_ERROR",
+        "message": "An unknown error occurred. Please contact support."
+      }
+    },
+    "headers": {
+      "server": "nginx",
+      "date": "Tue, 16 Jan 2018 00:04:48 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "97",
+      "connection": "close",
+      "x-content-type-options": "nosniff"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "admin.firebase.com",
+        "port": 443,
+        "hostname": "admin.firebase.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/database/portfolio-83749/tokens",
+        "path": "/v1/database/portfolio-83749/tokens",
+        "href": "https://admin.firebase.com/v1/database/portfolio-83749/tokens"
+      },
+      "method": "GET"
+    }
+  }
+}

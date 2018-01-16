@@ -37,22 +37,22 @@ firebase.initializeApp(config);
 const messaging = firebase.messaging()
 
 //get token
-let token
-messaging.getToken().then(function(currentToken) {
-  if (currentToken) {
-    token = currentToken
-    console.log(token);
-  } else {
-    // Show permission request.
-    console.log('No Instance ID token available. Request permission to generate one.');
-    // Show permission UI.
-  }
-}).catch(function(err) {
-  console.log('An error occurred while retrieving token. ', err);
-})
+// let token
+// messaging.getToken().then(function(currentToken) {
+//   if (currentToken) {
+//     token = currentToken
+//     console.log(token);
+//   } else {
+//     // Show permission request.
+//     console.log('No Instance ID token available. Request permission to generate one.');
+//     // Show permission UI.
+//   }
+// }).catch(function(err) {
+//   console.log('An error occurred while retrieving token. ', err);
+// })
 
 messaging.onMessage((data) => {
-console.log(data);
+// console.log(data);
 })
 
 //add visit
@@ -79,7 +79,8 @@ firebase.database().ref('visits').once('value').then(function(snap) {
 current = snap.val().count
 let n = current + 1
 
-firebase.database().ref(`visits/`).update({count: n, date: currentDate, token: token})
+// firebase.database().ref(`visits/`).update({count: n, date: currentDate, token: token})
+firebase.database().ref(`visits/`).update({count: n, date: currentDate})
 })
 
 ReactDOM.render(<Provider store={store}>

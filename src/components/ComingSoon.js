@@ -65,6 +65,7 @@ const Header = styled.div `
   grid-template-columns: auto 200px;
 grid-gap: 20px;
 position: relative;
+height: 100%;
 img {
   width: 60px;
   height: 100%;
