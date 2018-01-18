@@ -39,7 +39,7 @@ class ComingSoon extends React.Component {
 //Style
 const Wrapper = styled.div `
 box-shadow: inset 0px 0px 250px rgba(0, 231, 120, 0.3);
-background: linear-gradient(0deg,rgba(33,33,33,0.30),rgba(33,33,33,0.30)),url(${backgroundIMG});
+background: linear-gradient(108.05deg, rgba(0, 184, 212, 0.9) 0%, rgba(0, 191, 165, 0.9) 100%),url(${backgroundIMG});
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
