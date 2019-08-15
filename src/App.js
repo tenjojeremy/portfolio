@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 import Project from './components/project'
 import styled from 'styled-components'
 import Intro from './containers/intro'
-import ComingSoon from './components/ComingSoon'
+import LibraryItem from './components/LibraryItem'
 import ProjectsData from './projectData.json'
 import arrowLeft from './images/arrowLeft.svg'
 import arrowRight from './images/arrowRight.svg'
 import close from './images/close.svg'
 import SwipeableViews from 'react-swipeable-views'
+import Libraries from './libraries'
 
 //State
 import { bindActionCreators } from 'redux'
@@ -192,7 +193,10 @@ class App extends Component {
     return (
       <MasterContainer>
         <Intro />
-        {/* <ComingSoon /> */}
+
+        {Libraries.map((lib) => {
+          return <LibraryItem {...lib} />
+        })}
 
         <CarouselCon>
           <CarouselInner>
@@ -200,7 +204,9 @@ class App extends Component {
               <CloseIcon src={close} onClick={this.closeCar} />
             </CloseIconCon>
 
-            <SwipeableViews index={this.props.currentIndex}>{list}</SwipeableViews>
+            <SwipeableViews index={this.props.currentIndex}>
+              {list}
+            </SwipeableViews>
 
             <DirCon>
               <LeftArrow src={arrowLeft} onClick={this.prev} />
@@ -214,4 +220,7 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)
