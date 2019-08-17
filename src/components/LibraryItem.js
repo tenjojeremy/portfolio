@@ -5,7 +5,7 @@ import StorybookIcon from '../images/storybook.svg'
 
 import mainIcon from './../images/FootyCityIcon.svg'
 
-const ComingSoon = ({ name, logo, repo, site, backgroundIMG }) => {
+const ComingSoon = ({ name, logo, repo, site, backgroundIMG, description }) => {
   return (
     <Wrapper backgroundIMG={backgroundIMG}>
       <Content>
@@ -13,7 +13,7 @@ const ComingSoon = ({ name, logo, repo, site, backgroundIMG }) => {
           <img src={logo} alt="app" />
           <p>{name}</p>
         </Header>
-        <Title>A component and utility library</Title>
+        <Title>{description}</Title>
 
         <Links>
           <a title="Repo" target="_blank" rel="noopener noreferrer" href={repo}>
