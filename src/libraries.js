@@ -7,6 +7,6 @@ export default [
     site: 'https://tenjo-web-toolkit.web.app',
     backgroundIMG:
       'https://images.unsplash.com/photo-1516259680870-b878830674f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
-    description: 'A web component and utility library'
+    description: 'A library of web components and utilities'
   }
 ]
