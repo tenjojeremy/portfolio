@@ -56,8 +56,8 @@ class name extends React.Component {
           <AboutMe>
             I am a web developer who enjoys the challenges of solving modern
             problems by using the latest and greatest web tools at my disposal.
-            I love Javascript, but I am always experimenting with new
-            technologies that make my development more efficient.
+            I love Javascript and always experimenting with new technologies
+            that make my development more efficient.
           </AboutMe>
           <Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
           <LinksCon>
@@ -82,7 +82,7 @@ class name extends React.Component {
               title="Portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=b46e484b-63ed-41b4-8dfc-e2104be106b8"
+              href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=3f0bebdf-3355-4ebc-983e-a5c2cb870b09"
             >
               <Icon src={ResumeIcon} alt="CV icon" />
             </a>
