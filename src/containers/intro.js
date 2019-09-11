@@ -56,7 +56,7 @@ class name extends React.Component {
           <AboutMe>
             I am a web developer who enjoys the challenges of solving modern
             problems by using the latest and greatest web tools at my disposal.
-            I love Javascript and always experimenting with new technologies
+            I love Javascript and I'm always experimenting with new technologies
             that make my development more efficient.
           </AboutMe>
           <Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
