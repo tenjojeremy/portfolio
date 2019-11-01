@@ -82,7 +82,7 @@ class name extends React.Component {
               title="Portfolio"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=d9acbe64-ad23-44d6-837f-e7c0b1f2ec5c"
+              href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=df61aa7d-2c0a-4af3-a753-3768b7125635"
             >
               <Icon src={ResumeIcon} alt="CV icon" />
             </a>
