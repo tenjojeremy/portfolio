@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import GithubIcon from '../images/github.svg'
 import StorybookIcon from '../images/storybook.svg'
-
-import mainIcon from './../images/FootyCityIcon.svg'
 
 const ComingSoon = ({ name, logo, repo, site, backgroundIMG, description }) => {
   return (
@@ -34,7 +33,6 @@ const ComingSoon = ({ name, logo, repo, site, backgroundIMG, description }) => {
   )
 }
 
-//Style
 const Wrapper = styled.div`
   box-shadow: inset 0px 0px 250px rgba(0, 231, 120, 0.3);
   background: linear-gradient(

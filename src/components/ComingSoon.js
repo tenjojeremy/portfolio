@@ -1,20 +1,20 @@
 //Vendors
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 //Components
 
 //Images
-import backgroundIMG from './../images/background.jpg'
-import mainIcon from './../images/FootyCityIcon.svg'
+import backgroundIMG from "./../images/background.jpg";
+import mainIcon from "./../images/FootyCityIcon.svg";
 
 class ComingSoon extends React.Component {
   //initial state
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       ...props
-    }
+    };
   }
 
   //Methods
@@ -35,7 +35,7 @@ class ComingSoon extends React.Component {
           <ComingSoonTitle>COMING SOON</ComingSoonTitle>
         </Content>
       </Wrapper>
-    )
+    );
   }
 }
 
@@ -57,14 +57,14 @@ const Wrapper = styled.div`
   @media (min-width: 600px) {
     height: 400px;
   }
-`
+`;
 
 const Content = styled.div`
   padding-top: 15px;
   @media (min-width: 600px) {
     padding-top: 70px;
   }
-`
+`;
 const Header = styled.div`
   display: grid;
   margin: 0 auto;
@@ -102,7 +102,7 @@ const Header = styled.div`
       font-size: 65px;
     }
   }
-`
+`;
 
 const ComingSoonTitle = styled.p`
   font-family: HammersmithOne;
@@ -121,5 +121,5 @@ const ComingSoonTitle = styled.p`
   @media (min-width: 600px) {
     font-size: 40px;
   }
-`
-export default ComingSoon
+`;
+export default ComingSoon;
