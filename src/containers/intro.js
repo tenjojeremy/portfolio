@@ -1,26 +1,26 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import { goToAnchor } from "react-scrollable-anchor";
+import React from 'react'
+import styled, { keyframes } from 'styled-components'
+import { goToAnchor } from 'react-scrollable-anchor'
 
-import Particles from "../components/particles";
-import LinkedinIcon from "../images/linkedin.svg";
-import GithubIcon from "../images/github.svg";
-import ResumeIcon from "../images/ResumeIcon.svg";
-import arrowDownIcon from "../images/arrowDown.svg";
+import Particles from '../components/particles'
+import LinkedinIcon from '../images/linkedin.svg'
+import GithubIcon from '../images/github.svg'
+import ResumeIcon from '../images/ResumeIcon.svg'
+import arrowDownIcon from '../images/arrowDown.svg'
 
 class name extends React.Component {
   //initial state
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      data: "initial"
-    };
+      data: 'initial'
+    }
   }
 
   //Methods
   ScrollDown = () => {
-    goToAnchor("firstProject", true);
-  };
+    goToAnchor('firstProject', true)
+  }
   render() {
     //Properties
     const rotate360 = keyframes`
@@ -31,7 +31,7 @@ class name extends React.Component {
 			to {
 				opacity: 1;
 			}
-		`;
+		`
     const ArrowDown = styled.img`
       display: block;
       margin: 0 auto;
@@ -46,7 +46,7 @@ class name extends React.Component {
         right: 0;
         margin: auto;
       }
-    `;
+    `
     //Template
     return (
       <ParticlesCon>
@@ -95,7 +95,7 @@ class name extends React.Component {
           />
         </InfoContainer>
       </ParticlesCon>
-    );
+    )
   }
 }
 
@@ -110,26 +110,26 @@ const AboutMe = styled.p`
   @media (min-width: 600px) {
     font-size: 18px;
   }
-`;
+`
 const Linktext = styled.p`
   color: #bdbdbd;
   text-align: center;
   font-size: 12px;
-`;
+`
 const Icon = styled.img`
   width: 40px;
   padding: 10px;
-`;
+`
 const LinksCon = styled.div`
-  ${"" /* background: red; */} height: 70px;
+  ${'' /* background: red; */} height: 70px;
   width: 180px;
   margin: 0 auto;
-`;
+`
 const ParticlesCon = styled.div`
   height: 100vh;
   background: #182327;
   position: relative;
-`;
+`
 
 const InfoContainer = styled.div`
   height: 520px;
@@ -145,10 +145,10 @@ const InfoContainer = styled.div`
     right: 0;
     margin: auto;
   }
-`;
+`
 const Title = styled.p`
   color: #049372;
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   font-weight: bolder;
   font-size: 50px;
   line-height: 78px;
@@ -162,13 +162,13 @@ const Title = styled.p`
   @media (min-width: 950px) {
     font-size: 66px;
   }
-`;
+`
 const SubTitle = styled.p`
   text-align: center;
   font-size: 20px;
   line-height: 25px;
   color: white;
   font-weight: bold;
-`;
+`
 
-export default name;
+export default name
