@@ -77,8 +77,7 @@ firebase
 
 ReactDOM.render(
   <Provider store={store}>
-    {/* <App /> */}
-    asdf
+    <App />
   </Provider>,
   document.getElementById('root')
 )
