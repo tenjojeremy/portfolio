@@ -9,17 +9,6 @@ import App from './app'
 import Reducers from './state/reducers'
 const store = createStore(Reducers)
 
-//subscribe to GMC
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.ready.then((sw) => {
-    sw.pushManager
-      .subscribe({ userVisibleOnly: true })
-      .then(function(subscription) {
-        // console.log('endpoint:', subscription.endpoint);
-      })
-  })
-}
-
 // Firebase Configuration
 const config = {
   apiKey: 'AIzaSyDRRWbzzADN3rhjBWpZeiHfaIq4a1gvIOY',
@@ -31,13 +20,6 @@ const config = {
   appId: '1:7666199790:web:19f33a4fa0d7eb3fa397ff'
 }
 firebase.initializeApp(config)
-
-//push notifications permission
-const messaging = firebase.messaging.isSupported() ? firebase.messaging() : null
-
-messaging.onMessage((data) => {
-  // console.log(data);
-})
 
 //add visit
 let current,
@@ -68,7 +50,6 @@ firebase
     current = snap.val().count
     let n = current + 1
 
-    // firebase.database().ref(`visits/`).update({count: n, date: currentDate, token: token})
     firebase
       .database()
       .ref(`visits/`)
