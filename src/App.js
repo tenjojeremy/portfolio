@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import SwipeableViews from 'react-swipeable-views'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import SrollBackToTop from '@tenjojeremy/web-toolkit/dataDisplay/icon/special/srollBackToTop'
 
 import Project from './components/project'
 import Intro from './containers/intro'
@@ -211,6 +212,7 @@ class App extends Component {
           </CarouselInner>
         </CarouselCon>
         {projectList}
+        <SrollBackToTop />
       </MasterContainer>
     )
   }

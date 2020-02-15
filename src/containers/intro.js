@@ -68,7 +68,7 @@ const AboutMe = styled.p`
   font-size: 16px;
   margin-top: 40px;
   margin-bottom: 40px;
-  line-height: 21px;
+  line-height: 23px;
   letter-spacing: 2px;
   padding: 0 20px;
   @media (min-width: 600px) {
@@ -144,7 +144,7 @@ const SubTitle = styled.p`
   text-align: center;
   font-size: 20px;
   line-height: 25px;
-  color: #eeeeee;
+  color: #e7e7e7;
   font-weight: bold;
 `
 
