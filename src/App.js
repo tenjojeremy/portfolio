@@ -135,7 +135,7 @@ class App extends Component {
     const projectList = ProjectsData.map((project, index) => {
       if (index === 0) {
         return (
-          <span key={project.name.toString()} id="firstProject">
+          <span key={project.name.toString()}>
             <Project
               name={project.name}
               description={project.description}
@@ -184,7 +184,7 @@ class App extends Component {
 
     return (
       <MasterContainer>
-        {/* <Intro /> */}
+        <Intro />
 
         <div id="libraryContainer">
           {libraries.map((lib) => (
