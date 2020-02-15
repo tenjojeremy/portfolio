@@ -1,18 +1,18 @@
-import React, { Component, Fragment } from "react";
-import styled from "styled-components";
-import SwipeableViews from "react-swipeable-views";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
+import React, { Component, Fragment } from 'react'
+import styled from 'styled-components'
+import SwipeableViews from 'react-swipeable-views'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import Project from "./components/project";
-import Intro from "./containers/intro";
-import LibraryItem from "./components/LibraryItem";
-import ProjectsData from "./projectData.json";
-import arrowLeft from "./images/arrowLeft.svg";
-import arrowRight from "./images/arrowRight.svg";
-import close from "./images/close.svg";
-import Libraries from "./libraries";
-import { Toggle_Carousel, Set_Current_Index } from "./state/actions/index";
+import Project from './components/project'
+import Intro from './containers/intro'
+import LibraryItem from './components/LibraryItem'
+import ProjectsData from './projectData.json'
+import arrowLeft from './images/arrowLeft.svg'
+import arrowRight from './images/arrowRight.svg'
+import close from './images/close.svg'
+import libraries from './libraries'
+import { Toggle_Carousel, Set_Current_Index } from './state/actions/index'
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
@@ -21,8 +21,9 @@ function mapDispatchToProps(dispatch) {
       Set_Current_Index
     },
     dispatch
-  );
+  )
 }
+
 function mapStateToProps(state) {
   return {
     toggleCarousel: state.ToogleCarousel,
@@ -30,34 +31,35 @@ function mapStateToProps(state) {
     currentIndex: state.CurrentIndex,
     imagesFolder: state.imagesFolder,
     gallerySelected: state.GallerySelected
-  };
+  }
 }
+
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       index: this.props.currentIndex
-    };
+    }
   }
   closeCar = () => {
-    this.props.Toggle_Carousel(false);
-  };
+    this.props.Toggle_Carousel(false)
+  }
   prev = () => {
     if (this.props.currentIndex !== 0) {
-      let n = this.props.currentIndex - 1;
-      this.props.Set_Current_Index(n);
+      let n = this.props.currentIndex - 1
+      this.props.Set_Current_Index(n)
     } else {
-      this.props.Set_Current_Index(this.props.galleryCount);
+      this.props.Set_Current_Index(this.props.galleryCount)
     }
-  };
+  }
   next = () => {
     if (this.props.currentIndex < this.props.galleryCount) {
-      let n = this.props.currentIndex + 1;
-      this.props.Set_Current_Index(n);
+      let n = this.props.currentIndex + 1
+      this.props.Set_Current_Index(n)
     } else {
-      this.props.Set_Current_Index(0);
+      this.props.Set_Current_Index(0)
     }
-  };
+  }
 
   render() {
     const MasterContainer = styled.div`
@@ -65,9 +67,9 @@ class App extends Component {
       padding: 0;
       height: 100%;
       width: 100%;
-    `;
+    `
     const CarouselCon = styled.div`
-      display: ${this.props.toggleCarousel ? "block" : "none"};
+      display: ${this.props.toggleCarousel ? 'block' : 'none'};
       background: rgba(255, 255, 255, 0.9);
       height: 100%;
       width: 100%;
@@ -75,13 +77,13 @@ class App extends Component {
       z-index: 99;
       top: 0;
       left: 0;
-    `;
+    `
 
     const styles = {
       padding: 15,
       minHeight: 100,
-      color: "#fff"
-    };
+      color: '#fff'
+    }
 
     const SlideImage = styled.img`
       height: 90%;
@@ -89,34 +91,34 @@ class App extends Component {
       margin: 0 auto;
       display: block;
       max-width: 600px;
-    `;
+    `
     const CloseIcon = styled.img`
       width: 20px;
       position: absolute;
       right: 33px;
       cursor: pointer;
       fill: white;
-    `;
+    `
     const CloseIconCon = styled.div`
       position: relative;
       height: 30px;
-    `;
+    `
     const LeftArrow = styled.img`
       width: 20px;
       position: absolute;
       left: 33px;
       cursor: pointer;
-    `;
+    `
     const RightArrow = styled.img`
       width: 20px;
       position: absolute;
       right: 23px;
       cursor: pointer;
-    `;
+    `
     const DirCon = styled.div`
       position: relative;
       height: 23px;
-    `;
+    `
     const CarouselInner = styled.div`
       position: absolute;
       top: 0;
@@ -129,7 +131,7 @@ class App extends Component {
       @media (max-width: 600px) {
         top: 50px;
       }
-    `;
+    `
     const projectList = ProjectsData.map((project, index) => {
       if (index === 0) {
         return (
@@ -147,7 +149,7 @@ class App extends Component {
               techList={project.techList}
             />
           </span>
-        );
+        )
       }
       return (
         <span key={project.name.toString()}>
@@ -164,31 +166,33 @@ class App extends Component {
             techList={project.techList}
           />
         </span>
-      );
-    });
+      )
+    })
 
     let list = [],
-      source;
+      source
 
     for (var i = 1; i <= this.props.galleryCount; i++) {
-      source = `/images/${this.props.gallerySelected}/${i}.png`;
+      source = `/images/${this.props.gallerySelected}/${i}.png`
 
       list.push(
         <div key={i} style={styles}>
           <SlideImage src={source} />
         </div>
-      );
+      )
     }
 
     return (
       <MasterContainer>
         <Intro />
 
-        {Libraries.map(lib => (
-          <Fragment key={lib.name}>
-            <LibraryItem {...lib} />
-          </Fragment>
-        ))}
+        <div id="libraryContainer">
+          {libraries.map((lib) => (
+            <Fragment key={lib.name}>
+              <LibraryItem {...lib} />
+            </Fragment>
+          ))}
+        </div>
 
         <CarouselCon>
           <CarouselInner>
@@ -208,8 +212,8 @@ class App extends Component {
         </CarouselCon>
         {projectList}
       </MasterContainer>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App)
