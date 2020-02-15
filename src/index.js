@@ -33,7 +33,7 @@ const config = {
 firebase.initializeApp(config)
 
 //push notifications permission
-const messaging = firebase.messaging()
+const messaging = firebase.messaging.isSupported() ? firebase.messaging() : null
 
 messaging.onMessage((data) => {
   // console.log(data);
