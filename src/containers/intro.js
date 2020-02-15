@@ -110,13 +110,13 @@ const InfoContainer = styled.div`
   width: 100%;
   max-width: 390px;
   position: absolute;
-  top: 0;
-  top: 0;
+  top: 20px;
   bottom: auto;
   left: 0;
   right: 0;
   margin: auto;
   @media (min-height: 635px) {
+    top: 0;
     bottom: 0;
   }
 `

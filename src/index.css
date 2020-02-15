@@ -3,9 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
   overflow-x: hidden;
+  background: #0302dc;
 }
 
 @font-face {
-  font-family: "HammersmithOne";
-  src: url("./fonts/HammersmithOne.ttf") format("truetype");
+  font-family: 'HammersmithOne';
+  src: url('./fonts/HammersmithOne.ttf') format('truetype');
 }

@@ -9,7 +9,6 @@ import App from './app'
 import Reducers from './state/reducers'
 const store = createStore(Reducers)
 
-// Firebase Configuration
 const config = {
   apiKey: 'AIzaSyDRRWbzzADN3rhjBWpZeiHfaIq4a1gvIOY',
   authDomain: 'portfolio-83749.firebaseapp.com',
@@ -20,41 +19,6 @@ const config = {
   appId: '1:7666199790:web:19f33a4fa0d7eb3fa397ff'
 }
 firebase.initializeApp(config)
-
-//add visit
-let current,
-  d = new Date(),
-  months = [
-    'Jan',
-    'Feb',
-    'March',
-    'Apr',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ],
-  currentDate = `${d.getHours()}:${d.getMinutes()} ${
-    months[d.getMonth()]
-  } ${d.getDate()}, ${d.getFullYear()}`
-
-firebase
-  .database()
-  .ref('visits')
-  .once('value')
-  .then(function(snap) {
-    current = snap.val().count
-    let n = current + 1
-
-    firebase
-      .database()
-      .ref(`visits/`)
-      .update({ count: n, date: currentDate })
-  })
 
 ReactDOM.render(
   <Provider store={store}>
