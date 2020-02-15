@@ -184,7 +184,7 @@ class App extends Component {
 
     return (
       <MasterContainer>
-        <Intro />
+        {/* <Intro /> */}
 
         <div id="libraryContainer">
           {libraries.map((lib) => (
