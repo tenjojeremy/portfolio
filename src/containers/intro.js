@@ -64,7 +64,7 @@ const Intro = () => {
 
 const AboutMe = styled.p`
   text-align: center;
-  color: #e7e7e7;
+  color: #b5fffc;
   font-size: 16px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -143,9 +143,10 @@ const Title = styled.p`
 const SubTitle = styled.p`
   text-align: center;
   font-size: 20px;
-  line-height: 25px;
-  color: #e7e7e7;
+  line-height: 27px;
+  color: #b5fffc;
   font-weight: bold;
+  margin-top: 0;
 `
 
 export default Intro
