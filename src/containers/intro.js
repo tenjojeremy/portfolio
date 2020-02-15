@@ -9,7 +9,6 @@ import ResumeIcon from '../images/ResumeIcon.svg'
 import arrowDownIcon from '../images/arrowDown.svg'
 
 class name extends React.Component {
-  //initial state
   constructor(props) {
     super(props)
     this.state = {
@@ -17,12 +16,11 @@ class name extends React.Component {
     }
   }
 
-  //Methods
   ScrollDown = () => {
     goToAnchor('firstProject', true)
   }
+
   render() {
-    //Properties
     const rotate360 = keyframes`
 			from {
 				opacity: 0.3;
@@ -47,7 +45,6 @@ class name extends React.Component {
         margin: auto;
       }
     `
-    //Template
     return (
       <ParticlesCon>
         <Particles />
@@ -60,7 +57,6 @@ class name extends React.Component {
             I love Javascript and I'm always experimenting with new frameworks
             and libraries that make my development more efficient.
           </AboutMe>
-          <Linktext>Check out my Linkedin, GitHub and Resume</Linktext>
           <LinksCon>
             <a
               title="Linkedin"
@@ -101,7 +97,7 @@ class name extends React.Component {
 
 const AboutMe = styled.p`
   text-align: center;
-  color: white;
+  color: #e0e0e0;
   font-size: 16px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -121,13 +117,13 @@ const Icon = styled.img`
   padding: 10px;
 `
 const LinksCon = styled.div`
-  ${'' /* background: red; */} height: 70px;
+  height: 70px;
   width: 180px;
   margin: 0 auto;
 `
 const ParticlesCon = styled.div`
   height: 100vh;
-  background: #182327;
+  background: #0302dc;
   position: relative;
 `
 
@@ -147,8 +143,7 @@ const InfoContainer = styled.div`
   }
 `
 const Title = styled.p`
-  color: #049372;
-  font-family: 'PT Serif', serif;
+  color: #b5fffc;
   font-weight: bolder;
   font-size: 50px;
   line-height: 78px;
@@ -156,6 +151,9 @@ const Title = styled.p`
   margin-bottom: 10px;
   text-align: center;
   margin-top: 0;
+  @media (min-width: 360px) {
+    white-space: nowrap;
+  }
   @media (min-width: 600px) {
     font-size: 66px;
   }
@@ -167,7 +165,7 @@ const SubTitle = styled.p`
   text-align: center;
   font-size: 20px;
   line-height: 25px;
-  color: white;
+  color: #eeeeee;
   font-weight: bold;
 `
 

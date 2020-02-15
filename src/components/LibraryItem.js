@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import GithubIcon from '../images/github.svg'
-import StorybookIcon from '../images/storybook.svg'
+import GithubIcon from "../images/github.svg";
+import StorybookIcon from "../images/storybook.svg";
 
 const ComingSoon = ({ name, logo, repo, site, backgroundIMG, description }) => {
   return (
@@ -30,8 +30,8 @@ const ComingSoon = ({ name, logo, repo, site, backgroundIMG, description }) => {
         </Links>
       </Content>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   box-shadow: inset 0px 0px 250px rgba(0, 231, 120, 0.3);
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
   @media (min-width: 600px) {
     height: 400px;
   }
-`
+`;
 
 const Icon = styled.img`
   width: 30px;
@@ -60,13 +60,13 @@ const Icon = styled.img`
   @media (min-width: 600px) {
     width: 40px;
   }
-`
+`;
 const Icon2 = styled.img`
   width: 130px;
   @media (min-width: 600px) {
     width: 140px;
   }
-`
+`;
 
 const Links = styled.div`
   display: grid;
@@ -76,7 +76,7 @@ const Links = styled.div`
   justify-content: center;
   align-items: center;
   grid-gap: 15px;
-`
+`;
 
 const Content = styled.div`
   display: grid;
@@ -87,7 +87,7 @@ const Content = styled.div`
   @media (min-width: 600px) {
     padding: 0;
   }
-`
+`;
 
 const Header = styled.div`
   display: grid;
@@ -125,7 +125,7 @@ const Header = styled.div`
       font-size: 65px;
     }
   }
-`
+`;
 
 const Title = styled.p`
   font-family: HammersmithOne;
@@ -138,5 +138,5 @@ const Title = styled.p`
   margin: 0;
   width: 100%;
   font-size: 18px;
-`
-export default ComingSoon
+`;
+export default ComingSoon;
