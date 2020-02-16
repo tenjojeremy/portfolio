@@ -212,7 +212,7 @@ class App extends Component {
           </CarouselInner>
         </CarouselCon>
         {projectList}
-        <SrollBackToTop />
+        <SrollBackToTop iconProps={{ color: 'primaryLighter' }} />
       </MasterContainer>
     )
   }

@@ -64,7 +64,7 @@ const Intro = () => {
 
 const AboutMe = styled.p`
   text-align: center;
-  color: #b5fffc;
+  color: var(--color-primaryLighter);
   font-size: 16px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -121,7 +121,7 @@ const InfoContainer = styled.div`
   }
 `
 const Title = styled.p`
-  color: #b5fffc;
+  color: var(--color-primaryLighter);
   font-weight: bolder;
   font-size: 50px;
   line-height: 78px;
@@ -144,7 +144,7 @@ const SubTitle = styled.p`
   text-align: center;
   font-size: 20px;
   line-height: 27px;
-  color: #b5fffc;
+  color: var(--color-primaryLighter);
   font-weight: bold;
   margin-top: 0;
 `
