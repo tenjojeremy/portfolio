@@ -51,7 +51,7 @@ const Intro = () => {
             title="Portfolio"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=df61aa7d-2c0a-4af3-a753-3768b7125635"
+            href="https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=920f127b-f57d-4aae-a530-c123d6e409c9"
           >
             <Icon src={ResumeIcon} alt="CV icon" />
           </a>
