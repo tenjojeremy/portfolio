@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
+import React from 'react'
+import styled from 'styled-components'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-import LinkButton from "../components/linkButton";
+import LinkButton from '../components/linkButton'
 import {
   Toggle_Carousel,
   Set_Gallery,
   Set_Current_Index,
   Set_Gallery_Count
-} from "../state/actions/index";
+} from '../state/actions/index'
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
@@ -20,11 +20,11 @@ function mapDispatchToProps(dispatch) {
       Set_Gallery_Count
     },
     dispatch
-  );
+  )
 }
 class Projects extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       name: props.name,
       description: props.description,
@@ -36,52 +36,53 @@ class Projects extends React.Component {
       imagesFolder: props.imagesFolder,
       imagesGallery: props.imagesGallery,
       techList: props.techList
-    };
+    }
   }
 
   showCarousel = (imagesFolder, i) => {
-    this.props.Set_Gallery(imagesFolder);
-    this.props.Set_Gallery_Count(this.state.imagesGallery);
-    this.props.Set_Current_Index(i);
-    this.props.Toggle_Carousel(true);
-  };
+    this.props.Set_Gallery(imagesFolder)
+    this.props.Set_Gallery_Count(this.state.imagesGallery)
+    this.props.Set_Current_Index(i)
+    this.props.Toggle_Carousel(true)
+  }
 
   render() {
     let listGallery = [],
       source,
       index,
-      listTechCount = this.state.techList;
+      listTechCount = this.state.techList
 
     for (var i = 1; i <= this.state.imagesGallery; i++) {
-      source = `/images/${this.state.imagesFolder}/${i}.png`;
+      source = `/images/${this.state.imagesFolder}/${i}.png`
 
       listGallery.push(
         <GalleryItem
+          loading="lazy"
           key={i}
           data-index={i}
           src={source}
-          onClick={e => {
-            index = e.target.dataset.index - 1;
-            this.showCarousel(this.state.imagesFolder, index);
+          onClick={(e) => {
+            index = e.target.dataset.index - 1
+            this.showCarousel(this.state.imagesFolder, index)
           }}
         />
-      );
+      )
     }
 
     let listTech = listTechCount.map((item, i) => {
-      let source2 = `/images/icons/${item}.svg`;
-      if (item === "express") {
-        return <Express key={i}>Express.js</Express>;
+      let source2 = `/images/icons/${item}.svg`
+      if (item === 'express') {
+        return <Express key={i}>Express.js</Express>
       }
-      if (item === "mongodb") {
-        return <Express key={i}>mongoDB</Express>;
+      if (item === 'mongodb') {
+        return <Express key={i}>mongoDB</Express>
       }
       return (
         <li key={i} title={item}>
-          <IconTech src={source2} />
+          <IconTech src={source2} loading="lazy" />
         </li>
-      );
-    });
+      )
+    })
 
     return (
       <ProjectContainer
@@ -103,7 +104,7 @@ class Projects extends React.Component {
           </ProjectDesc>
         </ProjectDescCon>
       </ProjectContainer>
-    );
+    )
   }
 }
 const GalleryItem = styled.img`
@@ -111,7 +112,7 @@ const GalleryItem = styled.img`
   display: block;
   margin: 0 auto;
   cursor: pointer;
-`;
+`
 const GalleryCon = styled.div`
   height: auto;
   display: grid;
@@ -126,7 +127,7 @@ const GalleryCon = styled.div`
   @media (min-width: 950px) {
     height: 200px;
   }
-`;
+`
 const Express = styled.li`
   font-weight: lighter;
   padding: 0;
@@ -134,16 +135,16 @@ const Express = styled.li`
   width: 60px;
   position: relative;
   bottom: 2px;
-`;
+`
 const IconTech = styled.img`
   width: 20px;
-`;
+`
 const TechyTitle = styled.p`
   color: white;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
-`;
+`
 const TechList = styled.ul`
   text-decoration: none;
   list-style: none;
@@ -168,10 +169,10 @@ const TechList = styled.ul`
     margin-left: 0;
     margin-right: 0;
   }
-`;
+`
 const ProjectContainer = styled.div`
-background: ${props => props.color};
-background-image: url('../images/${props => props.imagesFolder}/${props =>
+background: ${(props) => props.color};
+background-image: url('../images/${(props) => props.imagesFolder}/${(props) =>
   props.img}.png');
 background-attachment: fixed;
 background-position: top center;
@@ -185,7 +186,7 @@ width: 100%;
 	background-image: none;
 	height: auto;
 }
-`;
+`
 
 const ProjectDescCon = styled.div`
   height: 100%;
@@ -204,7 +205,7 @@ const ProjectDescCon = styled.div`
     height: auto;
     width: 95%;
   }
-`;
+`
 
 const ProjectDesc = styled.div`
   max-height: 900px;
@@ -232,10 +233,10 @@ const ProjectDesc = styled.div`
     background: none;
     position: static;
   }
-`;
+`
 const Title = styled.p`
   color: white;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 10px;
@@ -247,13 +248,13 @@ const Title = styled.p`
     margin-top: 0px;
     text-align: center;
   }
-`;
+`
 const Position = styled.p`
   color: white;
   margin-top: 3px;
   font-size: 16px;
   line-height: 19px;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   height: 40px;
   border-bottom: 1px solid white;
   margin-bottom: 20px;
@@ -261,22 +262,22 @@ const Position = styled.p`
   @media (max-width: 950px) {
     text-align: center;
   }
-`;
+`
 const Description = styled.p`
   color: white;
   font-size: 19px;
   line-height: 26px;
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   height: auto;
   @media (max-width: 950px) {
     font-size: 16px;
   }
-`;
+`
 
 const Span = styled.div`
-  display: ${props => (props.display !== "" ? "block" : "none")};
+  display: ${(props) => (props.display !== '' ? 'block' : 'none')};
   margin-top: 60px;
   height: 41px;
   margin: 0 auto;
-`;
-export default connect(null, mapDispatchToProps)(Projects);
+`
+export default connect(null, mapDispatchToProps)(Projects)

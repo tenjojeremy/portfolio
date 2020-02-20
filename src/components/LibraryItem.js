@@ -9,7 +9,7 @@ const ComingSoon = ({ name, logo, repo, site, backgroundIMG, description }) => {
     <Wrapper backgroundIMG={backgroundIMG}>
       <Content>
         <Header>
-          <img src={logo} alt="app" />
+          <img src={logo} alt="app" loading="lazy" />
           <p>{name}</p>
         </Header>
         <Title>{description}</Title>
