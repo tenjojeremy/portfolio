@@ -39,7 +39,9 @@ module.exports = `
  /* spacing */
 
   :root {
-  --spacing-unit: 16px;
+  --spacing-auto: auto;
+--spacing-none: 0;
+--spacing-unit: 16px;
 --spacing-xxs: calc(0.25 * var(--spacing-unit));
 --spacing-xs: calc(0.5 * var(--spacing-unit));
 --spacing-s: calc(0.75 * var(--spacing-unit));
@@ -56,13 +58,17 @@ module.exports = `
 --font-secondary: Roboto;
   }
 
-  .typography-h1 {
+  .typography-title {
     font-family:  var(--font-primary);
     font-weight: bolder;
     line-height: 78px;
     text-shadow: rgba(181, 255, 252, 0.19) 0px 0px 9px;
-    white-space: nowrap;
+    font-size: 50px;
+  }
+  @media (min-width: 500px) {
+  .typography-title {
     font-size: 66px;
+    }
   }
   .typography-subtitle {
     font-family:  var(--font-primary);
@@ -74,8 +80,13 @@ module.exports = `
     font-family:  var(--font-primary);
     line-height: 23px;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 16px;
   }
+  @media (min-width: 500px) {
+  .typography-body2 {
+    font-size: 18px;
+      }
+    }
   .typography-h4 {
     font-family:  var(--font-primary);
     font-style: normal;
@@ -175,12 +186,6 @@ body {
 * > *,
 * * {
   box-sizing: border-box;
-}
-
-@media only screen and (min-width: 900px) {
-  body {
-    background-color: var(--color-lightgrey);
-  }
 }
 
 /* forms */

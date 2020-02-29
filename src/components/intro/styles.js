@@ -1,16 +1,49 @@
 export const wrapper = {
-  height: '100vh',
+  height: ['auto', '100vh'],
   backgroundColor: 'primary',
-  width: '100&',
+  width: '100%',
   position: 'relative',
   alignContent: 'center',
   justifyContent: 'center',
 }
 
-export const wrapperInner = {
-  textAlign: 'center',
-  maxWidth: '390px',
-  color: 'primaryLighter',
+export const wrapperParticles = {
+  position: 'absolute',
+  top: 'none',
+  right: 'none',
+  bottom: 'none',
+  left: 'none',
+  overflow: 'hidden',
+  zIndex: 0,
 }
 
-export const description = {}
+export const wrapperInner = {
+  justifyItems: 'center',
+  textAlign: 'center',
+  color: 'primaryLighter',
+  gridGap: 'l',
+  padding: 'm',
+  zIndex: 1,
+}
+
+export const wrapperTitle = {
+  gridGap: 's',
+}
+
+export const title = {
+  whiteSpace: ['normal', 'nowrap'],
+}
+
+export const description = {
+  maxWidth: '390px',
+}
+
+export const wrapperIcon = {
+  gridAutoFlow: 'column',
+  gridGap: 'm',
+}
+
+export const icon = {
+  color: 'primaryLighter',
+  size: 40,
+}

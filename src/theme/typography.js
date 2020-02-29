@@ -5,13 +5,17 @@ module.exports = {
     secondary: 'Roboto',
   },
   types: `
-  .typography-h1 {
+  .typography-title {
     font-family:  var(--font-primary);
     font-weight: bolder;
     line-height: 78px;
     text-shadow: rgba(181, 255, 252, 0.19) 0px 0px 9px;
-    white-space: nowrap;
+    font-size: 50px;
+  }
+  @media (min-width: 500px) {
+  .typography-title {
     font-size: 66px;
+    }
   }
   .typography-subtitle {
     font-family:  var(--font-primary);
@@ -23,8 +27,13 @@ module.exports = {
     font-family:  var(--font-primary);
     line-height: 23px;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 16px;
   }
+  @media (min-width: 500px) {
+  .typography-body2 {
+    font-size: 18px;
+      }
+    }
   .typography-h4 {
     font-family:  var(--font-primary);
     font-style: normal;
