@@ -5,7 +5,6 @@ import { catchAddToHomeScreenPrompt } from '@tenjojeremy/web-toolkit/miscUtils/a
 
 import hideSplashScreen from './.wapp/_splashScreen/hideSplashScreen'
 import './.wapp/_firebase/index'
-import './.wapp/_offlineSupport'
 import Router from './pages/router'
 import Store from './.wapp/_store'
 

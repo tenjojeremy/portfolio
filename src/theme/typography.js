@@ -7,24 +7,23 @@ module.exports = {
   types: `
   .typography-h1 {
     font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 96px;
-    letter-spacing: -1.5px;
+    font-weight: bolder;
+    line-height: 78px;
+    text-shadow: rgba(181, 255, 252, 0.19) 0px 0px 9px;
+    white-space: nowrap;
+    font-size: 66px;
   }
-  .typography-h2 {
+  .typography-subtitle {
     font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 60px;
-    letter-spacing: -0.5px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
   }
-  .typography-h3 {
+  .typography-body2 {
     font-family:  var(--font-primary);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  color: var(--color-black)
+    line-height: 23px;
+    letter-spacing: 2px;
+    font-size: 18px;
   }
   .typography-h4 {
     font-family:  var(--font-primary);
@@ -55,16 +54,8 @@ module.exports = {
     font-weight: normal;
     font-size: 18px;
     letter-spacing: 0.5px;
-  }
-  
-  .typography-body2 {
-    font-family:  var(--font-primary);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.25px;
-  color: var(--color-black)
-  }
+  }  
+
   
   .typography-subtitle1 {
     font-family:  var(--font-primary);
@@ -72,7 +63,6 @@ module.exports = {
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.15px;
-  color: var(--color-black)
   }
   
   .typography-subtitle2 {
@@ -95,7 +85,6 @@ module.exports = {
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0.4px;
-  color: var(--color-black)
   }
   .typography-navbar {
     font-family:  var(--font-primary);
