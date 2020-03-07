@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     name: 'Web-Toolkit',
     logo:
       'https://firebasestorage.googleapis.com/v0/b/tenjo-web-toolkit.appspot.com/o/logo.svg?alt=media&token=75c5c13e-de0b-40f5-b0a0-3045f13a61d7',

@@ -1,9 +1,9 @@
 import React, { memo } from 'react'
 
-import Library from './library'
+import Libraries from './libraries'
 
 const Projects = () => {
-  return <Library />
+  return <Libraries />
 }
 
 export default memo(Projects)
