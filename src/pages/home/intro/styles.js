@@ -27,7 +27,7 @@ export const wrapperInner = {
 }
 
 export const wrapperTitle = {
-  gridGap: 's',
+  gridGap: 'xs',
 }
 
 export const title = {

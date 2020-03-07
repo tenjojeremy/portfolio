@@ -54,7 +54,6 @@ module.exports = `
   .typography-title {
     font-family:  var(--font-primary);
     font-weight: bolder;
-    line-height: 78px;
     text-shadow: rgba(181, 255, 252, 0.19) 0px 0px 9px;
     font-size: 40px;
   }
@@ -66,12 +65,10 @@ module.exports = `
   .typography-subtitle {
     font-family:  var(--font-primary);
     font-size: 20px;
-    line-height: 27px;
     font-weight: bold;
   }
   .typography-body2 {
     font-family:  var(--font-primary);
-    line-height: 23px;
     letter-spacing: 2px;
     font-size: 16px;
   }
