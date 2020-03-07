@@ -3,6 +3,7 @@ import Box from '@tenjojeremy/web-toolkit/dataDisplay/box'
 import Typography from '@tenjojeremy/web-toolkit/dataDisplay/typography'
 import Particles from '@tenjojeremy/web-toolkit/ambient/particles'
 import Icon from '@tenjojeremy/web-toolkit/dataDisplay/icon'
+import Link from '@tenjojeremy/web-toolkit/navigation/link'
 
 import * as styles from './styles'
 
@@ -28,31 +29,19 @@ const Intro = () => {
           styles={styles.description}
         />
         <Box styles={styles.wrapperIcon}>
-          <a
-            title='Linkedin'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://ca.linkedin.com/in/jeremy-tenjo-244048120'
-          >
+          <Link title='Linkedin' href='https://ca.linkedin.com/in/jeremy-tenjo-244048120'>
             <Icon name='linkedin/1' {...styles.icon} />
-          </a>
-          <a
-            title='Github'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://github.com/tenjojeremy'
-          >
+          </Link>
+          <Link title='Github' href='https://github.com/tenjojeremy'>
             <Icon name='github/1' {...styles.icon} />
-          </a>
+          </Link>
 
-          <a
+          <Link
             title='Portfolio'
-            target='_blank'
-            rel='noopener noreferrer'
             href='https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Resume%20-%20Jeremy%20Tenjo.pdf?alt=media&token=920f127b-f57d-4aae-a530-c123d6e409c9'
           >
             <Icon name='paper/1' {...styles.icon} />
-          </a>
+          </Link>
         </Box>
         <Icon name='arrow/feather' {...styles.icon} />
       </Box>
