@@ -7,10 +7,13 @@ import hideSplashScreen from './.wapp/_splashScreen/hideSplashScreen'
 import './.wapp/_firebase/index'
 import Router from './pages/router'
 import Store from './.wapp/_store'
+import StyledComponents from './.wapp/_styledComponents'
 
 const App = hot(() => (
   <Store>
-    <Router />
+    <StyledComponents>
+      <Router />
+    </StyledComponents>
   </Store>
 ))
 

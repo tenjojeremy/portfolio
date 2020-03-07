@@ -8,7 +8,7 @@ import * as styles from './styles'
 
 const Intro = () => {
   return (
-    <Box styles={styles.wrapper}>
+    <Box styles={styles.wrapper} name='Intro'>
       <Box styles={styles.wrapperParticles}>
         <Particles height='100%' width='100%' />
       </Box>

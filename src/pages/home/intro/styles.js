@@ -1,5 +1,5 @@
 export const wrapper = {
-  height: ['auto', '100vh'],
+  height: ['100vh', ['auto', '100vh']],
   backgroundColor: 'primary',
   width: '100%',
   position: 'relative',

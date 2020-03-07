@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-import Intro from '../../components/intro'
+import Intro from './intro'
 
 const Home = () => {
   return <Intro />

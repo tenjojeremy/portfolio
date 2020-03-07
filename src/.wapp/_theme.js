@@ -29,13 +29,6 @@ module.exports = `
 --color-errorForeground: white;
   }
 
- /* mediaQueries */
-
-  :root {
-  --mediaQuery-m: 900;
---mediaQuery-l: 1200;
-  }
-
  /* spacing */
 
   :root {
@@ -63,7 +56,7 @@ module.exports = `
     font-weight: bolder;
     line-height: 78px;
     text-shadow: rgba(181, 255, 252, 0.19) 0px 0px 9px;
-    font-size: 50px;
+    font-size: 40px;
   }
   @media (min-width: 500px) {
   .typography-title {
