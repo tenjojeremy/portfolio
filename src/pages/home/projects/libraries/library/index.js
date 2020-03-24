@@ -21,7 +21,7 @@ const Library = ({ logo, name, description, repo, site }) => {
           <Icon name='github/1' />
         </Link>
         <Link href={site}>
-          <Icon name='storybook/1' />
+          <Icon name='storybook/1' size={100} plain />
         </Link>
       </Box>
     </Box>
