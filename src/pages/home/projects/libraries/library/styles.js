@@ -1,7 +1,7 @@
-export const Wrapper = {
+export const wrapper = {
   justifyContent: 'center',
   padding: 'm',
-  backgroundColor: 'primary',
+  backgroundColor: 'primaryLighter',
 }
 
 export const titleWrapper = {
