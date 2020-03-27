@@ -12,7 +12,7 @@ const Library = ({ logo, name, description, repo, site }) => {
   return (
     <Box styles={styles.wrapper}>
       <Box styles={styles.titleWrapper}>
-        <Image src={logo} />
+        <Image src={logo} styles={styles.logo} />
         <Typography text={name} />
       </Box>
       <Typography text={description} variant='body2' />

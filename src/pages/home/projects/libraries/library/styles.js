@@ -2,6 +2,7 @@ export const wrapper = {
   justifyContent: 'center',
   padding: 'm',
   backgroundColor: 'primaryLighter',
+  height: ['auto', '400px'],
 }
 
 export const titleWrapper = {
@@ -10,4 +11,11 @@ export const titleWrapper = {
   gridGap: 'm',
   justifyContent: 'center',
   alignItems: 'center',
+}
+
+const logoSizes = ['60px', '115px']
+
+export const logo = {
+  width: logoSizes,
+  height: logoSizes,
 }
