@@ -9,4 +9,5 @@ export const titleWrapper = {
   width: '100%',
   gridGap: 'm',
   justifyContent: 'center',
+  alignItems: 'center',
 }
