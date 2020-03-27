@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { hot } from 'react-hot-loader/root'
 import { catchAddToHomeScreenPrompt } from '@tenjojeremy/web-toolkit/miscUtils/addToHomeScreen'
 
+import animateOnSiteLoad from './.wapp/_animateOnSiteLoad/animateOnSiteLoad'
 import hideSplashScreen from './.wapp/_splashScreen/hideSplashScreen'
 import './.wapp/_firebase/index'
 import Router from './pages/router'
@@ -18,6 +19,7 @@ const App = hot(() => (
 ))
 
 // Load asynchronous
+animateOnSiteLoad()
 hideSplashScreen()
 catchAddToHomeScreenPrompt()
 

@@ -8,12 +8,12 @@ import Link from '@tenjojeremy/web-toolkit/navigation/link'
 import { defaultProps, propTypes } from './propTypes'
 import * as styles from './styles'
 
-const Library = ({ logo, name, description, repo, site }) => {
+const Library = ({ logo, name, description, repo, site, backgroundColor }) => {
   return (
-    <Box styles={styles.wrapper}>
+    <Box styles={styles.wrapper} style={{ background: backgroundColor }}>
       <Box styles={styles.titleWrapper}>
         <Image src={logo} styles={styles.logo} />
-        <Typography text={name} />
+        <Typography text={name} variant='headerTwo' />
       </Box>
       <Typography text={description} variant='body2' />
       <Box styles={styles.titleWrapper}>
@@ -21,7 +21,7 @@ const Library = ({ logo, name, description, repo, site }) => {
           <Icon name='github/1' />
         </Link>
         <Link href={site}>
-          <Icon name='storybook/1' size={100} plain />
+          <Icon name='storybook/1' size={130} plain />
         </Link>
       </Box>
     </Box>

@@ -1,8 +1,12 @@
 export const wrapper = {
   justifyContent: 'center',
   padding: 'm',
-  backgroundColor: 'primaryLighter',
   height: ['auto', '400px'],
+  textAlign: 'center',
+  color: 'white',
+  gridGap: ['m', 'l'],
+  gridAutoRows: 'fit-content(100%) fit-content(100%) fit-content(100%)',
+  alignContent: 'center',
 }
 
 export const titleWrapper = {

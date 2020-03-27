@@ -83,28 +83,20 @@ import { Meta } from '@storybook/addon-docs/blocks'
     font-size: 18px;
       }
     }
-  .typography-h4 {
-    font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 34px;
-    letter-spacing: 0.25px;
+  .typography-headerTwo {
+    font-family: var(--font-primary);
+    font-size: 35px;
+    letter-spacing: 0.13px;
+    text-shadow: rgba(255, 255, 255, 0.65) 0px 0px 9px;
+    margin: 0px;
+    font-weight: bold;
   }
-  
-  .typography-h5 {
-    font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-  }
-  
-  .typography-h6 {
-    font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.15px;
-  }
+
+  @media (min-width: 700px) {
+    .typography-headerTwo {
+      font-size: 65px;
+        }
+      }
   
   .typography-body1 {
     font-family:  var(--font-primary);
