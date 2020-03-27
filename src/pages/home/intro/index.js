@@ -4,10 +4,15 @@ import Typography from '@tenjojeremy/web-toolkit/dataDisplay/typography'
 import Particles from '@tenjojeremy/web-toolkit/ambient/particles'
 import Icon from '@tenjojeremy/web-toolkit/dataDisplay/icon'
 import Link from '@tenjojeremy/web-toolkit/navigation/link'
+import scrollIntoView from '@tenjojeremy/web-toolkit/navigation/utils/scrollIntoView'
+
+import { projectWrapperIdSelector } from '../projects'
 
 import * as styles from './styles'
 
 const Intro = () => {
+  const handleArrowClick = () => scrollIntoView(projectWrapperIdSelector)
+
   return (
     <Box styles={styles.wrapper} name='Intro'>
       <Box styles={styles.wrapperParticles}>
@@ -43,7 +48,7 @@ const Intro = () => {
             <Icon name='paper/1' {...styles.icon} />
           </Link>
         </Box>
-        <Icon name='arrow/feather' {...styles.icon} />
+        <Icon name='arrow/feather' {...styles.icon} onClick={handleArrowClick} />
       </Box>
     </Box>
   )

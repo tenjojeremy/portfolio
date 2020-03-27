@@ -47,8 +47,7 @@ module.exports = `
  /* fonts */
 
   :root {
-  --font-primary: Montserrat;
---font-secondary: Roboto;
+  --font-primary: monospace;
   }
 
   .typography-title {

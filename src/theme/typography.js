@@ -1,8 +1,6 @@
 module.exports = {
-  fonts: ['montserrat', 'roboto'],
   variables: {
-    primary: 'Montserrat',
-    secondary: 'Roboto',
+    primary: 'monospace',
   },
   types: `
   .typography-title {
