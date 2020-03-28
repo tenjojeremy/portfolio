@@ -6,11 +6,14 @@ export default [
     imagesBG: 'iLandlord',
     imagesGallery: 8,
     description:
-      'iLandlord is a property management webapp. Keep track of income, bills, expenses and receipts with ease. I created this app with Reactjs to further improve my skills with my current favorite front end framework. Being a property manager, this app not only improved my react skills, it also replaced Excel as my main finance tracking app.',
+      'iLandlord is a property management webapp. Keep track of income, bills, expenses and receipts with ease. I created this app with Reactjavascript to further improve my skills with my current favorite front end framework. Being a property manager, this app not only improved my react skills, it also replaced Excel as my main finance tracking app.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
     link: 'https://ilandlord-486c3.firebaseapp.com/',
     type: 'DEMO',
     techList: ['react', 'firebase', 'xd'],
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/iLandlord%2FiLandlord.png?alt=media&token=f4f51799-7e54-4d6c-8851-2a7614dc15ee',
+    screenshots: [],
   },
   {
     name: 'Live Note',
@@ -24,6 +27,8 @@ export default [
     link: 'https://live-note-ce62c.firebaseapp.com/',
     type: 'DEMO',
     techList: ['react', 'firebase', 'xd'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'Fanshawe Intramurals',
@@ -37,6 +42,8 @@ export default [
     link: 'https://github.com/tenjojeremy/Fanshawe_Intramurals',
     type: '',
     techList: ['vue', 'express', 'photoshop', 'mongodb'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'Complaints Check',
@@ -50,6 +57,8 @@ export default [
     link: 'https://github.com/tenjojeremy/Property_Management_App',
     type: '',
     techList: ['vue', 'laravel', 'sql', 'photoshop'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'Reactr',
@@ -63,6 +72,8 @@ export default [
     link: 'http://www.jeremytenjo.com/reactr/',
     type: 'DEMO',
     techList: ['codeigniter', 'sql'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'My Weddings Ontario',
@@ -76,6 +87,8 @@ export default [
     link: 'http://www.jeremytenjo.com/weddings_p2/',
     type: 'DEMO',
     techList: ['codeigniter', 'sql'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'Infographics',
@@ -89,6 +102,8 @@ export default [
     link: 'http://www.jeremytenjo.com/infographics/',
     type: 'DEMO',
     techList: ['d3'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'EDFC',
@@ -100,7 +115,9 @@ export default [
       'The EDFC website was created for the Eating Disorders Foundation of Canada with the purpose of creating a website where people could go and share their experiences with eating disorders with people all around the world, and ideally seek help.',
     link: 'http://www.jeremytenjo.com/EDFC//',
     type: 'DEMO',
-    techList: ['php', 'sql', 'js'],
+    techList: ['php', 'sql', 'javascript'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'Drinky',
@@ -113,7 +130,9 @@ export default [
     position: 'FULLSTACK DEVELOPER - DESIGNER',
     link: 'http://www.jeremytenjo.com/drinky/',
     type: '',
-    techList: ['php', 'sql', 'js', 'photoshop'],
+    techList: ['php', 'sql', 'javascript', 'photoshop'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'Christina Tischler',
@@ -126,7 +145,9 @@ export default [
     position: 'FRONT-END DEVELOPER',
     link: 'http://www.jeremytenjo.com/tischler/',
     type: 'DEMO',
-    techList: ['js'],
+    techList: ['javascript'],
+    backgroundImage: '',
+    screenshots: [],
   },
   {
     name: 'My Movies',
@@ -139,6 +160,8 @@ export default [
     position: 'FULLSTACK DEVELOPER - DESIGNER',
     link: '',
     type: '',
-    techList: ['php', 'sql', 'js', 'photoshop'],
+    techList: ['php', 'sql', 'javascript', 'photoshop'],
+    backgroundImage: '',
+    screenshots: [],
   },
 ]

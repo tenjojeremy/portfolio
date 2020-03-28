@@ -46,8 +46,6 @@ module.exports = {
   
   .typography-body1 {
     font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     letter-spacing: 0.5px;
   }  
@@ -55,16 +53,12 @@ module.exports = {
   
   .typography-subtitle1 {
     font-family:  var(--font-primary);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-size: 19px;
   letter-spacing: 0.15px;
   }
   
   .typography-subtitle2 {
     font-family:  var(--font-primary);
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
   }
   .typography-button {

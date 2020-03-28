@@ -5,9 +5,9 @@ import libraries from '../../../../data/libraries'
 import Library from './library'
 
 const Libraries = () => {
-  return libraries.map((lib) => (
-    <Fragment key={lib.id}>
-      <Library {...lib} />
+  return libraries.map((library) => (
+    <Fragment key={library.id}>
+      <Library {...library} />
     </Fragment>
   ))
 }

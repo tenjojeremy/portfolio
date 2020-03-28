@@ -4,7 +4,7 @@ export default [
     name: 'Web-Toolkit',
     logo:
       'https://firebasestorage.googleapis.com/v0/b/tenjo-web-toolkit.appspot.com/o/logo.svg?alt=media&token=75c5c13e-de0b-40f5-b0a0-3045f13a61d7',
-    description: 'A library of web components and utilities',
+    description: 'A library of React components and utilities',
     repo: 'https://github.com/tenjojeremy/Web-Toolkit',
     site: 'https://tenjo-web-toolkit.web.app',
     backgroundColor:
