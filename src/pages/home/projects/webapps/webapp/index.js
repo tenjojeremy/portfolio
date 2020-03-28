@@ -32,7 +32,7 @@ const Webapp = ({
             />
           </Box>
 
-          <Typography styles={styles.titles} text={description} variant='body1' />
+          <Typography text={description} variant='body1' />
 
           <Box styles={styles.techListWrapper}>
             <Typography styles={styles.techListTitle} text='Tech used:' variant='body1' />
