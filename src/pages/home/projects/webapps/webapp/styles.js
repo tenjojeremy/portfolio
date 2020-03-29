@@ -1,5 +1,13 @@
-export const wrapper = {
-  height: ['auto', 'auto', '100vh'],
+export const wrapper = (color, backgroundImage) => {
+  return {
+    backgroundColor: `--${color}`,
+    backgroundImage: ['none', 'none', `url(${backgroundImage})`],
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'top center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    height: ['auto', 'auto', '100vh'],
+  }
 }
 
 export const innerWrapper = {

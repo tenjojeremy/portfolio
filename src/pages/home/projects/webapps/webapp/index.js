@@ -20,7 +20,7 @@ const Webapp = ({
   backgroundImage,
 }) => {
   return (
-    <Box styles={{ ...styles.wrapper, backgroundColor: `--${color}`, backgroundImage }}>
+    <Box styles={styles.wrapper(color, backgroundImage)}>
       <Box styles={styles.innerWrapper}>
         <Box styles={styles.infoWrapper}>
           <Box styles={styles.titlesWrapper}>
