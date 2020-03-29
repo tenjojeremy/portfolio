@@ -93,7 +93,7 @@ module.exports = `
   
   .typography-body1 {
     font-family:  var(--font-primary);
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.5px;
   }  
 

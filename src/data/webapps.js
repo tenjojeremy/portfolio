@@ -6,7 +6,7 @@ export default [
     imagesBG: 'iLandlord',
     imagesGallery: 8,
     description:
-      'iLandlord is a property management webapp. Keep track of income, bills, expenses and receipts with ease. I created this app with Reactjavascript to further improve my skills with my current favorite front end framework. Being a property manager, this app not only improved my react skills, it also replaced Excel as my main finance tracking app.',
+      'iLandlord is a property management webapp. Keep track of income, bills, expenses and receipts with ease. I created this app with React to further improve my skills with my current favorite front end framework. Being a property manager, this app not only improved my react skills, it also replaced Excel as my main finance tracking app.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
     link: 'https://ilandlord-486c3.firebaseapp.com/',
     type: 'DEMO',

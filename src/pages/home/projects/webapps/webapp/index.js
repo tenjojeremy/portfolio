@@ -32,13 +32,20 @@ const Webapp = ({
             />
           </Box>
 
-          <Typography text={description} variant='body1' />
+          <Typography styles={styles.description} text={description} variant='body1' />
 
           <Box styles={styles.techListWrapper}>
             <Typography styles={styles.techListTitle} text='Tech used:' variant='body1' />
             <Box styles={styles.techList}>
               {techList.map((tech) => (
-                <Icon key={tech} name={`${tech}/1`} size={20} style={styles.icon} />
+                <Icon
+                  key={tech}
+                  name={`${tech}/1`}
+                  width='auto'
+                  height='20px'
+                  style={styles.icon}
+                  plain
+                />
               ))}
             </Box>
           </Box>

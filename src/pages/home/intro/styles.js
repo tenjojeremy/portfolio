@@ -40,10 +40,10 @@ export const description = {
 
 export const wrapperIcon = {
   gridAutoFlow: 'column',
-  gridGap: 'm',
+  gridGap: 's',
 }
 
 export const icon = {
   color: 'primaryLighter',
-  size: 40,
+  size: '40px',
 }

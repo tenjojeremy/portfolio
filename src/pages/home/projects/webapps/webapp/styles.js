@@ -1,5 +1,5 @@
 export const wrapper = {
-  height: ['auto', 'auto', '100vh', ['auto', '100vh']],
+  height: ['auto', 'auto', '100vh'],
 }
 
 export const innerWrapper = {
@@ -57,4 +57,9 @@ export const titlesWrapper = {
 
 export const icon = {
   cursor: 'auto',
+}
+
+export const description = {
+  paddingTop: 'm',
+  paddingBottom: 'm',
 }
