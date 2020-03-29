@@ -9,9 +9,6 @@ import * as styles from './styles'
 const Webapp = ({
   name,
   color,
-  imagesFolder,
-  imagesBG,
-  imagesGallery,
   description,
   position,
   link,

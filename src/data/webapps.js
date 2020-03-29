@@ -2,9 +2,6 @@ export default [
   {
     name: 'iLandlord',
     color: '#43A047',
-    imagesFolder: 'iLandlord',
-    imagesBG: 'iLandlord',
-    imagesGallery: 8,
     description:
       'iLandlord is a property management webapp. Keep track of income, bills, expenses and receipts with ease. I created this app with React to further improve my skills with my current favorite front end framework. Being a property manager, this app not only improved my react skills, it also replaced Excel as my main finance tracking app.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
@@ -18,9 +15,6 @@ export default [
   {
     name: 'Live Note',
     color: '#F71735',
-    imagesFolder: 'Live_Note',
-    imagesBG: 'Live_Note',
-    imagesGallery: 7,
     description:
       'Live note is a mobile centered progressive web app. I built it for better note taking during meetings and classes. This app consists of starting an audio note, and as it records the user can add timestamped comments and pictures to the note. This gives note taking an audio, visual and textual context for a more detailed note.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
@@ -33,9 +27,6 @@ export default [
   {
     name: 'Fanshawe Intramurals',
     color: '#795548',
-    imagesFolder: 'fanshawe_intramurals',
-    imagesBG: 'fanshawe_intramurals',
-    imagesGallery: 6,
     description:
       "Web app where students can join intramural teams and connect with their teammates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
     position: 'FULLSTACK DEVELOPER - DESIGNER',
@@ -48,9 +39,6 @@ export default [
   {
     name: 'Complaints Check',
     color: '#2A919A',
-    imagesFolder: 'complaints_check',
-    imagesBG: 'complaints_check',
-    imagesGallery: 6,
     description:
       'A web app where property managers can track tenant complaints and keep records of them. It integrates a CMS to manage complaints and a client-side interface where tenants can log in and lodge complaints with photo evidence and detailed descriptions.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
@@ -63,9 +51,6 @@ export default [
   {
     name: 'Reactr',
     color: '#F9A825',
-    imagesFolder: 'react',
-    imagesBG: 'react_bg',
-    imagesGallery: 5,
     description:
       'Reactr.ca is the official website for Fanshawe’s web development team. Developed with Codeigniter I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.',
     position: 'FULLSTACK DEVELOPER',
@@ -78,9 +63,6 @@ export default [
   {
     name: 'My Weddings Ontario',
     color: '#EF5350',
-    imagesFolder: 'weddings',
-    imagesBG: 'weddings_bg',
-    imagesGallery: 7,
     description:
       'My Weddings Ontario is a website that connects brides with vendors and where brides can save their favorite vendor items. I added functionality, such as: vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.',
     position: 'FULLSTACK DEVELOPER',
@@ -93,9 +75,6 @@ export default [
   {
     name: 'Infographics',
     color: '#673AB7',
-    imagesFolder: 'd3',
-    imagesBG: 'd3_bg',
-    imagesGallery: 8,
     description:
       'Using the D3 JavaScript library, I built 10 dynamic, database ready infographics which represent results from a survey conducted by Fanshawe’s school of contemporary media for IDP and IMS graduates.',
     position: 'FULLSTACK DEVELOPER',
@@ -108,9 +87,6 @@ export default [
   {
     name: 'EDFC',
     color: '#2D353F',
-    imagesFolder: 'edfg',
-    imagesBG: 'edfg_bg',
-    imagesGallery: 4,
     description:
       'The EDFC website was created for the Eating Disorders Foundation of Canada with the purpose of creating a website where people could go and share their experiences with eating disorders with people all around the world, and ideally seek help.',
     link: 'http://www.jeremytenjo.com/EDFC//',
@@ -122,9 +98,6 @@ export default [
   {
     name: 'Drinky',
     color: '#22A7F0',
-    imagesFolder: 'drinky',
-    imagesBG: 'drinky_bg',
-    imagesGallery: 1,
     description:
       'Drinky is a concept for a website dedicated to sell alcohol. The purpose of the website is to manage it effectively from a CMS.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
@@ -137,9 +110,6 @@ export default [
   {
     name: 'Christina Tischler',
     color: '#019875',
-    imagesFolder: 'tischler',
-    imagesBG: 'tischler_bg',
-    imagesGallery: 5,
     description:
       'Christina Tischeler website is designed for an individual business focused on selling arts and crafts of her own making. Custom-made and local products are nicely showcased in the website, persuading people to purchase her products.',
     position: 'FRONT-END DEVELOPER',
@@ -152,9 +122,6 @@ export default [
   {
     name: 'My Movies',
     color: '#E87E04',
-    imagesFolder: 'mymovies',
-    imagesBG: 'mymovies',
-    imagesGallery: 1,
     description:
       'My Movies is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and Rotten Tomatoes, but adding some detailed touches to offer a nice and easy user experience.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
