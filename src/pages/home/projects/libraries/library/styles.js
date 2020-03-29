@@ -12,7 +12,7 @@ export const wrapper = {
 export const titleWrapper = {
   gridAutoFlow: 'column',
   width: '100%',
-  gridGap: 'm',
+  gridGap: 's',
   justifyContent: 'center',
   alignItems: 'center',
 }

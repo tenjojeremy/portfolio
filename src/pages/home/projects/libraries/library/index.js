@@ -18,7 +18,7 @@ const Library = ({ logo, name, description, repo, site, backgroundColor }) => {
       <Typography text={description} variant='body2' />
       <Box styles={styles.titleWrapper}>
         <Link href={repo}>
-          <Icon name='github/1' />
+          <Icon name='github/1' size='40px' />
         </Link>
         <Link href={site}>
           <Icon name='storybook/1' size='130px' height='auto' />
