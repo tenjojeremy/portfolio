@@ -48,6 +48,7 @@ module.exports = {
     font-family:  var(--font-primary);
     font-size: 16px;
     letter-spacing: 0.5px;
+    line-height: 25px;
   }  
 
   

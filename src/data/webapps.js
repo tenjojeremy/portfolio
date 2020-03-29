@@ -21,7 +21,8 @@ export default [
     link: 'https://live-note-ce62c.firebaseapp.com/',
     type: 'DEMO',
     techList: ['react', 'firebase', 'xd'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/Live_Note%2FLive_Note.png?alt=media&token=943a28d9-8756-4c36-aada-31ea87ccbc1d',
     screenshots: [],
   },
   {
@@ -33,7 +34,8 @@ export default [
     link: 'https://github.com/tenjojeremy/Fanshawe_Intramurals',
     type: '',
     techList: ['vue', 'express', 'photoshop', 'mongodb'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/fanshawe_intramurals%2Ffanshawe_intramurals.png?alt=media&token=3c4338fb-d66e-447d-a628-57bfc0cc162f',
     screenshots: [],
   },
   {
@@ -45,7 +47,8 @@ export default [
     link: 'https://github.com/tenjojeremy/Property_Management_App',
     type: '',
     techList: ['vue', 'laravel', 'sql', 'photoshop'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/complaints_check%2Fcomplaints_check.png?alt=media&token=ffbed949-c876-441e-affa-1f23d3fd7c61',
     screenshots: [],
   },
   {
@@ -57,7 +60,8 @@ export default [
     link: 'http://www.jeremytenjo.com/reactr/',
     type: 'DEMO',
     techList: ['codeigniter', 'sql'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/reactr%2Freact_bg.png?alt=media&token=bd4af7b3-6d63-41c0-ad59-43379e99733a',
     screenshots: [],
   },
   {
@@ -69,7 +73,8 @@ export default [
     link: 'http://www.jeremytenjo.com/weddings_p2/',
     type: 'DEMO',
     techList: ['codeigniter', 'sql'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/weddings%2Fweddings_bg.png?alt=media&token=58a99ab2-ac92-4082-a6fb-60d33ef308de',
     screenshots: [],
   },
   {
@@ -81,7 +86,8 @@ export default [
     link: 'http://www.jeremytenjo.com/infographics/',
     type: 'DEMO',
     techList: ['d3'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/d3%2Fd3_bg.png?alt=media&token=69eaf572-a930-48a3-9e32-e8ead9c2a3f9',
     screenshots: [],
   },
   {
@@ -92,7 +98,8 @@ export default [
     link: 'http://www.jeremytenjo.com/EDFC//',
     type: 'DEMO',
     techList: ['php', 'sql', 'javascript'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/edfg%2Fedfg_bg.png?alt=media&token=3da0c50c-439a-4312-8926-d2d390fa1fd3',
     screenshots: [],
   },
   {
@@ -104,7 +111,8 @@ export default [
     link: 'http://www.jeremytenjo.com/drinky/',
     type: '',
     techList: ['php', 'sql', 'javascript', 'photoshop'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/drinky%2Fdrinky_bg.png?alt=media&token=72966656-31f1-4c39-ad3d-2226bbfceca5',
     screenshots: [],
   },
   {
@@ -116,7 +124,8 @@ export default [
     link: 'http://www.jeremytenjo.com/tischler/',
     type: 'DEMO',
     techList: ['javascript'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/tischler%2Ftischler_bg.png?alt=media&token=f7a8bb03-e1c6-49a0-84db-699cc3bf97d5',
     screenshots: [],
   },
   {
@@ -128,7 +137,8 @@ export default [
     link: '',
     type: '',
     techList: ['php', 'sql', 'javascript', 'photoshop'],
-    backgroundImage: '',
+    backgroundImage:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/mymovies%2Fmymovies.png?alt=media&token=2e0a2f9f-b464-43ad-a5ea-a9db1fdb1ba1',
     screenshots: [],
   },
 ]
