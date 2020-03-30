@@ -5,7 +5,7 @@ import Icon from '@tenjojeremy/web-toolkit/dataDisplay/icon'
 import List from '@tenjojeremy/web-toolkit/dataDisplay/list'
 import Image from '@tenjojeremy/web-toolkit/media/image'
 import Link from '@tenjojeremy/web-toolkit/navigation/link'
-// import Button from '@tenjojeremy/web-toolkit/input/button'
+import Button from '@tenjojeremy/web-toolkit/input/button/styles/base'
 
 import useCarousel from '../../../../../common/carousel/carousel.state'
 
@@ -43,6 +43,7 @@ const Webapp = ({
 
           <Box styles={styles.techListWrapper}>
             <Typography styles={styles.techListTitle} text='Tech used:' variant='body1' />
+
             <Box styles={styles.techList}>
               {techList.map((tech) => (
                 <Icon
@@ -55,6 +56,7 @@ const Webapp = ({
                 />
               ))}
             </Box>
+
             <List photoGrid>
               {screenshots.map((screenshot, index) => (
                 <Image
@@ -65,7 +67,15 @@ const Webapp = ({
                 />
               ))}
             </List>
-            {site && <Link href={site}>{/* <Button text='DEMO' /> */}</Link>}
+
+            {site && (
+              <Link
+                href={site}
+                styles={{ margin: ['--0 auto', '--0 auto', '--initial'] }}
+              >
+                <Button text='DEMO' />
+              </Link>
+            )}
           </Box>
         </Box>
       </Box>
