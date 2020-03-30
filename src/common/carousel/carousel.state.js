@@ -2,6 +2,7 @@ import React, { useState, createContext, useContext } from 'react'
 import Modal from '@tenjojeremy/web-toolkit/feedback/modal'
 import Carousel from '@tenjojeremy/web-toolkit/dataDisplay/carousel'
 import Image from '@tenjojeremy/web-toolkit/media/image'
+import Icon from '@tenjojeremy/web-toolkit/dataDisplay/icon'
 
 export const CarouselContext = createContext(null)
 
@@ -14,6 +15,10 @@ export const CarouselProvider = ({ children }) => {
     setShow(true)
     setData(data)
     setIndex(index)
+  }
+
+  const hideCarousel = () => {
+    setShow(false)
   }
 
   return (
@@ -29,6 +34,12 @@ export const CarouselProvider = ({ children }) => {
           animationStyle='centerOut'
           onClose={() => setShow(false)}
         >
+          <Icon
+            name='close/1'
+            color='black'
+            wrapperStyles={{ margin: '0 0 0 auto' }}
+            onClick={hideCarousel}
+          />
           <Carousel index={index} setIndex={setIndex} iconColor='black'>
             {data.map((item) => (
               <Image
