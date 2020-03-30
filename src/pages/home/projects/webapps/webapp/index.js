@@ -63,6 +63,7 @@ const Webapp = ({
                   key={screenshot}
                   src={screenshot}
                   styles={styles.screenshots}
+                  isLazyLoaded
                   onClick={() => handleScreenshotClick(index)}
                 />
               ))}
