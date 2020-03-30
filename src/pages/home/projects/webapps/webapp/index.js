@@ -57,7 +57,7 @@ const Webapp = ({
               ))}
             </Box>
 
-            <List photoGrid>
+            <List photoGrid style={{ maxHeight: '200px', overflow: 'auto' }}>
               {screenshots.map((screenshot, index) => (
                 <Image
                   key={screenshot}
@@ -71,7 +71,7 @@ const Webapp = ({
             {site && (
               <Link
                 href={site}
-                styles={{ margin: ['--0 auto', '--0 auto', '--initial'] }}
+                styles={{ margin: ['--0 auto', '--0 auto', '--initial'], padding: 'm' }}
               >
                 <Button text='DEMO' />
               </Link>

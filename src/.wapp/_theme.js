@@ -87,7 +87,7 @@ module.exports = `
 
   @media (min-width: 700px) {
     .typography-headerTwo {
-      font-size: 65px;
+      font-size: 50px;
         }
       }
   
@@ -101,7 +101,7 @@ module.exports = `
   
   .typography-subtitle1 {
     font-family:  var(--font-primary);
-  font-size: 19px;
+  font-size: 17px;
   letter-spacing: 0.15px;
   }
   

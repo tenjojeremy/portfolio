@@ -16,7 +16,7 @@ export const innerWrapper = {
   height: '100%',
   width: ['auto', 'auto', '50%'],
   transform: ['none', 'none', 'translateX(100%)'],
-  padding: ['none', 'none', 'xxl'],
+  paddingLeft: ['none', 'none', 'xxl'],
   alignItems: 'center',
 }
 
