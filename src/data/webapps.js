@@ -49,7 +49,6 @@ export default [
       "Web app where students can join intramural teams and connect with their teammates. Moreover, a CMS system for Fanshawe's intramural tournament management and client usability as well.",
     position: 'FULLSTACK DEVELOPER - DESIGNER',
     site: 'https://github.com/tenjojeremy/Fanshawe_Intramurals',
-    type: '',
     techList: ['vue', 'express', 'photoshop', 'mongodb'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/fanshawe_intramurals%2Ffanshawe_intramurals.png?alt=media&token=3c4338fb-d66e-447d-a628-57bfc0cc162f',
@@ -62,7 +61,6 @@ export default [
       'A web app where property managers can track tenant complaints and keep records of them. It integrates a CMS to manage complaints and a client-side interface where tenants can log in and lodge complaints with photo evidence and detailed descriptions.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
     site: 'https://github.com/tenjojeremy/Property_Management_App',
-    type: '',
     techList: ['vue', 'laravel', 'sql', 'photoshop'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/complaints_check%2Fcomplaints_check.png?alt=media&token=ffbed949-c876-441e-affa-1f23d3fd7c61',
@@ -74,8 +72,6 @@ export default [
     description:
       'Reactr.ca is the official website for Fanshawe’s web development team. Developed with Codeigniter I worked on making the website mobile responsive, added a CMS system to add and edit projects and worked on functionality.',
     position: 'FULLSTACK DEVELOPER',
-    site: 'http://www.jeremytenjo.com/reactr/',
-    type: 'DEMO',
     techList: ['codeigniter', 'sql'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/reactr%2Freact_bg.png?alt=media&token=bd4af7b3-6d63-41c0-ad59-43379e99733a',
@@ -87,8 +83,6 @@ export default [
     description:
       'My Weddings Ontario is a website that connects brides with vendors and where brides can save their favorite vendor items. I added functionality, such as: vendor reviews, vendor blog, account settings and wedding inspiration catalog, a place where brides can save photos posted by vendors for future reference and wedding inspiration.',
     position: 'FULLSTACK DEVELOPER',
-    site: 'http://www.jeremytenjo.com/weddings_p2/',
-    type: 'DEMO',
     techList: ['codeigniter', 'sql'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/weddings%2Fweddings_bg.png?alt=media&token=58a99ab2-ac92-4082-a6fb-60d33ef308de',
@@ -100,8 +94,6 @@ export default [
     description:
       'Using the D3 JavaScript library, I built 10 dynamic, database ready infographics which represent results from a survey conducted by Fanshawe’s school of contemporary media for IDP and IMS graduates.',
     position: 'FULLSTACK DEVELOPER',
-    site: 'http://www.jeremytenjo.com/infographics/',
-    type: 'DEMO',
     techList: ['d3'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/d3%2Fd3_bg.png?alt=media&token=69eaf572-a930-48a3-9e32-e8ead9c2a3f9',
@@ -112,8 +104,6 @@ export default [
     color: '#2D353F',
     description:
       'The EDFC website was created for the Eating Disorders Foundation of Canada with the purpose of creating a website where people could go and share their experiences with eating disorders with people all around the world, and ideally seek help.',
-    site: 'http://www.jeremytenjo.com/EDFC//',
-    type: 'DEMO',
     techList: ['php', 'sql', 'javascript'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/edfg%2Fedfg_bg.png?alt=media&token=3da0c50c-439a-4312-8926-d2d390fa1fd3',
@@ -125,8 +115,6 @@ export default [
     description:
       'Drinky is a concept for a website dedicated to sell alcohol. The purpose of the website is to manage it effectively from a CMS.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
-    site: 'http://www.jeremytenjo.com/drinky/',
-    type: '',
     techList: ['php', 'sql', 'javascript', 'photoshop'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/drinky%2Fdrinky_bg.png?alt=media&token=72966656-31f1-4c39-ad3d-2226bbfceca5',
@@ -138,8 +126,6 @@ export default [
     description:
       'Christina Tischeler website is designed for an individual business focused on selling arts and crafts of her own making. Custom-made and local products are nicely showcased in the website, persuading people to purchase her products.',
     position: 'FRONT-END DEVELOPER',
-    site: 'http://www.jeremytenjo.com/tischler/',
-    type: 'DEMO',
     techList: ['javascript'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/tischler%2Ftischler_bg.png?alt=media&token=f7a8bb03-e1c6-49a0-84db-699cc3bf97d5',
@@ -151,8 +137,6 @@ export default [
     description:
       'My Movies is a concept for a website dedicated to showcasing movies and TV shows in an orderly fashion similarly to IMDB and Rotten Tomatoes, but adding some detailed touches to offer a nice and easy user experience.',
     position: 'FULLSTACK DEVELOPER - DESIGNER',
-    site: '',
-    type: '',
     techList: ['php', 'sql', 'javascript', 'photoshop'],
     backgroundImage:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-83749.appspot.com/o/mymovies%2Fmymovies.png?alt=media&token=2e0a2f9f-b464-43ad-a5ea-a9db1fdb1ba1',
