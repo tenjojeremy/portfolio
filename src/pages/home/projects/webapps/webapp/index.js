@@ -24,10 +24,7 @@ const Webapp = ({
 }) => {
   const { updateCarousel } = useCarousel()
 
-  const handleScreenshotClick = (index) => {
-    console.log({ index, screenshots })
-    updateCarousel(screenshots, index)
-  }
+  const handleScreenshotClick = (index) => updateCarousel(screenshots, index)
 
   return (
     <Box styles={styles.wrapper(color, backgroundImage)}>

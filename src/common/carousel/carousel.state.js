@@ -23,13 +23,22 @@ export const CarouselProvider = ({ children }) => {
       }}
     >
       <>
-        <Modal show={show} animationStyle='centerOut' onClose={() => setShow(false)}>
-          <Carousel wrapAround slideIndex={index}>
+        <Modal
+          show={show}
+          style={{ width: '90%' }}
+          animationStyle='centerOut'
+          onClose={() => setShow(false)}
+        >
+          <Carousel index={index} setIndex={setIndex} iconColor='black'>
             {data.map((item) => (
               <Image
                 key={item}
                 src={item}
-                styles={{ width: '300px', height: '300px', margin: '--0 auto' }}
+                styles={{
+                  width: ['300px', '300px', '600px'],
+                  height: ['300px', '300px', '600px'],
+                  margin: '--0 auto',
+                }}
               />
             ))}
           </Carousel>
