@@ -27,7 +27,11 @@ const Webapp = ({
   const handleScreenshotClick = (index) => updateCarousel(screenshots, index)
 
   return (
-    <Box styles={styles.wrapper(color, backgroundImage)}>
+    <Box
+      styles={styles.wrapper(color, backgroundImage)}
+      isLazyLoaded
+      lazyLoadProps={{ offset: 300 }}
+    >
       <Box styles={styles.innerWrapper}>
         <Box styles={styles.infoWrapper}>
           <Box styles={styles.titlesWrapper}>
@@ -63,7 +67,6 @@ const Webapp = ({
                   key={screenshot}
                   src={screenshot}
                   styles={styles.screenshots}
-                  isLazyLoaded
                   onClick={() => handleScreenshotClick(index)}
                 />
               ))}
