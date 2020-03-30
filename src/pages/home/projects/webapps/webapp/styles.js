@@ -71,3 +71,6 @@ export const description = {
   paddingTop: 'm',
   paddingBottom: 'm',
 }
+export const screenshots = {
+  cursor: 'pointer',
+}

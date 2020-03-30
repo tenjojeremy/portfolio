@@ -2,6 +2,12 @@ import React, { memo } from 'react'
 import Box from '@tenjojeremy/web-toolkit/dataDisplay/box'
 import Typography from '@tenjojeremy/web-toolkit/dataDisplay/typography'
 import Icon from '@tenjojeremy/web-toolkit/dataDisplay/icon'
+import List from '@tenjojeremy/web-toolkit/dataDisplay/list'
+import Image from '@tenjojeremy/web-toolkit/media/image'
+import Link from '@tenjojeremy/web-toolkit/navigation/link'
+// import Button from '@tenjojeremy/web-toolkit/input/button'
+
+import useCarousel from '../../../../../common/carousel/carousel.state'
 
 import { defaultProps, propTypes } from './propTypes'
 import * as styles from './styles'
@@ -11,11 +17,18 @@ const Webapp = ({
   color,
   description,
   position,
-  link,
-  type,
   techList,
   backgroundImage,
+  screenshots,
+  site,
 }) => {
+  const { updateCarousel } = useCarousel()
+
+  const handleScreenshotClick = (index) => {
+    console.log({ index, screenshots })
+    updateCarousel(screenshots, index)
+  }
+
   return (
     <Box styles={styles.wrapper(color, backgroundImage)}>
       <Box styles={styles.innerWrapper}>
@@ -45,6 +58,17 @@ const Webapp = ({
                 />
               ))}
             </Box>
+            <List photoGrid>
+              {screenshots.map((screenshot, index) => (
+                <Image
+                  key={screenshot}
+                  src={screenshot}
+                  styles={styles.screenshots}
+                  onClick={() => handleScreenshotClick(index)}
+                />
+              ))}
+            </List>
+            {site && <Link href={site}>{/* <Button text='DEMO' /> */}</Link>}
           </Box>
         </Box>
       </Box>

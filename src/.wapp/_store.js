@@ -1,6 +1,8 @@
 import React, { cloneElement } from 'react'
 
-const providers = []
+import { CarouselProvider } from '../common/carousel/carousel.state.js'
+
+const providers = [<CarouselProvider key={1} />]
 
 const ProviderComposer = ({ contexts, children }) =>
   contexts.reduceRight(
