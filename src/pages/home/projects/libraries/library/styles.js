@@ -12,12 +12,12 @@ export const wrapper = {
 export const titleWrapper = {
   gridAutoFlow: 'column',
   width: '100%',
-  gridGap: 's',
+  gridGap: 'm',
   justifyContent: 'center',
   alignItems: 'center',
 }
 
-const logoSizes = ['60px', '115px']
+const logoSizes = ['60px', '70px']
 
 export const logo = {
   width: logoSizes,
