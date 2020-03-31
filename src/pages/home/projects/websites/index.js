@@ -2,12 +2,12 @@ import React, { memo, Fragment } from 'react'
 
 import websites from '../../../../data/websites'
 
-import Webapp from './website'
+import Website from './website'
 
 const Libraries = () => {
-  return websites.map((webapp) => (
-    <Fragment key={webapp.name}>
-      <Webapp {...webapp} />
+  return websites.map((website) => (
+    <Fragment key={website.name}>
+      <Website {...website} />
     </Fragment>
   ))
 }

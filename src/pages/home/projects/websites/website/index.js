@@ -13,7 +13,7 @@ import useCarousel from '../../../../../common/carousel/carousel.state'
 import { defaultProps, propTypes } from './propTypes'
 import * as styles from './styles'
 
-const Webapp = ({
+const Website = ({
   name,
   color,
   description,
@@ -90,7 +90,7 @@ const Webapp = ({
   )
 }
 
-Webapp.defaultProps = defaultProps
-Webapp.propTypes = propTypes
+Website.defaultProps = defaultProps
+Website.propTypes = propTypes
 
-export default memo(Webapp)
+export default memo(Website)
