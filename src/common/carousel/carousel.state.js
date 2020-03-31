@@ -45,6 +45,7 @@ export const CarouselProvider = ({ children }) => {
               <Image
                 key={item}
                 src={item}
+                objectFit='contain'
                 styles={{
                   width: ['300px', '300px', '600px'],
                   height: ['300px', '300px', '600px'],
