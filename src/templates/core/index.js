@@ -7,7 +7,7 @@ const Core = ({ children }) => {
   return (
     <>
       <Content>{children}</Content>
-      <SrollBackToTop />
+      <SrollBackToTop iconProps={{ name: 'arrow/feather', size: '15px' }} />
     </>
   )
 }
