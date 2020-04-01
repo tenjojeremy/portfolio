@@ -18,6 +18,7 @@ export const innerWrapper = {
   transform: ['none', 'none', 'translateX(100%)'],
   paddingLeft: ['none', 'none', 'xxl'],
   alignItems: 'center',
+  overflow: 'auto',
 }
 
 export const infoWrapper = {
