@@ -47,3 +47,8 @@ export const icon = {
   color: 'primaryLighter',
   size: '40px',
 }
+
+export const arrowDown = {
+  size: '24px',
+  style: { transform: 'rotate(270deg)' },
+}

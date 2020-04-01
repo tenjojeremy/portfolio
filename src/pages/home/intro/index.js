@@ -48,7 +48,12 @@ const Intro = () => {
             <Icon name='paper/1' {...styles.icon} />
           </Link>
         </Box>
-        <Icon name='arrow/feather' {...styles.icon} onClick={handleArrowClick} />
+        <Icon
+          name='arrow/feather'
+          {...styles.icon}
+          {...styles.arrowDown}
+          onClick={handleArrowClick}
+        />
       </Box>
     </Box>
   )

@@ -37,6 +37,7 @@ export const CarouselProvider = ({ children }) => {
           <Icon
             name='close/feather'
             color='black'
+            size='26px'
             wrapperStyles={{ margin: '0 0 0 auto' }}
             onClick={hideCarousel}
           />
