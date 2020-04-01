@@ -35,7 +35,7 @@ export const CarouselProvider = ({ children }) => {
           onClose={() => setShow(false)}
         >
           <Icon
-            name='close/1'
+            name='close/feather'
             color='black'
             wrapperStyles={{ margin: '0 0 0 auto' }}
             onClick={hideCarousel}
