@@ -1,9 +1,3 @@
-#### Start development
+# JeremyTenjo.com
 
-```sh
-npm i
-```
-
-```sh
-npm run start
-```
+- Built with [Wapp](https://github.com/tenjojeremy/wapp)
