@@ -1,15 +1,47 @@
 {
-  "name": "app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jeremy Tenjo | Portfolio",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "react-scripts build && firebase deploy && gpush",
+    "start": "wapp start",
+    "build": "wapp build",
+    "build:analyze": "wapp build && wapp analyze",
+    "docs": "wapp docs",
+    "deploy:dev": "wapp build && firebase use development && firebase deploy --only hosting ",
+    "deploy:prod": "npm run lint:fix && npm run prettify && wapp build && gpush && firebase use default && firebase deploy --only hosting",
+    "start:functions": "firebase serve --only functions",
+    "prettify": "prettier \"**/*.js\" --write",
+    "check-staged": "lint-staged",
     "lint:fix": "eslint ./src --fix",
-    "lint:check": "eslint ./src",
-    "prettify": "prettier \"**/*.js\" --write"
+    "lint:check": "eslint ./src"
   },
+  "dependencies": {
+    "@tenjojeremy/eslint-config": "^3.1.0",
+    "@tenjojeremy/prettier-config": "^0.5.0",
+    "@tenjojeremy/wapp": "^1.24.0",
+    "@tenjojeremy/web-toolkit": "^6.73.0",
+    "firebase": "^7.8.1",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19",
+    "styled-components": "^5.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run lint:fix",
+      "npm run prettify",
+      "prettier --list-different"
+    ]
+  },
+  "prettier": "@tenjojeremy/prettier-config",
   "eslintConfig": {
     "extends": "@tenjojeremy/eslint-config"
   },
@@ -18,38 +50,5 @@
     "/src/serviceWorker/sw.js",
     "/node_modules",
     "/api/node_modules"
-  ],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "dependencies": {
-    "@tenjojeremy/eslint-config": "^3.1.0",
-    "@tenjojeremy/prettier-config": "^0.5.0",
-    "@tenjojeremy/web-toolkit": "^6.12.0",
-    "firebase": "^7.8.1",
-    "firebase-functions": "^3.3.0",
-    "nuka-carousel": "^4.6.2",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-particles-js": "^2.7.0",
-    "react-redux": "^7.1.3",
-    "react-responsive-carousel": "^3.1.51",
-    "react-scripts": "3.3.1",
-    "react-slick": "^0.25.2",
-    "react-swipe": "^6.0.4",
-    "react-swipeable-views": "^0.13.8",
-    "redux": "^4.0.5",
-    "styled-components": "^5.0.1",
-    "workbox-sw": "^5.0.0"
-  }
+  ]
 }
