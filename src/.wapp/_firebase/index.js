@@ -2,8 +2,6 @@ import firebase from 'firebase/app'
 
 import 'firebase/analytics'
 
-import enablePerfMonitoring from '@tenjojeremy/web-toolkit/analytics/firebase'
-
 firebase.initializeApp({
   apiKey: 'AIzaSyDRRWbzzADN3rhjBWpZeiHfaIq4a1gvIOY',
   authDomain: 'portfolio-83749.firebaseapp.com',
@@ -14,5 +12,3 @@ firebase.initializeApp({
   appId: '1:7666199790:web:19f33a4fa0d7eb3fa397ff',
   measurementId: 'G-RNL42DTCS5',
 })
-
-enablePerfMonitoring(firebase)
