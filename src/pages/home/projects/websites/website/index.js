@@ -6,7 +6,7 @@ import List from '@tenjojeremy/web-toolkit/dataDisplay/list'
 import Image from '@tenjojeremy/web-toolkit/media/image'
 import Link from '@tenjojeremy/web-toolkit/navigation/link'
 import Button from '@tenjojeremy/web-toolkit/input/button/styles/base'
-import LazyLoad from '@tenjojeremy/web-toolkit/miscUtils/rendering/lazyLoad'
+import LazyLoad from '@tenjojeremy/web-toolkit/utils/rendering/lazyLoad'
 
 import useCarousel from '../../../../../common/carousel/carousel.state'
 
